@@ -2,13 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EagleScript : MonoBehaviour {
+public class EagleScript : PlayerParent {
 
     public Animator eagleAnim;
     public GameObject feather;
-    public GameObject windGust;
-    public GameObject talonSwipeMelee;
-    public GameObject talonSwipeArc;
     public float GustUsed;
     public float TalonUsed;
 
