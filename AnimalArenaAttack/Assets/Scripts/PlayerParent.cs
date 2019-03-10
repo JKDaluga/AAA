@@ -13,12 +13,12 @@ public class PlayerParent : MonoBehaviour {
 
     public bool ability1;
     public bool ability2;
-    public bool ability3;
 
 
     // Use this for initialization
     void Start ()
     {
+        health = 750;
         rb = GetComponent<Rigidbody2D>();
         //GameManager.addPlayer(this);
     }
@@ -80,22 +80,22 @@ public class PlayerParent : MonoBehaviour {
 
     void MovementP1()
     {
-        float x = Input.GetAxis("Horizontal2") * Time.deltaTime;
-        float y = Input.GetAxis("Vertical2") * Time.deltaTime;
+        float x = Input.GetAxis("Horizontal1") * Time.deltaTime;
+        float y = Input.GetAxis("Vertical1") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
-        print(rb);
         rb.velocity = movement;
+        print(movement);    
     }
 
     void MovementP2()
     {
-        float x = Input.GetAxis("Horizontal") * Time.deltaTime;
-        float y = Input.GetAxis("Vertical") * Time.deltaTime;
+        float x = Input.GetAxis("Horizontal2") * Time.deltaTime;
+        float y = Input.GetAxis("Vertical2") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
-        print(rb);
         rb.velocity = movement;
+        print(movement);
     }
     public void Damage(int amount)
     {

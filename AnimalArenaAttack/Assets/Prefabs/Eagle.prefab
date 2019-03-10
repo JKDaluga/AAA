@@ -121,11 +121,8 @@ MonoBehaviour:
   isPlayer1: 0
   ability1: 0
   ability2: 0
-  ability3: 0
   eagleAnim: {fileID: 0}
-  feather: {fileID: 0}
-  GustUsed: 0
-  TalonUsed: 0
+  feather: {fileID: 1742646030460580, guid: f72f59eacfb81484d852bd9bb2f4827e, type: 2}
   featherCloneRB: {fileID: 0}
   baseAttackDuration: 1
   featherSpeed: 2

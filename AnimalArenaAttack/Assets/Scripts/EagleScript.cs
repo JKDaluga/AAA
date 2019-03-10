@@ -6,8 +6,6 @@ public class EagleScript : PlayerParent {
 
     public Animator eagleAnim;
     public GameObject feather;
-    public float GustUsed;
-    public float TalonUsed;
 
     public Rigidbody2D featherCloneRB;
     public float baseAttackDuration = 1f;
