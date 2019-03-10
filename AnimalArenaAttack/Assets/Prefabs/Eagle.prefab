@@ -20,13 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4290396569210024}
   - component: {fileID: 212076232651384824}
-  - component: {fileID: 114703374508070306}
-  - component: {fileID: 114197271756920320}
   - component: {fileID: 50899363423640042}
   - component: {fileID: 114795992164774124}
   - component: {fileID: 61432882768501472}
   - component: {fileID: 95715686612117154}
-  - component: {fileID: 114257564656597336}
   m_Layer: 0
   m_Name: Eagle
   m_TagString: Eagle
@@ -110,78 +107,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114197271756920320
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1853554982099422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.033333335
-  m_SyncRotationAxis: 3
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 1
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
---- !u!114 &114257564656597336
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1853554982099422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Animator: {fileID: 95715686612117154}
-  m_ParameterSendBits: 0
-  param0: 
-  param1: 
-  param2: 
-  param3: 
-  param4: 
-  param5: 
---- !u!114 &114703374508070306
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1853554982099422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 214
-    i1: 12
-    i2: 181
-    i3: 14
-    i4: 88
-    i5: 147
-    i6: 162
-    i7: 196
-    i8: 121
-    i9: 59
-    i10: 47
-    i11: 73
-    i12: 76
-    i13: 231
-    i14: 7
-    i15: 96
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
 --- !u!114 &114795992164774124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -248,7 +173,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 226519561
-  m_SortingLayer: 5
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ae187fffb6a62c24e977fd527d24cb15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

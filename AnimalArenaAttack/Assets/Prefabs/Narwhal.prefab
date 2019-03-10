@@ -20,12 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4413951138534436}
   - component: {fileID: 212271114525542226}
-  - component: {fileID: 114448963858613024}
-  - component: {fileID: 114133376610977282}
   - component: {fileID: 50410032969589620}
   - component: {fileID: 114422487239287454}
   - component: {fileID: 95080662391015314}
-  - component: {fileID: 114867144935703632}
   - component: {fileID: 61641704127848020}
   m_Layer: 0
   m_Name: Narwhal
@@ -110,27 +107,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114133376610977282
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1523674517385784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.033333335
-  m_SyncRotationAxis: 3
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 1
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!114 &114422487239287454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,57 +138,6 @@ MonoBehaviour:
   bubbleCloneRB: {fileID: 0}
   bubbleSpeed: 1
   baseAttackDuration: 1
---- !u!114 &114448963858613024
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1523674517385784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 65
-    i1: 159
-    i2: 112
-    i3: 138
-    i4: 33
-    i5: 30
-    i6: 180
-    i7: 4
-    i8: 89
-    i9: 41
-    i10: 35
-    i11: 12
-    i12: 92
-    i13: 241
-    i14: 100
-    i15: 19
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
---- !u!114 &114867144935703632
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1523674517385784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Animator: {fileID: 95080662391015314}
-  m_ParameterSendBits: 0
-  param0: 
-  param1: 
-  param2: 
-  param3: 
-  param4: 
-  param5: 
 --- !u!212 &212271114525542226
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -246,7 +171,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 226519561
-  m_SortingLayer: 5
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4cf8513fb4d894112888ccba889ef6e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
