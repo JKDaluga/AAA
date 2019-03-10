@@ -20,13 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4215946087548524}
   - component: {fileID: 212139183787705188}
-  - component: {fileID: 114896181193871538}
-  - component: {fileID: 114818728688634136}
   - component: {fileID: 50670261204087406}
   - component: {fileID: 61129556566390662}
   - component: {fileID: 114014496832853548}
   - component: {fileID: 95743878742588688}
-  - component: {fileID: 114618361439194030}
   m_Layer: 0
   m_Name: Chimera
   m_TagString: Monster
@@ -131,78 +128,6 @@ MonoBehaviour:
   yCleaveDisplacement: 0
   normal: {r: 0, g: 0, b: 0, a: 0}
   hurt: {r: 1, g: 0, b: 0, a: 0.5647059}
---- !u!114 &114618361439194030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1468167961776760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Animator: {fileID: 95743878742588688}
-  m_ParameterSendBits: 0
-  param0: 
-  param1: 
-  param2: 
-  param3: 
-  param4: 
-  param5: 
---- !u!114 &114818728688634136
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1468167961776760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.033333335
-  m_SyncRotationAxis: 3
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 1
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
---- !u!114 &114896181193871538
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1468167961776760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 200
-    i1: 232
-    i2: 73
-    i3: 247
-    i4: 137
-    i5: 23
-    i6: 9
-    i7: 68
-    i8: 25
-    i9: 48
-    i10: 194
-    i11: 164
-    i12: 28
-    i13: 84
-    i14: 59
-    i15: 234
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
 --- !u!212 &212139183787705188
 SpriteRenderer:
   m_ObjectHideFlags: 1

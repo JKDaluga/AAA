@@ -20,13 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4728946962213704}
   - component: {fileID: 212515393321308326}
-  - component: {fileID: 114201551387044768}
-  - component: {fileID: 114573202722466484}
   - component: {fileID: 50102361339672202}
   - component: {fileID: 114700184662339044}
   - component: {fileID: 61844941096281804}
   - component: {fileID: 95943639058510226}
-  - component: {fileID: 114494747694735008}
   m_Layer: 0
   m_Name: Rhino
   m_TagString: Rhino
@@ -110,78 +107,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114201551387044768
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1233969339073164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 88
-    i1: 61
-    i2: 11
-    i3: 102
-    i4: 141
-    i5: 69
-    i6: 149
-    i7: 212
-    i8: 25
-    i9: 107
-    i10: 66
-    i11: 191
-    i12: 165
-    i13: 165
-    i14: 142
-    i15: 156
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
---- !u!114 &114494747694735008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1233969339073164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Animator: {fileID: 95943639058510226}
-  m_ParameterSendBits: 0
-  param0: 
-  param1: 
-  param2: 
-  param3: 
-  param4: 
-  param5: 
---- !u!114 &114573202722466484
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1233969339073164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.033333335
-  m_SyncRotationAxis: 3
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 1
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!114 &114700184662339044
 MonoBehaviour:
   m_ObjectHideFlags: 1
