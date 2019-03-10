@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4290396569210024}
   - component: {fileID: 212076232651384824}
+  - component: {fileID: 114439160813768542}
   - component: {fileID: 50899363423640042}
-  - component: {fileID: 114795992164774124}
   - component: {fileID: 61432882768501472}
   - component: {fileID: 95715686612117154}
   m_Layer: 0
@@ -107,7 +107,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114795992164774124
+--- !u!114 &114439160813768542
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,31 +115,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1853554982099422}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff4f7dc765bea3a4f8bec9969dfa188a, type: 3}
+  m_Script: {fileID: 11500000, guid: 20336232563cb46c08018f972f1cb37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 200
-  anim: {fileID: 0}
-  rb: {fileID: 0}
-  Health: 750
-  isDead: 0
-  isMonster: 0
-  isPlayer1: 1
+  isPlayer1: 0
   ability1: 0
   ability2: 0
   ability3: 0
-  attack: 0
-  normal: {r: 0, g: 0, b: 0, a: 0}
-  hurt: {r: 1, g: 0, b: 0, a: 0.63529414}
-  feather: {fileID: 1742646030460580, guid: f72f59eacfb81484d852bd9bb2f4827e, type: 2}
-  windGust: {fileID: 0}
-  talonSwipeMelee: {fileID: 0}
-  talonSwipeArc: {fileID: 0}
+  eagleAnim: {fileID: 0}
+  feather: {fileID: 0}
   GustUsed: 0
   TalonUsed: 0
   featherCloneRB: {fileID: 0}
-  baseAttackDuration: 5
-  featherSpeed: 1
+  baseAttackDuration: 1
+  featherSpeed: 2
 --- !u!212 &212076232651384824
 SpriteRenderer:
   m_ObjectHideFlags: 1
