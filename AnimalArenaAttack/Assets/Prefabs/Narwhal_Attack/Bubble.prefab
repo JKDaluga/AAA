@@ -20,12 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4260874122001728}
   - component: {fileID: 212241348157089496}
-  - component: {fileID: 114145388771093552}
   - component: {fileID: 50236248215897858}
   - component: {fileID: 95296503324451058}
   - component: {fileID: 114423271019589594}
   - component: {fileID: 58506188685525930}
-  - component: {fileID: 114661755894475046}
   m_Layer: 8
   m_Name: Bubble
   m_TagString: PlayerAttack
@@ -99,38 +97,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114145388771093552
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1742646030460580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 64
-    i1: 157
-    i2: 150
-    i3: 126
-    i4: 177
-    i5: 43
-    i6: 93
-    i7: 212
-    i8: 233
-    i9: 42
-    i10: 85
-    i11: 119
-    i12: 154
-    i13: 175
-    i14: 187
-    i15: 112
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
 --- !u!114 &114423271019589594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,27 +111,6 @@ MonoBehaviour:
   damage: 5
   chimera: {fileID: 1468167961776760, guid: c8e849f7891709441930c2a41c543bea, type: 2}
   speed: 1
---- !u!114 &114661755894475046
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1742646030460580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 2
-  m_SendInterval: 0.033333335
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!212 &212241348157089496
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -199,7 +144,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -678233647
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c88c7629f80206a4f9664876f0280630, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

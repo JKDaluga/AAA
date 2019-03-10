@@ -20,8 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4741293100718780}
   - component: {fileID: 212336703889911920}
-  - component: {fileID: 114109240052561538}
-  - component: {fileID: 114406087462515974}
   m_Layer: 0
   m_Name: cleaveWarningPrefab
   m_TagString: Untagged
@@ -42,59 +40,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114109240052561538
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1026418562412202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 19
-    i1: 219
-    i2: 88
-    i3: 137
-    i4: 244
-    i5: 81
-    i6: 21
-    i7: 132
-    i8: 104
-    i9: 154
-    i10: 191
-    i11: 100
-    i12: 105
-    i13: 234
-    i14: 38
-    i15: 12
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
---- !u!114 &114406087462515974
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1026418562412202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.033333335
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!212 &212336703889911920
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -128,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -678233647
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5102e505c9a39a248b9f9b29717f9854, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

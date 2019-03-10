@@ -20,8 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4310501287948924}
   - component: {fileID: 212954388039958726}
-  - component: {fileID: 114100378262210984}
-  - component: {fileID: 114944942535136784}
   - component: {fileID: 60712074927211232}
   - component: {fileID: 50310401428527420}
   - component: {fileID: 114651113638161236}
@@ -305,38 +303,6 @@ PolygonCollider2D:
       - {x: 0.76, y: -7.5}
       - {x: 0.94, y: -7.48}
       - {x: 1.2099999, y: -7.44}
---- !u!114 &114100378262210984
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1064383934232854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SceneId:
-    m_Value: 0
-  m_AssetId:
-    i0: 98
-    i1: 128
-    i2: 91
-    i3: 106
-    i4: 31
-    i5: 18
-    i6: 189
-    i7: 68
-    i8: 153
-    i9: 38
-    i10: 241
-    i11: 133
-    i12: 10
-    i13: 128
-    i14: 59
-    i15: 118
-  m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
 --- !u!114 &114651113638161236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -349,27 +315,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
---- !u!114 &114944942535136784
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1064383934232854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TransformSyncMode: 1
-  m_SendInterval: 0.03448276
-  m_SyncRotationAxis: 7
-  m_RotationSyncCompression: 0
-  m_SyncSpin: 0
-  m_MovementTheshold: 0.001
-  m_VelocityThreshold: 0.0001
-  m_SnapThreshold: 5
-  m_InterpolateRotation: 1
-  m_InterpolateMovement: 1
 --- !u!212 &212954388039958726
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -403,7 +348,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -678233647
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c42cba0b1f5e13345828f17729bcfdc7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
