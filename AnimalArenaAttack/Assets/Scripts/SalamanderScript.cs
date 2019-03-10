@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SalamanderScript : MonoBehaviour {
+public class SalamanderScript : PlayerParent {
 
 
     public GameObject salamanderFist;
@@ -20,7 +20,7 @@ public class SalamanderScript : MonoBehaviour {
         Destroy(currentFist, baseAttackDuration);
 	}
 	
-	public override void Abililty2 ()
+	public override void Ability2 ()
     {
 		
 	}
