@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 56b80df37a581d044b2ed55f97426499
+guid: aab36f27887134f498d06c8ab35e1193
 TextureImporter:
   fileIDToRecycleName:
-    21300000: eagle_feather_0
-    21300002: eagle_feather_1
+    21300000: eagle_feather_copy_0
+    21300002: eagle_feather_copy_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: eagle_feather_0
+      name: eagle_feather_copy_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,13 +111,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b7b7aaa1c9c3aa45a446b00d9bfef93
+      spriteID: 24155fb052cab8640820dc22fa35309e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: eagle_feather_1
+      name: eagle_feather_copy_1
       rect:
         serializedVersion: 2
         x: 546
@@ -131,7 +131,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10d94c71157337a419da1a1c8a3cf803
+      spriteID: 80a6c41965146b343b68f551a73cb858
       vertices: []
       indices: 
       edges: []
@@ -139,7 +139,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2cb83b1e03a228b4ba9944e14d5d6bdc
+    spriteID: dd60ead1e87451f4190f367b5156579f
     vertices: []
     indices: 
     edges: []

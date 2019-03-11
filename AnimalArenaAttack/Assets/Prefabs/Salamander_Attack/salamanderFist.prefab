@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212560372478972778}
   - component: {fileID: 61002521489159116}
   - component: {fileID: 50929411217612594}
-  - component: {fileID: 114998161836598440}
   m_Layer: 11
   m_Name: salamanderFist
   m_TagString: Untagged
@@ -88,19 +87,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114998161836598440
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1986031310715116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4e5173ab966e4d449eec392635f13f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 5
-  chimera: {fileID: 1468167961776760, guid: c8e849f7891709441930c2a41c543bea, type: 2}
 --- !u!212 &212560372478972778
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -133,8 +119,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -678233647
-  m_SortingLayer: 0
+  m_SortingLayerID: 103353123
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b4bd34807da43af42a339b9397a584b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
