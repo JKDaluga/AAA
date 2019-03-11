@@ -76,7 +76,7 @@ public class ChimeraController : MonoBehaviour {
         print("Ability 4");
     }
 
-    void Damage(int damage)
+    public void Damage(int damage)
     {
         Health -= damage;
         if(Health < 0)

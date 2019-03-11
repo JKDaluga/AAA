@@ -6,13 +6,14 @@ public class EagleFeather : MonoBehaviour {
 
     public int damage = 5;
     public float timer = 0;
-    public float speed = 2f;
+    float speed = 10f;
 
     public GameObject chimera;
 
     // Use this for initialization
     void Start ()
     {
+        chimera = GameObject.FindGameObjectWithTag("Monster");
         speed *= Time.deltaTime;
     }
 
@@ -25,15 +26,18 @@ public class EagleFeather : MonoBehaviour {
         timer += 1.0F * Time.deltaTime;
         
         transform.position = Vector3.MoveTowards(transform.position, chimera.transform.position, speed);
-        
+        transform.right = chimera.transform.position - transform.position;
+
+
     }
 
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Chimera")
+        if (col.gameObject.tag == "Monster")
         {
             col.gameObject.GetComponent<ChimeraController>().Damage(damage);
+            GameObject.Destroy(gameObject);
         }
     }
 }

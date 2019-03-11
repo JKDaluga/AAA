@@ -16,17 +16,15 @@ public class EagleScript : PlayerParent {
 
 	public override void Ability1()
     {
-        if (Time.time > featherUsed + 2)
+        if (Time.time > featherUsed + .25)
         {
             Instantiate(feather, transform.position, transform.rotation);
             featherUsed = Time.time;
         }
-        GameObject featherClone = (GameObject)Instantiate(feather, transform.position, transform.rotation);
 
-        Vector2 direction = transform.up;
-        featherClone.GetComponent<Rigidbody2D>().velocity = direction * featherSpeed;
+        //Vector2 direction = transform.up;
+      //  featherClone.GetComponent<Rigidbody2D>().velocity = direction * featherSpeed;
 
-        GameObject.Destroy(featherClone, baseAttackDuration);
 
     }
 
