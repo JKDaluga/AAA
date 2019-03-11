@@ -23,7 +23,7 @@ public class ChimeraController : MonoBehaviour {
 
     void combat()
     {
-        randomAbility();
+        //randomAbility();
         Invoke("combat", 5f);
     }
 
