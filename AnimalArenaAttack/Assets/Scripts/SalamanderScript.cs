@@ -16,7 +16,7 @@ public class SalamanderScript : PlayerParent {
     {
         if(Time.time > slashUsed + .25)
         {
-            Instantiate(slash, transform.position, transform.rotation);
+            Instantiate(slash, (transform.position * .8f), transform.rotation);
             slashUsed = Time.time;
         }
 	}

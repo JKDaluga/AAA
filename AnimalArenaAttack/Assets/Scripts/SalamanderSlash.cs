@@ -19,7 +19,7 @@ public class SalamanderSlash : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if (timer >= .8)
+        if (timer >= .01)
         {
             GameObject.Destroy(gameObject);
         }

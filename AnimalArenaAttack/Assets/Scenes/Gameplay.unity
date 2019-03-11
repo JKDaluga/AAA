@@ -792,7 +792,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 5.2900085, y: 0}
-  m_SizeDelta: {x: 18.460001, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &594760031
 MonoBehaviour:
@@ -1513,7 +1513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1507758119
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1750,10 +1750,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2087923107}
   - component: {fileID: 2087923106}
+  - component: {fileID: 2087923103}
   - component: {fileID: 2087923105}
   - component: {fileID: 2087923104}
   - component: {fileID: 2087923102}
-  - component: {fileID: 2087923103}
   m_Layer: 0
   m_Name: Chimera
   m_TagString: Monster

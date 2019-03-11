@@ -8,7 +8,7 @@ public class PlayerParent : MonoBehaviour {
 
     private Rigidbody2D rb;
 
-    int health;
+    public int health;
 
     public bool isPlayer1;
 
