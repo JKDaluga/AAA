@@ -246,6 +246,46 @@ Prefab:
       propertyPath: isPlayer1
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: normal.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: normal.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: normal.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: normal.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: hurt.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: hurt.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: hurt.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: hurt.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d60cb50e5893a2c4793b2f494ce70760, type: 2}
   m_IsPrefabAsset: 0
@@ -1422,6 +1462,46 @@ Prefab:
         type: 2}
       propertyPath: isPlayer1
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: normal.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: normal.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: normal.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: normal.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: hurt.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: hurt.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: hurt.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: hurt.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29f30ba6ca6b64e4eafb18e88e06668a, type: 2}
@@ -3016,6 +3096,8 @@ MonoBehaviour:
   cleaveWarningDuration: 2
   xCleaveDisplacement: 0
   yCleaveDisplacement: -1
+  normal: {r: 1, g: 1, b: 1, a: 1}
+  hurt: {r: 1, g: 0, b: 0, a: 1}
 --- !u!61 &2087923104
 BoxCollider2D:
   m_ObjectHideFlags: 0
