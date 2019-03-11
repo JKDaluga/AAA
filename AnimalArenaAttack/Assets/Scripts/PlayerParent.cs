@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerParent : MonoBehaviour {
 
@@ -26,8 +27,12 @@ public class PlayerParent : MonoBehaviour {
     public float dashSpeed = 1f;
     public float stopDash = .1f;
 
-    private float startingDashTime;
-    private int direction;
+    private float currentDashTime;
+
+    public Slider P1HealthBar;
+    public Slider P2HealthBar;
+
+
 
     public void Awake()
     {
@@ -41,7 +46,7 @@ public class PlayerParent : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         //GameManager.addPlayer(this);
         //dashTime  = startingDashTime;
-       
+
     }
 
     // Update is called once per frame
@@ -54,7 +59,7 @@ public class PlayerParent : MonoBehaviour {
             {
                 Flip();
             }
-           
+
             else if (this.transform.position.x > chimera.transform.position.x && facingRight)
             {
                 Flip();
@@ -74,16 +79,20 @@ public class PlayerParent : MonoBehaviour {
             }
         }
 
-        
+
         if (health > 0)
         {
             if (isPlayer1)
             {
                 MovementP1();
+                P1HealthBar.value = health;
+
             }
             if (!isPlayer1)
             {
                 MovementP2();
+                P2HealthBar.value =health;
+
             }
             if (isPlayer1)
             {
@@ -137,9 +146,9 @@ public class PlayerParent : MonoBehaviour {
         //    dashTime = startingDashTime;
         //    rb.velocity = Vector2.zero;
         //}
-       
 
-        //After knowing the direction of a player if a player uses ability 2 push them in that specific diretion 
+
+        //After knowing the direction of a player if a player uses ability 2 push them in that specific diretion
         //Store a varible for the last direction a player moves
 
     }

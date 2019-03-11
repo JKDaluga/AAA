@@ -26,7 +26,7 @@ public class EagleFeather : MonoBehaviour {
         timer += 1.0F * Time.deltaTime;
         
         transform.position = Vector3.MoveTowards(transform.position, chimera.transform.position, speed);
-        transform.right = chimera.transform.position - transform.position;
+        transform.up = chimera.transform.position - transform.position;
 
 
     }

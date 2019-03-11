@@ -52,91 +52,91 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
+  - name: Menu_Music
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Select_Music
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Fight_Music
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Victory_Music
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Defeat_Music
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Sal_Attack
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Sal_Defense
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Eagle_Attack
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Eagle_Defense
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Chim_Attack_1
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Chim_Attack_2
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Chim_Attack_3
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Chim_Attack_4
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Menu_Move
     clip: {fileID: 0}
     volume: 0
     pitch: 0
     randomVolume: 0
     randomPitch: 0
-  - name: 
+  - name: Menu_Input
     clip: {fileID: 0}
     volume: 0
     pitch: 0
