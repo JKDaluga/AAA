@@ -88,4 +88,8 @@ public class ChimeraController : MonoBehaviour {
             Health = 0;
         }
     }
+    public int getHealth()
+    {
+        return Health;
+    }
 }
