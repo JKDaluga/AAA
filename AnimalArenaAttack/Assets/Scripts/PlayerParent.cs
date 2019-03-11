@@ -96,12 +96,12 @@ public class PlayerParent : MonoBehaviour {
             }
             if (isPlayer1)
             {
-                if ((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.Mouse0)))
+                if ((Input.GetKeyDown(KeyCode.U)) || (Input.GetKeyDown(KeyCode.Mouse0)))
                 {
                     Ability1();
 
                 }
-                if ((Input.GetKeyDown(KeyCode.B)))
+                if ((Input.GetKeyDown(KeyCode.I)) || (Input.GetKeyDown(KeyCode.E)))
                 {
                     Ability2();
 
@@ -110,14 +110,14 @@ public class PlayerParent : MonoBehaviour {
             else if (!isPlayer1)
             {
                 //Ability 1 Player 2
-                if (((Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.U))) || (Input.GetKeyDown(KeyCode.Mouse0)))
+                if (((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.Mouse0)))
                 {
                     // anim.SetBool("Ability1", true);
                     Ability1();
                 }
 
                 //Ability 2 Player 2
-                if ((Input.GetKeyDown(KeyCode.I)) || (Input.GetKeyDown(KeyCode.E)))
+                if ((Input.GetKeyDown(KeyCode.B)))
                 {
                     //Debug.Log("Am I Work?");
                     // anim.SetBool("Ability2", true);

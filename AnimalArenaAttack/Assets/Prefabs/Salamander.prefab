@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  isPlayer1: 1
+  isPlayer1: 0
   ability1: 0
   ability2: 0
   speed: 0
