@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212757548078933510}
   - component: {fileID: 58491898694901192}
   - component: {fileID: 50353244347453258}
+  - component: {fileID: 114140093626161054}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: ChimeraFire
@@ -56,7 +57,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -77,6 +78,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &114140093626161054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1285427161551978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212757548078933510
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -109,8 +121,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 103353123
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9c4af204444af864aa727f18fe9173c5, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}

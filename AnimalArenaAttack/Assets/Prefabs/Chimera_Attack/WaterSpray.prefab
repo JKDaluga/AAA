@@ -125,13 +125,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1876367379822638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65458bf203cc0a54ab20222b943bb96b, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f4d024ba18daaf4ca32a895ff35bea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   minAngle: -80
   maxAngle: 80
   progress: 0
-  timeToRotate: 5
+  timeToRotate: 4
 --- !u!212 &212514498982799268
 SpriteRenderer:
   m_ObjectHideFlags: 1
