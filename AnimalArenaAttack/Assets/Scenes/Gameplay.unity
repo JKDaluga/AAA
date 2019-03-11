@@ -240,7 +240,7 @@ Prefab:
         type: 2}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 201c68108e5234161bff5b586b24aea2, type: 2}
+      objectReference: {fileID: 9100000, guid: 55ea5d3f198b740909c679845102e2d2, type: 2}
     - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
         type: 2}
       propertyPath: isPlayer1
@@ -1034,7 +1034,7 @@ GameObject:
   m_Layer: 9
   m_Name: Border (4)
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1220,7 +1220,7 @@ GameObject:
   m_Layer: 9
   m_Name: Border (5)
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1457,7 +1457,7 @@ Prefab:
         type: 2}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 9e423062c3f094a63b87106e67f71437, type: 2}
+      objectReference: {fileID: 9100000, guid: 7912271da9bc543e3a38ac593995f9b1, type: 2}
     - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
         type: 2}
       propertyPath: isPlayer1
@@ -1711,7 +1711,7 @@ GameObject:
   m_Layer: 9
   m_Name: Border (6)
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1812,7 +1812,7 @@ GameObject:
   m_Layer: 9
   m_Name: Border (2)
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2201,7 +2201,7 @@ GameObject:
   m_Layer: 9
   m_Name: Border (3)
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2828,7 +2828,7 @@ GameObject:
   m_Layer: 9
   m_Name: Border
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3200,7 +3200,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2087923101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1328932, y: 1.6934617, z: -0.01}
+  m_LocalPosition: {x: 0.49, y: 1.6934617, z: -0.01}
   m_LocalScale: {x: 0.45, y: 0.45, z: 1}
   m_Children:
   - {fileID: 1804436924}
@@ -3220,7 +3220,7 @@ GameObject:
   m_Layer: 9
   m_Name: Border (1)
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

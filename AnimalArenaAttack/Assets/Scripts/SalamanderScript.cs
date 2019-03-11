@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SalamanderScript : PlayerParent {
 
-    public Animator salamanderAnim;
-
     public GameObject slash;
     public float slashUsed;
 
@@ -14,8 +12,10 @@ public class SalamanderScript : PlayerParent {
 
     public override void Ability1()
     {
-        if(Time.time > slashUsed + .25)
+       
+        if (Time.time > slashUsed + .25)
         {
+             
             Instantiate(slash, (transform.position * .8f), transform.rotation);
             slashUsed = Time.time;
         }

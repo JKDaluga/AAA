@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class PlayerParent : MonoBehaviour {
 
     private Rigidbody2D rb;
+    public Animator anim;
 
     public int health;
 
@@ -38,6 +39,7 @@ public class PlayerParent : MonoBehaviour {
     public void Awake()
     {
         horiz = 0;
+        anim = gameObject.GetComponent<Animator>();
     }
     // Use this for initialization
     void Start ()
@@ -101,6 +103,7 @@ public class PlayerParent : MonoBehaviour {
             {
                 if ((Input.GetKeyDown(KeyCode.U)) || (Input.GetKeyDown(KeyCode.Mouse0)))
                 {
+                    StartCoroutine(setAttack());
                     Ability1();
 
                 }
@@ -115,7 +118,7 @@ public class PlayerParent : MonoBehaviour {
                 //Ability 1 Player 2
                 if (((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.Mouse0))))
                 {
-                    // anim.SetBool("Ability1", true);
+                    StartCoroutine(setAttack());
                     Ability1();
                 }
 
@@ -123,7 +126,7 @@ public class PlayerParent : MonoBehaviour {
                 if ((Input.GetKeyDown(KeyCode.B)))
                 {
                     //Debug.Log("Am I Work?");
-                    // anim.SetBool("Ability2", true);
+                    //anim.SetBool("Ability2", true);
                     Ability2();
                 }
             }
@@ -214,5 +217,11 @@ public class PlayerParent : MonoBehaviour {
         transform.localScale = theScale;
     }
 
-    private IEnumerator getHurt()     {         sp.color = hurt;         yield return new WaitForSeconds(.5f);         sp.color = normal;     }  
+    private IEnumerator getHurt()     {         sp.color = hurt;         yield return new WaitForSeconds(.5f);         sp.color = normal;     } 
+    IEnumerator setAttack()
+    {
+        anim.SetBool("Attack", true);
+        yield return new WaitForSeconds(.6f);
+        anim.SetBool("Attack", false);
+    }
 }

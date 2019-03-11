@@ -21,6 +21,7 @@ public class SalamanderSlash : MonoBehaviour {
     {
         if (timer >= .01)
         {
+
             GameObject.Destroy(gameObject);
         }
         timer += 1.0F * Time.deltaTime;
