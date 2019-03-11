@@ -9,34 +9,35 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1853554982099422}
+  m_RootGameObject: {fileID: 1227095583050184}
   m_IsPrefabAsset: 1
---- !u!1 &1853554982099422
+--- !u!1 &1227095583050184
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4290396569210024}
-  - component: {fileID: 212076232651384824}
-  - component: {fileID: 114439160813768542}
-  - component: {fileID: 50899363423640042}
-  - component: {fileID: 61432882768501472}
-  - component: {fileID: 95715686612117154}
-  m_Layer: 0
+  - component: {fileID: 4687741165474642}
+  - component: {fileID: 212483952405749530}
+  - component: {fileID: 114053842247477328}
+  - component: {fileID: 50275816149445250}
+  - component: {fileID: 61136159171707884}
+  - component: {fileID: 95468855463027796}
+  - component: {fileID: 61136672383632402}
+  m_Layer: 8
   m_Name: Eagle
   m_TagString: Eagle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4290396569210024
+--- !u!4 &4687741165474642
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1853554982099422}
+  m_GameObject: {fileID: 1227095583050184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.37, y: -1.83, z: 0}
   m_LocalScale: {x: 0.45, y: 0.45, z: 1}
@@ -44,13 +45,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50899363423640042
+--- !u!50 &50275816149445250
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1853554982099422}
+  m_GameObject: {fileID: 1227095583050184}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -63,13 +64,13 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &61432882768501472
+  m_Constraints: 4
+--- !u!61 &61136159171707884
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1853554982099422}
+  m_GameObject: {fileID: 1227095583050184}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -89,13 +90,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.4594975, y: 3.0189705}
   m_EdgeRadius: 0
---- !u!95 &95715686612117154
+--- !u!61 &61136672383632402
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1227095583050184}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.049141407, y: 0.83540684}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.8, y: 5.0000005}
+    newSize: {x: 5.8, y: 5.0000005}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.4396286, y: 3.0015755}
+  m_EdgeRadius: 0
+--- !u!95 &95468855463027796
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1853554982099422}
+  m_GameObject: {fileID: 1227095583050184}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 0}
@@ -107,17 +133,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114439160813768542
+--- !u!114 &114053842247477328
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1853554982099422}
+  m_GameObject: {fileID: 1227095583050184}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20336232563cb46c08018f972f1cb37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
   isPlayer1: 0
   ability1: 0
   ability2: 0
@@ -125,7 +152,7 @@ MonoBehaviour:
   facingRight: 1
   horiz: 0
   chimera: {fileID: 0}
-  directionFacing: {x: 0, y: 0, z: 0}
+  savedVelocity: {x: 0, y: 0}
   dashTime: 1
   dashDistance: 10
   dashSpeed: 1
@@ -137,12 +164,12 @@ MonoBehaviour:
   baseAttackDuration: 1
   featherSpeed: 2
   featherUsed: 0
---- !u!212 &212076232651384824
+--- !u!212 &212483952405749530
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1853554982099422}
+  m_GameObject: {fileID: 1227095583050184}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
