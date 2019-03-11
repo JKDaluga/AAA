@@ -20,14 +20,14 @@ public class PlayerParent : MonoBehaviour {
     public GameObject chimera;
 
 
-    public Vector3 directionFacing;
+    public Vector2 savedVelocity;
     public float dashTime = 1f;
     public float dashDistance = 10f;
     public float dashSpeed = 1f;
     public float stopDash = .1f;
 
-    private float currentDashTime;
-
+    private float startingDashTime;
+    private int direction;
 
     public void Awake()
     {
@@ -40,7 +40,7 @@ public class PlayerParent : MonoBehaviour {
         speed = 300;
         rb = GetComponent<Rigidbody2D>();
         //GameManager.addPlayer(this);
-        currentDashTime = dashTime;
+        //dashTime  = startingDashTime;
        
     }
 
@@ -110,6 +110,7 @@ public class PlayerParent : MonoBehaviour {
                 //Ability 2 Player 2
                 if ((Input.GetKeyDown(KeyCode.I)) || (Input.GetKeyDown(KeyCode.E)))
                 {
+                    //Debug.Log("Am I Work?");
                     // anim.SetBool("Ability2", true);
                     Ability2();
                 }
@@ -124,17 +125,19 @@ public class PlayerParent : MonoBehaviour {
     }
     public virtual void Ability2()
     {
-        currentDashTime = 0f;
+        //Debug.Log("Am I work?");
 
-        if (currentDashTime < dashTime)
-        {
-            directionFacing = transform.forward * dashDistance;
-            currentDashTime += stopDash;
-        }
-        else
-        {
-            directionFacing = Vector3.zero;
-        }
+        //savedVelocity = rb.velocity;
+        //rb.transform.position = new Vector2(rb.transform.position.x * 3f, rb.transform.position.y);
+
+        //checks to see if the player has dashed
+        //if (dashTime <= 0)
+        //{
+        //    direction = 0;
+        //    dashTime = startingDashTime;
+        //    rb.velocity = Vector2.zero;
+        //}
+       
 
         //After knowing the direction of a player if a player uses ability 2 push them in that specific diretion 
         //Store a varible for the last direction a player moves
@@ -147,7 +150,14 @@ public class PlayerParent : MonoBehaviour {
         float y = Input.GetAxis("Vertical1") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
-        rb.velocity = movement * speed;
+        if (Input.GetKeyDown(KeyCode.B ))
+        {
+            rb.velocity = movement * speed * 10f;
+        }
+        else
+        {
+            rb.velocity = movement * speed;
+        }
     }
 
     void MovementP2()
@@ -156,7 +166,16 @@ public class PlayerParent : MonoBehaviour {
         float y = Input.GetAxis("Vertical2") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
-        rb.velocity = movement * speed;
+
+
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.I))
+        {
+            rb.velocity = movement * speed * 10f;
+        }
+        else
+        {
+            rb.velocity = movement * speed;
+        }
     }
     public void Damage(int amount)
     {
