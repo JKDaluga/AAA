@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Eagle
   - Salamander
+  - PlayerAttack
+  - ChimeraLightning
+  - ChimeraWater
+  - Cleave
+  - ChimeraFire
+  - Monster
   layers:
   - Default
   - TransparentFX
@@ -46,11 +52,14 @@ TagManager:
   - name: Background
     uniqueID: 2818622221
     locked: 0
-  - name: Player
-    uniqueID: 103353123
+  - name: Chimera
+    uniqueID: 2608184337
     locked: 0
   - name: Foreground
     uniqueID: 1478740453
+    locked: 0
+  - name: Player
+    uniqueID: 103353123
     locked: 0
   - name: UI
     uniqueID: 3545529883

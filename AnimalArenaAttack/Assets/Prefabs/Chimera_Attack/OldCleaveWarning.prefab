@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4741293100718780}
   - component: {fileID: 212336703889911920}
   m_Layer: 0
-  m_Name: cleaveWarningPrefab
+  m_Name: OldCleaveWarning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

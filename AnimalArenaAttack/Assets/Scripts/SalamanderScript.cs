@@ -5,7 +5,7 @@ using UnityEngine;
 public class SalamanderScript : PlayerParent {
 
 
-    public GameObject salamanderFist;
+    public GameObject slash;
     public float baseAttackDuration = 0f;
 
     public override void Ability1  () 
@@ -15,9 +15,9 @@ public class SalamanderScript : PlayerParent {
         Vector3 hitPos = new Vector3((gameObject.transform.position.x), (gameObject.transform.position.y), gameObject.transform.position.z);
 
 
-        var currentFist = Instantiate(salamanderFist, hitPos, rotation);
+        var slashClone = Instantiate(slash, hitPos, rotation);
 
-        Destroy(currentFist, baseAttackDuration);
+        Destroy(slashClone, baseAttackDuration);
 	}
 	
 	public override void Ability2 ()

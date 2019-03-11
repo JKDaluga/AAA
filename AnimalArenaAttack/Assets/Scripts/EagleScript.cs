@@ -6,22 +6,25 @@ public class EagleScript : PlayerParent {
 
     public Animator eagleAnim;
     public GameObject feather;
-    public float GustUsed;
-    public float TalonUsed;
 
     public Rigidbody2D featherCloneRB;
     public float baseAttackDuration = 1f;
 
     public float featherSpeed = 2f;
 
+    public float featherUsed;
+
 	public override void Ability1()
     {
-        GameObject featherClone = (GameObject)Instantiate(feather, transform.position, transform.rotation);
+        if (Time.time > featherUsed + .25)
+        {
+            Instantiate(feather, transform.position, transform.rotation);
+            featherUsed = Time.time;
+        }
 
-        Vector2 direction = transform.up;
-        featherClone.GetComponent<Rigidbody2D>().velocity = direction * featherSpeed;
+        //Vector2 direction = transform.up;
+      //  featherClone.GetComponent<Rigidbody2D>().velocity = direction * featherSpeed;
 
-        GameObject.Destroy(featherClone, baseAttackDuration);
 
     }
 
