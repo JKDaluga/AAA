@@ -17,6 +17,17 @@ public class PlayerParent : MonoBehaviour {
     public bool facingRight = true;
     public float horiz;
 
+    public GameObject chimera;
+
+
+    public Vector3 directionFacing;
+    public float dashTime = 1f;
+    public float dashDistance = 10f;
+    public float dashSpeed = 1f;
+    public float stopDash = .1f;
+
+    private float currentDashTime;
+
 
     public void Awake()
     {
@@ -29,6 +40,8 @@ public class PlayerParent : MonoBehaviour {
         speed = 300;
         rb = GetComponent<Rigidbody2D>();
         //GameManager.addPlayer(this);
+        currentDashTime = dashTime;
+       
     }
 
     // Update is called once per frame
@@ -37,11 +50,12 @@ public class PlayerParent : MonoBehaviour {
         if (isPlayer1)
         {
             horiz = Input.GetAxis("Horizontal1");
-            if (horiz > 0 && !facingRight)
+            if (this.transform.position.x < chimera.transform.position.x && !facingRight)
             {
                 Flip();
             }
-            else if (horiz < 0 && facingRight)
+           
+            else if (this.transform.position.x > chimera.transform.position.x && facingRight)
             {
                 Flip();
             }
@@ -49,11 +63,12 @@ public class PlayerParent : MonoBehaviour {
         else if (!isPlayer1)
         {
             horiz = Input.GetAxis("Horizontal2");
-            if (horiz > 0 && !facingRight)
+            if (this.transform.position.x < chimera.transform.position.x && !facingRight)
             {
                 Flip();
             }
-            else if (horiz < 0 && facingRight)
+
+            else if (this.transform.position.x > chimera.transform.position.x && facingRight)
             {
                 Flip();
             }
@@ -109,6 +124,20 @@ public class PlayerParent : MonoBehaviour {
     }
     public virtual void Ability2()
     {
+        currentDashTime = 0f;
+
+        if (currentDashTime < dashTime)
+        {
+            directionFacing = transform.forward * dashDistance;
+            currentDashTime += stopDash;
+        }
+        else
+        {
+            directionFacing = Vector3.zero;
+        }
+
+        //After knowing the direction of a player if a player uses ability 2 push them in that specific diretion 
+        //Store a varible for the last direction a player moves
 
     }
 
