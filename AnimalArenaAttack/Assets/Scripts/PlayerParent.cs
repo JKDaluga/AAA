@@ -8,7 +8,7 @@ public class PlayerParent : MonoBehaviour {
 
     private Rigidbody2D rb;
 
-    public int health = 750;
+    public int health;
 
     public bool isPlayer1;
 
@@ -32,11 +32,6 @@ public class PlayerParent : MonoBehaviour {
     public Slider P1HealthBar;
     public Slider P2HealthBar;
 
-    public Vector3 bottomLeftWorldCoordinates;
-    public Vector3 topRightWorldCoordinates;
-
-
-
 
 
     public void Awake()
@@ -52,21 +47,11 @@ public class PlayerParent : MonoBehaviour {
         //GameManager.addPlayer(this);
         //dashTime  = startingDashTime;
 
-
-
     }
 
     // Update is called once per frame
-    private void Update()
-    {
-                
-    }
-
     void FixedUpdate()
     {
-
-
-
         if (isPlayer1)
         {
             horiz = Input.GetAxis("Horizontal1");
