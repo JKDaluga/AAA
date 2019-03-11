@@ -13,12 +13,20 @@ public class PlayerParent : MonoBehaviour {
 
     public bool ability1;
     public bool ability2;
+    public int speed;
+    public bool facingRight = true;
+    public float horiz;
 
 
+    public void Awake()
+    {
+        horiz = 0;
+    }
     // Use this for initialization
     void Start ()
     {
         health = 750;
+        speed = 300;
         rb = GetComponent<Rigidbody2D>();
         //GameManager.addPlayer(this);
     }
@@ -26,6 +34,32 @@ public class PlayerParent : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (isPlayer1)
+        {
+            horiz = Input.GetAxis("Horizontal1");
+            if (horiz > 0 && !facingRight)
+            {
+                Flip();
+            }
+            else if (horiz < 0 && facingRight)
+            {
+                Flip();
+            }
+        }
+        else if (!isPlayer1)
+        {
+            horiz = Input.GetAxis("Horizontal2");
+            if (horiz > 0 && !facingRight)
+            {
+                Flip();
+            }
+            else if (horiz < 0 && facingRight)
+            {
+                Flip();
+            }
+        }
+
+        
         if (health > 0)
         {
             if (isPlayer1)
@@ -84,8 +118,7 @@ public class PlayerParent : MonoBehaviour {
         float y = Input.GetAxis("Vertical1") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
-        rb.velocity = movement;
-        print(movement);    
+        rb.velocity = movement * speed;
     }
 
     void MovementP2()
@@ -94,8 +127,7 @@ public class PlayerParent : MonoBehaviour {
         float y = Input.GetAxis("Vertical2") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
-        rb.velocity = movement;
-        print(movement);
+        rb.velocity = movement * speed;
     }
     public void Damage(int amount)
     {
@@ -111,6 +143,14 @@ public class PlayerParent : MonoBehaviour {
     public int getHealth()
     {
         return health;
+    }
+
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
 }
