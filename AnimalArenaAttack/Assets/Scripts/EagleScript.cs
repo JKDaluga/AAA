@@ -12,8 +12,15 @@ public class EagleScript : PlayerParent {
 
     public float featherSpeed = 2f;
 
+    public float featherUsed;
+
 	public override void Ability1()
     {
+        if (Time.time > featherUsed + 2)
+        {
+            Instantiate(feather, transform.position, transform.rotation);
+            featherUsed = Time.time;
+        }
         GameObject featherClone = (GameObject)Instantiate(feather, transform.position, transform.rotation);
 
         Vector2 direction = transform.up;
