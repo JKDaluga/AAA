@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class SalamanderScript : PlayerParent {
 
+    public Animator salamanderAnim;
 
     public GameObject slash;
-    public float baseAttackDuration = 0f;
+    public float slashUsed;
 
-    public override void Ability1  () 
+    public float baseAttackDuration = 1f;
+    public Quaternion turn;
+
+    public override void Ability1() 
     {
-
-        Quaternion rotation = gameObject.transform.rotation;
-        Vector3 hitPos = new Vector3((gameObject.transform.position.x), (gameObject.transform.position.y), gameObject.transform.position.z);
-
-
-        var slashClone = Instantiate(slash, hitPos, rotation);
-
-        Destroy(slashClone, baseAttackDuration);
+        if(Time.time > slashUsed + .25)
+        {
+            Instantiate(slash, transform.position, transform.rotation);
+            slashUsed = Time.time;
+        }
 	}
 	
 	public override void Ability2 ()

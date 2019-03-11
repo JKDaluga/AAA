@@ -7,7 +7,6 @@ public class EagleScript : PlayerParent {
     public Animator eagleAnim;
     public GameObject feather;
 
-    public Rigidbody2D featherCloneRB;
     public float baseAttackDuration = 1f;
 
     public float featherSpeed = 2f;
@@ -21,11 +20,6 @@ public class EagleScript : PlayerParent {
             Instantiate(feather, transform.position, transform.rotation);
             featherUsed = Time.time;
         }
-
-        //Vector2 direction = transform.up;
-      //  featherClone.GetComponent<Rigidbody2D>().velocity = direction * featherSpeed;
-
-
     }
 
     public override void Ability2() 
