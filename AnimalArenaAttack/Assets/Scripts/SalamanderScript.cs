@@ -12,7 +12,7 @@ public class SalamanderScript : PlayerParent {
     public float baseAttackDuration = 1f;
     public Quaternion turn;
 
-    public override void Ability1() 
+    public override void Ability1()
     {
         if(Time.time > slashUsed + .25)
         {
@@ -20,10 +20,10 @@ public class SalamanderScript : PlayerParent {
             slashUsed = Time.time;
         }
 	}
-	
+
 	public override void Ability2 ()
     {
-		
-	}
+
+    }
 
 }
