@@ -99,12 +99,12 @@ public class PlayerParent : MonoBehaviour {
             }
             if (isPlayer1)
             {
-                if ((Input.GetKeyDown(KeyCode.U)) || (Input.GetKeyDown(KeyCode.Mouse0)))
+                if ((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.Mouse0)))
                 {
                     Ability1();
 
                 }
-                if ((Input.GetKeyDown(KeyCode.I)) || (Input.GetKeyDown(KeyCode.E)))
+                if ((Input.GetKeyDown(KeyCode.B)))
                 {
                     Ability2();
 
@@ -113,14 +113,14 @@ public class PlayerParent : MonoBehaviour {
             else if (!isPlayer1)
             {
                 //Ability 1 Player 2
-                if (((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.Mouse0))))
+                if (((Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.Mouse0))))
                 {
                     // anim.SetBool("Ability1", true);
                     Ability1();
                 }
 
                 //Ability 2 Player 2
-                if ((Input.GetKeyDown(KeyCode.B)))
+                if ((Input.GetKeyDown(KeyCode.I)))
                 {
                     //Debug.Log("Am I Work?");
                     // anim.SetBool("Ability2", true);
@@ -158,8 +158,8 @@ public class PlayerParent : MonoBehaviour {
 
     void MovementP1()
     {
-        float x = Input.GetAxis("Horizontal1") * Time.deltaTime;
-        float y = Input.GetAxis("Vertical1") * Time.deltaTime;
+        float x = Input.GetAxis("Horizontal2") * Time.deltaTime;
+        float y = Input.GetAxis("Vertical2") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
         if (Input.GetKeyDown(KeyCode.B ))
@@ -174,8 +174,8 @@ public class PlayerParent : MonoBehaviour {
 
     void MovementP2()
     {
-        float x = Input.GetAxis("Horizontal2") * Time.deltaTime;
-        float y = Input.GetAxis("Vertical2") * Time.deltaTime;
+        float x = Input.GetAxis("Horizontal1") * Time.deltaTime;
+        float y = Input.GetAxis("Vertical1") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
 
