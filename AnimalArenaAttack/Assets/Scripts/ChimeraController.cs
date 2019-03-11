@@ -6,6 +6,11 @@ public class ChimeraController : MonoBehaviour {
 
     private int Health = 1000;
 
+    public GameObject cleave;
+    public GameObject Electric;
+    public GameObject Water;
+    public GameObject FireBreath;
+
 	// Use this for initialization
 	void Start () {
         Invoke("combat", 2f);
@@ -43,23 +48,40 @@ public class ChimeraController : MonoBehaviour {
         }
     }
 
+    //Cleave
     void Ability1()
     {
+        Instantiate(cleave);
         print("Ability 1");
     }
 
+    //Electric Floor
     void Ability2()
     {
+        Instantiate(Electric);
         print("Ability 2");
     }
 
+    //Water Spray
     void Ability3()
     {
+        Instantiate(Water);
         print("Ability 3");
     }
 
+    //Fire Breath
     void Ability4()
     {
+        Instantiate(FireBreath);
         print("Ability 4");
+    }
+
+    public void Damage(int damage)
+    {
+        Health -= damage;
+        if(Health < 0)
+        {
+            Health = 0;
+        }
     }
 }

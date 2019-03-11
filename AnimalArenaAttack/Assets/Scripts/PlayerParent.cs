@@ -17,6 +17,8 @@ public class PlayerParent : MonoBehaviour {
     public bool facingRight = true;
     public float horiz;
 
+    public GameObject chimera;
+
 
     public Vector3 directionFacing;
     public float dashTime = 1f;
@@ -48,11 +50,12 @@ public class PlayerParent : MonoBehaviour {
         if (isPlayer1)
         {
             horiz = Input.GetAxis("Horizontal1");
-            if (horiz > 0 && !facingRight)
+            if (this.transform.position.x < chimera.transform.position.x && !facingRight)
             {
                 Flip();
             }
-            else if (horiz < 0 && facingRight)
+           
+            else if (this.transform.position.x > chimera.transform.position.x && facingRight)
             {
                 Flip();
             }
@@ -60,11 +63,12 @@ public class PlayerParent : MonoBehaviour {
         else if (!isPlayer1)
         {
             horiz = Input.GetAxis("Horizontal2");
-            if (horiz > 0 && !facingRight)
+            if (this.transform.position.x < chimera.transform.position.x && !facingRight)
             {
                 Flip();
             }
-            else if (horiz < 0 && facingRight)
+
+            else if (this.transform.position.x > chimera.transform.position.x && facingRight)
             {
                 Flip();
             }
