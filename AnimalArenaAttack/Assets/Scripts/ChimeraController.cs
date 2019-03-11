@@ -1,29 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChimeraController : MonoBehaviour {
 
-    private int Health = 1000;
+    public int Health = 1000;
 
     public GameObject cleave;
     public GameObject Electric;
     public GameObject Water;
     public GameObject FireBreath;
 
-	// Use this for initialization
-	void Start () {
+    public Slider HealthBar;
+
+    // Use this for initialization
+    void Start () {
         Invoke("combat", 2f);
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update ()
+    {
+        HealthBar.value = Health;
+    }
 
     void combat()
     {
-        randomAbility();
+        //randomAbility();
         Invoke("combat", 5f);
     }
 
