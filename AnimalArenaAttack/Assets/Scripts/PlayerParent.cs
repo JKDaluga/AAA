@@ -20,6 +20,7 @@ public class PlayerParent : MonoBehaviour {
 
     public GameObject chimera;
 
+    private SpriteRenderer sp;
 
     public Vector2 savedVelocity;
     public float dashTime = 1f;
@@ -32,7 +33,7 @@ public class PlayerParent : MonoBehaviour {
     public Slider P1HealthBar;
     public Slider P2HealthBar;
 
-
+    public Color normal, hurt;
 
     public void Awake()
     {
@@ -44,6 +45,8 @@ public class PlayerParent : MonoBehaviour {
         health = 750;
         speed = 300;
         rb = GetComponent<Rigidbody2D>();
+
+        sp = GetComponent<SpriteRenderer>();         sp.color = normal; 
         //GameManager.addPlayer(this);
         //dashTime  = startingDashTime;
 
@@ -190,6 +193,7 @@ public class PlayerParent : MonoBehaviour {
     {
         if (amount > 0)
         {
+            StartCoroutine(getHurt()); 
             health -= amount;
             if (health <= 0)
             {
@@ -210,4 +214,5 @@ public class PlayerParent : MonoBehaviour {
         transform.localScale = theScale;
     }
 
+    private IEnumerator getHurt()     {         sp.color = hurt;         yield return new WaitForSeconds(.5f);         sp.color = normal;     }  
 }

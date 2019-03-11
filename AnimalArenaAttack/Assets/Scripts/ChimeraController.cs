@@ -8,6 +8,7 @@ public class ChimeraController : MonoBehaviour
 
     public int Health = 500;
 
+    private SpriteRenderer sp;
     //Attack Game Objects
     public GameObject cleave;
     public GameObject cleaveWarning;
@@ -32,12 +33,14 @@ public class ChimeraController : MonoBehaviour
     public float xCleaveDisplacement = 0f;
     public float yCleaveDisplacement = 0f;
 
+    public Color normal, hurt;
+
     //Use this for initialization
     void Start()
     {
 
         StartCoroutine(AttackPattern());
-
+        sp = GetComponent<SpriteRenderer>();         sp.color = normal; 
 
     }
 
@@ -50,6 +53,7 @@ public class ChimeraController : MonoBehaviour
     //Method determines how much damage is delt to the Chimera
     public void Damage(int damage)
     {
+        StartCoroutine(getHurt()); 
         Health -= damage;
         if (Health < 0)
         {
@@ -168,5 +172,6 @@ public class ChimeraController : MonoBehaviour
         StartCoroutine(AttackPattern());
     }
 
+    private IEnumerator getHurt()     {         sp.color = hurt;         yield return new WaitForSeconds(.5f);         sp.color = normal;     }  
 }
 
