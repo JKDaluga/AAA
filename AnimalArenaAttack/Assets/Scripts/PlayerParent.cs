@@ -110,7 +110,7 @@ public class PlayerParent : MonoBehaviour {
             else if (!isPlayer1)
             {
                 //Ability 1 Player 2
-                if (((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.Mouse0)))
+                if (((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.Mouse0))))
                 {
                     // anim.SetBool("Ability1", true);
                     Ability1();
