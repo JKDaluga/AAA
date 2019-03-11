@@ -20,6 +20,15 @@ public class PlayerParent : MonoBehaviour {
     public GameObject chimera;
 
 
+    public Vector3 directionFacing;
+    public float dashTime = 1f;
+    public float dashDistance = 10f;
+    public float dashSpeed = 1f;
+    public float stopDash = .1f;
+
+    private float currentDashTime;
+
+
     public void Awake()
     {
         horiz = 0;
@@ -31,6 +40,8 @@ public class PlayerParent : MonoBehaviour {
         speed = 300;
         rb = GetComponent<Rigidbody2D>();
         //GameManager.addPlayer(this);
+        currentDashTime = dashTime;
+       
     }
 
     // Update is called once per frame
@@ -113,6 +124,20 @@ public class PlayerParent : MonoBehaviour {
     }
     public virtual void Ability2()
     {
+        currentDashTime = 0f;
+
+        if (currentDashTime < dashTime)
+        {
+            directionFacing = transform.forward * dashDistance;
+            currentDashTime += stopDash;
+        }
+        else
+        {
+            directionFacing = Vector3.zero;
+        }
+
+        //After knowing the direction of a player if a player uses ability 2 push them in that specific diretion 
+        //Store a varible for the last direction a player moves
 
     }
 
