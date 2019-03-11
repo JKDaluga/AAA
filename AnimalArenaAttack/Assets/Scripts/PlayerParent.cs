@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerParent : MonoBehaviour {
 
@@ -27,6 +28,10 @@ public class PlayerParent : MonoBehaviour {
     public float stopDash = .1f;
 
     private float currentDashTime;
+
+    public Slider P1HealthBar;
+    public Slider P2HealthBar;
+
 
 
     public void Awake()
@@ -80,10 +85,14 @@ public class PlayerParent : MonoBehaviour {
             if (isPlayer1)
             {
                 MovementP1();
+                P1HealthBar.value = health;
+
             }
             if (!isPlayer1)
             {
                 MovementP2();
+                P2HealthBar.value =health;
+
             }
             if (isPlayer1)
             {
