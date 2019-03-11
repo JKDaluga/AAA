@@ -1508,7 +1508,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 69431616}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1000
+  m_MaxValue: 500
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -3002,7 +3002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2596727f1c4d56045a1e964eed25d7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 1000
+  Health: 500
   cleave: {fileID: 1064383934232854, guid: 62805b6a1f12bd449926f1850a803b76, type: 2}
   cleaveWarning: {fileID: 1026418562412202, guid: 13db5889f4511584689abf6469ea260c,
     type: 2}

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ChimeraController : MonoBehaviour
 {
 
-    public int Health = 1000;
+    public int Health = 500;
 
     //Attack Game Objects
     public GameObject cleave;
