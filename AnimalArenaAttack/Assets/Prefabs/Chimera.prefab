@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 212139183787705188}
   - component: {fileID: 50670261204087406}
   - component: {fileID: 61129556566390662}
-  - component: {fileID: 114014496832853548}
   - component: {fileID: 95743878742588688}
+  - component: {fileID: 114253900647765384}
   m_Layer: 0
   m_Name: Chimera
   m_TagString: Monster
@@ -38,8 +38,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1468167961776760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.693457, y: -0.8341446, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 1}
+  m_LocalPosition: {x: -416.77417, y: 194.34148, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -98,7 +98,7 @@ Animator:
   m_GameObject: {fileID: 1468167961776760}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 578ed5b8d29ab476aad3f1266bfb3a28, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -107,7 +107,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114014496832853548
+--- !u!114 &114253900647765384
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,19 +115,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1468167961776760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfe36c8ea102c2b46a63671e05fb4144, type: 3}
+  m_Script: {fileID: 11500000, guid: 2596727f1c4d56045a1e964eed25d7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 1000
-  baseAttackDuration: 0.5
-  cleaveWarningDuration: 1
-  cleave: {fileID: 1064383934232854, guid: 62805b6a1f12bd449926f1850a803b76, type: 2}
-  cleaveWarning: {fileID: 1026418562412202, guid: 13db5889f4511584689abf6469ea260c,
-    type: 2}
-  xCleaveDisplacement: 0
-  yCleaveDisplacement: 0
-  normal: {r: 0, g: 0, b: 0, a: 0}
-  hurt: {r: 1, g: 0, b: 0, a: 0.5647059}
 --- !u!212 &212139183787705188
 SpriteRenderer:
   m_ObjectHideFlags: 1
