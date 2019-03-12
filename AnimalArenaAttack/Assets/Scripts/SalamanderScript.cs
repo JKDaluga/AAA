@@ -18,10 +18,9 @@ public class SalamanderScript : PlayerParent {
 
     public override void Ability1()
     {
-        source.PlayOneShot(slashAttk);
-
         if (Time.time > slashUsed + .15)
         {
+            source.PlayOneShot(slashAttk);
             Instantiate(slash, (transform.position * .8f), transform.rotation);
             slashUsed = Time.time;
         }

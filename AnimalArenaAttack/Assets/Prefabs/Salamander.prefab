@@ -152,6 +152,8 @@ MonoBehaviour:
   speed: 0
   facingRight: 1
   horiz: 0
+  rollTime: 0
+  rollSpeed: 800
   chimera: {fileID: 0}
   savedVelocity: {x: 0, y: 0}
   dashTime: 1

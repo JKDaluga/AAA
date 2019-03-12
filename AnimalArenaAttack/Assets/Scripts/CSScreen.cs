@@ -12,11 +12,11 @@ public class CSScreen : MonoBehaviour
     void Update()
     {
        
-        if (Input.GetKey(KeyCode.I))
+        if (Input.GetKey(KeyCode.W))
         {
             p1Sel = true;
         }
-        if (Input.GetKey(KeyCode.O))
+        if (Input.GetKey(KeyCode.V))
         {
             p2Sel = true;
         }
