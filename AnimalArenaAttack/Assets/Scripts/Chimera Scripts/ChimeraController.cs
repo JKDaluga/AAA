@@ -40,7 +40,9 @@ public class ChimeraController : MonoBehaviour
     {
 
         StartCoroutine(AttackPattern());
-        sp = GetComponent<SpriteRenderer>();         sp.color = normal; 
+        sp = GetComponent<SpriteRenderer>();
+        sp.color = normal;
+
 
     }
 
@@ -53,7 +55,8 @@ public class ChimeraController : MonoBehaviour
     //Method determines how much damage is delt to the Chimera
     public void Damage(int damage)
     {
-        StartCoroutine(getHurt()); 
+        StartCoroutine(getHurt());
+
         Health -= damage;
         if (Health < 0)
         {
@@ -172,6 +175,13 @@ public class ChimeraController : MonoBehaviour
         StartCoroutine(AttackPattern());
     }
 
-    private IEnumerator getHurt()     {         sp.color = hurt;         yield return new WaitForSeconds(.5f);         sp.color = normal;     }  
+    private IEnumerator getHurt()
+    {
+        sp.color = hurt;
+        yield return new WaitForSeconds(.5f);
+        sp.color = normal;
+    }
+
+
 }
 
