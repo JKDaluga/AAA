@@ -13,10 +13,16 @@ public class EagleScript : PlayerParent {
 
     public float featherUsed;
 
-	public override void Ability1()
+    public AudioClip featherAttk;
+
+    public AudioSource source;
+
+    public override void Ability1()
     {
-        if (Time.time > featherUsed + .25)
+
+        if (Time.time > featherUsed + .15)
         {
+            source.PlayOneShot(featherAttk);
             Instantiate(feather, transform.position, transform.rotation);
             featherUsed = Time.time;
         }

@@ -8,6 +8,7 @@ public class PlayerParent : MonoBehaviour {
 
     private Rigidbody2D rb;
     public Animator anim;
+    public AudioManager audioManager;
 
     public int health;
 
@@ -44,6 +45,11 @@ public class PlayerParent : MonoBehaviour {
     {
         horiz = 0;
         anim = gameObject.GetComponent<Animator>();
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("No AudioManager found in the scene.");
+        }
     }
     // Use this for initialization
     void Start ()
@@ -52,7 +58,9 @@ public class PlayerParent : MonoBehaviour {
         speed = 300;
         rb = GetComponent<Rigidbody2D>();
 
-        sp = GetComponent<SpriteRenderer>();         sp.color = normal; 
+        sp = GetComponent<SpriteRenderer>();         sp.color = normal;
+
+
         //GameManager.addPlayer(this);
         //dashTime  = startingDashTime;
 

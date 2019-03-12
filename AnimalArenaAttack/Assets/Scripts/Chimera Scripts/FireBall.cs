@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FireBall : MonoBehaviour
 {
+    public int damage = 30;
 
 
     // Use this for initialization
@@ -16,5 +17,13 @@ public class FireBall : MonoBehaviour
     void Update()
     {
 
+    }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Eagle" || col.gameObject.tag == "Salamander")
+        {
+            col.gameObject.GetComponent<PlayerParent>().Damage(damage);
+            GameObject.Destroy(gameObject);
+        }
     }
 }
