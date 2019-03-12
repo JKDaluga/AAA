@@ -121,6 +121,7 @@ public class ChimeraController : MonoBehaviour
     IEnumerator AttackPattern()
     {
         int randomInt = Random.Range(0, 3);
+
         if (randomInt == 0)
         {
             FlameBreath();
