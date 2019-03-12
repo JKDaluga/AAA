@@ -5,11 +5,12 @@ using UnityEngine;
 public class FireBall : MonoBehaviour
 {
     public int damage = 30;
-
+    public float fireBallSpeed;
 
     // Use this for initialization
     void Start()
     {
+        GetComponent<Rigidbody2D>().velocity = -transform.up.normalized * fireBallSpeed;
         Destroy(gameObject, 5);
     }
 

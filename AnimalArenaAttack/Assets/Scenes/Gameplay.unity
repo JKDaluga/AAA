@@ -3506,9 +3506,9 @@ MonoBehaviour:
     type: 2}
   electric: {fileID: 0}
   waterSpray: {fileID: 1876367379822638, guid: ff03be02fe8537243bc0611a1023271b, type: 2}
-  fireBall: {fileID: 1285427161551978, guid: fe06f6ebe90af4779a1ce89e5db2dddd, type: 2}
+  fireBall: {fileID: 1501436529030570, guid: c33925c702e903d40a57e79047e252b9, type: 2}
+  fireBall2: {fileID: 1914620934627114, guid: 4aaf769c7c71ce84dbaede7dd77e1233, type: 2}
   redHead: {fileID: 1804436923}
-  fireBallSpeed: 2
   HealthBar: {fileID: 901353389}
   baseAttackDuration: 1
   cleaveWarningDuration: 2
