@@ -124,7 +124,7 @@ Animator:
   m_GameObject: {fileID: 1518049945991578}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7912271da9bc543e3a38ac593995f9b1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -144,8 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816c7a061d09044b19e7bd3f15d4f3a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   health: 0
-  isPlayer1: 0
+  isPlayer1: 1
   ability1: 0
   ability2: 0
   speed: 0
@@ -159,7 +160,8 @@ MonoBehaviour:
   stopDash: 0.1
   P1HealthBar: {fileID: 0}
   P2HealthBar: {fileID: 0}
-  salamanderAnim: {fileID: 0}
+  normal: {r: 1, g: 1, b: 1, a: 1}
+  hurt: {r: 1, g: 0, b: 0, a: 1}
   slash: {fileID: 1986031310715116, guid: d961c8aee44265643a20ec111351a835, type: 2}
   slashUsed: 0
   baseAttackDuration: 0
