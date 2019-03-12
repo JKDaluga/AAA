@@ -54,7 +54,8 @@ public class PlayerParent : MonoBehaviour {
         speed = 300;
         rb = GetComponent<Rigidbody2D>();
 
-        sp = GetComponent<SpriteRenderer>();         sp.color = normal;
+        sp = GetComponent<SpriteRenderer>();
+        sp.color = normal;
 
 
         //GameManager.addPlayer(this);
@@ -204,7 +205,8 @@ public class PlayerParent : MonoBehaviour {
     {
         if (amount > 0)
         {
-            StartCoroutine(getHurt()); 
+            StartCoroutine(getHurt());
+
             health -= amount;
             if (health <= 0)
             {
@@ -225,7 +227,13 @@ public class PlayerParent : MonoBehaviour {
         transform.localScale = theScale;
     }
 
-    private IEnumerator getHurt()     {         sp.color = hurt;         yield return new WaitForSeconds(.5f);         sp.color = normal;     } 
+    private IEnumerator getHurt()
+    {
+        sp.color = hurt;
+        yield return new WaitForSeconds(.5f);
+        sp.color = normal;
+    }
+
     IEnumerator setAttack()
     {
         anim.SetBool("Attack", true);
