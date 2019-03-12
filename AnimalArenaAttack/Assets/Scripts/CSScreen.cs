@@ -24,10 +24,7 @@ public class CSScreen : MonoBehaviour
         {
             StartCoroutine(WaitForSceneSwitch());
         }
-       
-
     }
-
 
     private IEnumerator WaitForSceneSwitch()
     {
