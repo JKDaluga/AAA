@@ -131,7 +131,8 @@ MonoBehaviour:
   minAngle: -80
   maxAngle: 80
   progress: 0
-  timeToRotate: 4
+  timeToRotate: 5
+  damage: 30
 --- !u!212 &212514498982799268
 SpriteRenderer:
   m_ObjectHideFlags: 1
