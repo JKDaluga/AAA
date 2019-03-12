@@ -76,18 +76,14 @@ public class AudioManager : MonoBehaviour
     {
         for (int i = 0; i < sounds.Length; i++)
         {
-            if (sounds[i].name == _name)
+            if (sounds[i].name.Equals(_name))
             {
                 sounds[i].Play();
                 return;
             }
-            else
-            {
-                Debug.LogWarning("AudioManager: Sound not found in list. " + _name);
-            }
         }
         //no sound with name
-
+        Debug.LogWarning("AudioManager: Sound not found in list. " + _name);
     }
 
     public void StopSound(string _name)
