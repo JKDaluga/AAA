@@ -19,6 +19,10 @@ public class PlayerParent : MonoBehaviour {
     public int speed;
     public bool facingRight = true;
     public float horiz;
+    public float rollTime;
+    private Vector2 rollVector;
+    public int rollSpeed;
+    private bool isVulnerable = true;
 
     public GameObject chimera;
 
@@ -65,80 +69,97 @@ public class PlayerParent : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (isPlayer1)
-        {
-            horiz = Input.GetAxis("Horizontal1");
-            if (this.transform.position.x < chimera.transform.position.x && !facingRight)
-            {
-                Flip();
-            }
-
-            else if (this.transform.position.x > chimera.transform.position.x && facingRight)
-            {
-                Flip();
-            }
-        }
-        else if (!isPlayer1)
-        {
-            horiz = Input.GetAxis("Horizontal2");
-            if (this.transform.position.x < chimera.transform.position.x && !facingRight)
-            {
-                Flip();
-            }
-
-            else if (this.transform.position.x > chimera.transform.position.x && facingRight)
-            {
-                Flip();
-            }
-        }
-
-
         if (health > 0)
         {
-            if (isPlayer1)
+            if(rollTime > 0)
             {
-                MovementP1();
-                P1HealthBar.value = health;
-
+                rollTime -= Time.deltaTime;
+                rb.velocity = rollVector * rollSpeed * Time.deltaTime;
             }
-            if (!isPlayer1)
+            else
             {
-                MovementP2();
-                P2HealthBar.value =health;
-
-            }
-            if (isPlayer1)
-            {
-                if ((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.Mouse0)))
+                isVulnerable = true;
+                if (isPlayer1)
                 {
-                    StartCoroutine(setAttack());
-                    Ability1();
+                    horiz = Input.GetAxis("Horizontal1");
+                    if (this.transform.position.x < chimera.transform.position.x && !facingRight)
+                    {
+                        Flip();
+                    }
+
+                    else if (this.transform.position.x > chimera.transform.position.x && facingRight)
+                    {
+                        Flip();
+                    }
+                }
+                else if (!isPlayer1)
+                {
+                    horiz = Input.GetAxis("Horizontal2");
+                    if (this.transform.position.x < chimera.transform.position.x && !facingRight)
+                    {
+                        Flip();
+                    }
+
+                    else if (this.transform.position.x > chimera.transform.position.x && facingRight)
+                    {
+                        Flip();
+                    }
+                }
+                if (isPlayer1)
+                {
+                    MovementP1();
+                    P1HealthBar.value = health;
 
                 }
-                if ((Input.GetKeyDown(KeyCode.B)))
+                if (!isPlayer1)
                 {
-                    Ability2();
+                    MovementP2();
+                    P2HealthBar.value = health;
 
+                }
+                if (isPlayer1)
+                {
+                    if ((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.Mouse0)))
+                    {
+                        StartCoroutine(setAttack());
+                        Ability1();
+
+                    }
+                    if ((Input.GetKeyDown(KeyCode.B)))
+                    {
+                        if(rb.velocity.magnitude != 0)
+                        {
+                            rollTime = .125f;
+                            rollVector = rb.velocity.normalized;
+                            isVulnerable = false;
+                        }
+                        //Ability2();
+                    }
+                }
+                else if (!isPlayer1)
+                {
+                    //Ability 1 Player 2
+                    if (((Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.Mouse0))))
+                    {
+                        StartCoroutine(setAttack());
+                        Ability1();
+                    }
+
+                    //Ability 2 Player 2
+                    if ((Input.GetKeyDown(KeyCode.I)))
+                    {
+                        //Debug.Log("Am I Work?");
+                        //anim.SetBool("Ability2", true);
+                        Ability2();
+                        if (rb.velocity.magnitude != 0)
+                        {
+                            rollTime = .125f;
+                            rollVector = rb.velocity.normalized;
+                            isVulnerable = false;
+                        }
+                    }
                 }
             }
-            else if (!isPlayer1)
-            {
-                //Ability 1 Player 2
-                if (((Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.Mouse0))))
-                {
-                    StartCoroutine(setAttack());
-                    Ability1();
-                }
-
-                //Ability 2 Player 2
-                if ((Input.GetKeyDown(KeyCode.I)))
-                {
-                    //Debug.Log("Am I Work?");
-                    //anim.SetBool("Ability2", true);
-                    Ability2();
-                }
-            }
-
         }
     }
 
@@ -173,14 +194,7 @@ public class PlayerParent : MonoBehaviour {
         float y = Input.GetAxis("Vertical2") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
-        if (Input.GetKeyDown(KeyCode.B ))
-        {
-            rb.velocity = movement * speed * 10f;
-        }
-        else
-        {
-            rb.velocity = movement * speed;
-        }
+        rb.velocity = movement * speed;
     }
 
     void MovementP2()
@@ -189,28 +203,23 @@ public class PlayerParent : MonoBehaviour {
         float y = Input.GetAxis("Vertical1") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
-
-
-        if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.I))
-        {
-            rb.velocity = movement * speed * 10f;
-        }
-        else
-        {
-            rb.velocity = movement * speed;
-        }
+        rb.velocity = movement * speed;
     }
     public void Damage(int amount)
     {
-        if (amount > 0)
+        if (isVulnerable)
         {
-            StartCoroutine(getHurt()); 
-            health -= amount;
-            if (health <= 0)
+            if (amount > 0)
             {
-                health = 0;
+                StartCoroutine(getHurt()); 
+                health -= amount;
+                if (health <= 0)
+                {
+                    health = 0;
+                }
             }
         }
+        
     }
     public int getHealth()
     {
