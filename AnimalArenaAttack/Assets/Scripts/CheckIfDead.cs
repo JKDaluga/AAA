@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class CheckIfDead : MonoBehaviour
 {
+    private AudioManager audioManager;
+
+    public string FightMusicName;
 
     public GameObject p1;
     public GameObject p2;
@@ -20,7 +23,12 @@ public class CheckIfDead : MonoBehaviour
         int p2h = p2.GetComponent<PlayerParent>().health;
         int ch = chimera.GetComponent<ChimeraController>().Health;
 
-
+        audioManager = AudioManager.instance;
+        if (audioManager == null)
+        {
+            Debug.LogError("No AudioManager found in the scene.");
+        }
+        audioManager.PlaySound(FightMusicName);
     }
 
     // Update is called once per frame

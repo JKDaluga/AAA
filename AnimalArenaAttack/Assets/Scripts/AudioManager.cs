@@ -81,9 +81,13 @@ public class AudioManager : MonoBehaviour
                 sounds[i].Play();
                 return;
             }
+            else
+            {
+                Debug.LogWarning("AudioManager: Sound not found in list. " + _name);
+            }
         }
         //no sound with name
-        Debug.LogWarning("AudioManager: Sound not found in list. " + _name);
+
     }
 
     public void StopSound(string _name)
@@ -95,8 +99,12 @@ public class AudioManager : MonoBehaviour
                 sounds[i].Stop();
                 return;
             }
+            else
+            {
+                Debug.LogWarning("AudioManager: Sound not found in list. " + _name);
+            }
         }
         //no sound with name
-        Debug.LogWarning("AudioManager: Sound not found in list. " + _name);
+
     }
 }
