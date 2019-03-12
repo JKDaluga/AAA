@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class EndMenu : MonoBehaviour
 {
+    public AudioClip PlayerVictoryMusic;
 
+    public AudioSource source;
     // Use this for initialization
     void Start()
     {
-
+        source.PlayOneShot(PlayerVictoryMusic);
     }
 
     // Update is called once per frame
