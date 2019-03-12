@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class CSScreen : MonoBehaviour
 {
-    //bool p1Sel = false;
-    //bool p2Sel = false;
+    bool p1Sel = false;
+    bool p2Sel = false;
 
     // Use this for initialization
     void Update()
     {
-       /*
+       
         if (Input.GetKey(KeyCode.I))
         {
             p1Sel = true;
@@ -24,11 +24,7 @@ public class CSScreen : MonoBehaviour
         {
             StartCoroutine(WaitForSceneSwitch());
         }
-        */
-        if (Input.GetKey(KeyCode.I) && (Input.GetKey(KeyCode.O)))
-        {
-            SceneManager.LoadScene(2);
-        }
+       
 
     }
 
