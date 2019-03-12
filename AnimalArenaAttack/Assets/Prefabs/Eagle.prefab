@@ -124,7 +124,7 @@ Animator:
   m_GameObject: {fileID: 1227095583050184}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 55ea5d3f198b740909c679845102e2d2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -144,8 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20336232563cb46c08018f972f1cb37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   health: 0
-  isPlayer1: 1
+  isPlayer1: 0
   ability1: 0
   ability2: 0
   speed: 0
@@ -159,6 +160,8 @@ MonoBehaviour:
   stopDash: 0.1
   P1HealthBar: {fileID: 0}
   P2HealthBar: {fileID: 0}
+  normal: {r: 1, g: 1, b: 1, a: 1}
+  hurt: {r: 1, g: 0, b: 0, a: 1}
   eagleAnim: {fileID: 0}
   feather: {fileID: 1742646030460580, guid: f72f59eacfb81484d852bd9bb2f4827e, type: 2}
   baseAttackDuration: 1

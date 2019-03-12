@@ -17,7 +17,13 @@ public class EndMenu : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            SceneManager.LoadScene(0);
+            StartCoroutine(WaitForSceneSwitch());
+
         }
+    }
+    private IEnumerator WaitForSceneSwitch()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(0);
     }
 }
