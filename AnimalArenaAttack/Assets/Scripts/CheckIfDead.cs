@@ -45,6 +45,6 @@ public class CheckIfDead : MonoBehaviour
     private IEnumerator WaitForSceneSwitch()
     {
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 }
