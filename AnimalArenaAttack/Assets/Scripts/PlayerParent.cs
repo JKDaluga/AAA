@@ -11,6 +11,8 @@ public class PlayerParent : MonoBehaviour {
     public AudioManager audioManager;
 
     public int health;
+    float maxHealth;
+
 
     public bool isPlayer1;
 
@@ -55,10 +57,12 @@ public class PlayerParent : MonoBehaviour {
     void Start ()
     {
         health = 1500;
+        maxHealth = 1500;
         speed = 350;
         rb = GetComponent<Rigidbody2D>();
 
-        sp = GetComponent<SpriteRenderer>();         sp.color = normal;
+        sp = GetComponent<SpriteRenderer>();
+        sp.color = normal;
 
 
         //GameManager.addPlayer(this);
@@ -108,13 +112,13 @@ public class PlayerParent : MonoBehaviour {
                 if (isPlayer1)
                 {
                     MovementP1();
-                    P1HealthBar.value = health;
+                    P1HealthBar.value = ((health/maxHealth)*100);
 
                 }
                 if (!isPlayer1)
                 {
                     MovementP2();
-                    P2HealthBar.value = health;
+                    P2HealthBar.value = ((health / maxHealth) * 100);
 
                 }
                 if (isPlayer1)
@@ -211,7 +215,8 @@ public class PlayerParent : MonoBehaviour {
         {
             if (amount > 0)
             {
-                StartCoroutine(getHurt()); 
+                StartCoroutine(getHurt());
+
                 health -= amount;
                 if (health <= 0)
                 {
@@ -234,7 +239,13 @@ public class PlayerParent : MonoBehaviour {
         transform.localScale = theScale;
     }
 
-    private IEnumerator getHurt()     {         sp.color = hurt;         yield return new WaitForSeconds(.5f);         sp.color = normal;     } 
+    private IEnumerator getHurt()
+    {
+        sp.color = hurt;
+        yield return new WaitForSeconds(.5f);
+        sp.color = normal;
+    }
+
     IEnumerator setAttack()
     {
         anim.SetBool("Attack", true);

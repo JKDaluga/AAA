@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class ChimeraController : MonoBehaviour
 {
 
-    public int Health = 500;
+    public int Health;
+    float maxHealth;
+
 
     private SpriteRenderer sp;
     //Attack Game Objects
@@ -40,6 +42,8 @@ public class ChimeraController : MonoBehaviour
         StartCoroutine(AttackPattern());
         sp = GetComponent<SpriteRenderer>();
         sp.color = normal;
+        Health = 1000;
+        maxHealth = 1000;
 
 
     }
@@ -47,7 +51,7 @@ public class ChimeraController : MonoBehaviour
     //Update is called once per frame
     void Update()
     {
-        HealthBar.value = Health;
+        HealthBar.value = ((Health / maxHealth) * 100);
     }
 
     //Method determines how much damage is delt to the Chimera
