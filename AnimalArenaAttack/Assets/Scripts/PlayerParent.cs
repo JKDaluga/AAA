@@ -54,7 +54,7 @@ public class PlayerParent : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        health = 750;
+        health = 1500;
         speed = 350;
         rb = GetComponent<Rigidbody2D>();
 
@@ -190,8 +190,8 @@ public class PlayerParent : MonoBehaviour {
 
     void MovementP1()
     {
-        float x = Input.GetAxis("Horizontal2") * Time.deltaTime;
-        float y = Input.GetAxis("Vertical2") * Time.deltaTime;
+        float x = Input.GetAxisRaw("Horizontal2") * Time.deltaTime;
+        float y = Input.GetAxisRaw("Vertical2") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
         rb.velocity = movement * speed;
@@ -199,8 +199,8 @@ public class PlayerParent : MonoBehaviour {
 
     void MovementP2()
     {
-        float x = Input.GetAxis("Horizontal1") * Time.deltaTime;
-        float y = Input.GetAxis("Vertical1") * Time.deltaTime;
+        float x = Input.GetAxisRaw("Horizontal1") * Time.deltaTime;
+        float y = Input.GetAxisRaw("Vertical1") * Time.deltaTime;
 
         Vector2 movement = new Vector2(x, y);
         rb.velocity = movement * speed;

@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 1533645135453246}
   m_LocalRotation: {x: 0, y: 0, z: -0.13052624, w: 0.9914449}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4244598021528400}
   m_RootOrder: 1
@@ -123,7 +123,7 @@ Transform:
   m_GameObject: {fileID: 1770987911787676}
   m_LocalRotation: {x: 0, y: 0, z: 0.13052616, w: 0.9914449}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4244598021528400}
   m_RootOrder: 2
@@ -153,7 +153,7 @@ Transform:
   m_GameObject: {fileID: 1318616961511950}
   m_LocalRotation: {x: 0, y: 0, z: -0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4244598021528400}
   m_RootOrder: 0
@@ -166,7 +166,7 @@ Transform:
   m_GameObject: {fileID: 1563469615273304}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4244598021528400}
   m_RootOrder: 3
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  fireBallSpeed: 4
+  fireBallSpeed: 3
 --- !u!114 &114151899170553846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  fireBallSpeed: 4
+  fireBallSpeed: 3
 --- !u!114 &114200140727469166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  fireBallSpeed: 4
+  fireBallSpeed: 3
 --- !u!114 &114426563836274912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -362,7 +362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  fireBallSpeed: 4
+  fireBallSpeed: 3
 --- !u!212 &212032237043532760
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -73,14 +73,14 @@ public class ChimeraController : MonoBehaviour
         {
             float time = 0;
             var fireBallClone1 = (GameObject)Instantiate(fireBall, redHead.transform.position, transform.rotation);
-            while (time < 1f)
+            while (time < 1.5f)
             {
                 time += Time.deltaTime;
                 yield return null;
             }
             time = 0;
             fireBallClone1 = (GameObject)Instantiate(fireBall2, redHead.transform.position, transform.rotation);
-            while (time < 1f)
+            while (time < 1.5f)
             {
                 time += Time.deltaTime;
                 yield return null;
@@ -125,7 +125,7 @@ public class ChimeraController : MonoBehaviour
         if (randomInt == 0)
         {
             FlameBreath();
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(6f);
         }
         if (randomInt == 1)
         {

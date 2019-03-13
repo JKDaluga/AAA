@@ -129,7 +129,7 @@ Transform:
   m_GameObject: {fileID: 1834653209337190}
   m_LocalRotation: {x: 0, y: 0, z: 0.5, w: 0.8660254}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4969994936857402}
   m_RootOrder: 4
@@ -142,7 +142,7 @@ Transform:
   m_GameObject: {fileID: 1988277278391344}
   m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4969994936857402}
   m_RootOrder: 1
@@ -155,7 +155,7 @@ Transform:
   m_GameObject: {fileID: 1334050743983470}
   m_LocalRotation: {x: 0, y: 0, z: -0.5, w: 0.8660254}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4969994936857402}
   m_RootOrder: 2
@@ -168,7 +168,7 @@ Transform:
   m_GameObject: {fileID: 1907601825897054}
   m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4969994936857402}
   m_RootOrder: 3
@@ -181,7 +181,7 @@ Transform:
   m_GameObject: {fileID: 1331463469168390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4969994936857402}
   m_RootOrder: 0
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  fireBallSpeed: 4
+  fireBallSpeed: 3
 --- !u!114 &114341689021419584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  fireBallSpeed: 4
+  fireBallSpeed: 3
 --- !u!114 &114354057252196800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  fireBallSpeed: 4
+  fireBallSpeed: 3
 --- !u!114 &114496614551919512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -430,7 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  fireBallSpeed: 4
+  fireBallSpeed: 3
 --- !u!114 &114665662996684394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 30
-  fireBallSpeed: 4
+  fireBallSpeed: 3
 --- !u!212 &212059733586921320
 SpriteRenderer:
   m_ObjectHideFlags: 1
