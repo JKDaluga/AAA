@@ -37,14 +37,26 @@ public class CheckIfDead : MonoBehaviour
         p1h = p1.GetComponent<PlayerParent>().health;
         p2h = p2.GetComponent<PlayerParent>().health;
         ch = chimera.GetComponent<ChimeraController>().Health;
-        if ((p1h <= 0 && p2h <= 0) || ch <= 0)
+        if (ch <= 0)
         {
-            StartCoroutine(WaitForSceneSwitch());                
+            StartCoroutine(WaitForWin());                
         }
+        if(p1h <= 0 && p2h <= 0)
+        {
+            StartCoroutine(WaitForLose());
+        }
+
     }
-    private IEnumerator WaitForSceneSwitch()
+    private IEnumerator WaitForWin()
     {
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(4);
     }
+
+    IEnumerator WaitForLose()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(5);
+    }
+
 }
