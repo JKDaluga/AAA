@@ -20,6 +20,10 @@ public class CSScreen : MonoBehaviour
         {
             p2Sel = true;
         }
+        if (((Input.GetKey(KeyCode.Alpha1)) && (Input.GetKey(KeyCode.Alpha2))))
+        {
+            SceneManager.LoadScene(0);
+        }
         if (p2Sel == true && p1Sel == true)
         {
             StartCoroutine(WaitForSceneSwitch());

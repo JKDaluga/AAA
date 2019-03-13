@@ -17,7 +17,11 @@ public class MainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown)
+        if (((Input.GetKey(KeyCode.Alpha1)) && (Input.GetKey(KeyCode.Alpha2))))
+        {
+            SceneManager.LoadScene(0);
+        }
+        else if (Input.anyKeyDown)
         {
             SceneManager.LoadScene(2);
         }

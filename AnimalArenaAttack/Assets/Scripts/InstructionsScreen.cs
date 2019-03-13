@@ -11,8 +11,13 @@ public class InstructionsScreen : MonoBehaviour
     {
         StartCoroutine(WaitForSceneSwitch());
     }
-
-
+    private void Update()
+    {
+        if (((Input.GetKey(KeyCode.Alpha1)) && (Input.GetKey(KeyCode.Alpha2))))
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
     private IEnumerator WaitForSceneSwitch()
     {
         yield return new WaitForSeconds(10f);

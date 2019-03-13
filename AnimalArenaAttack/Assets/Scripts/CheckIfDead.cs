@@ -41,6 +41,10 @@ public class CheckIfDead : MonoBehaviour
         {
             StartCoroutine(WaitForSceneSwitch());                
         }
+        if (((Input.GetKey(KeyCode.Alpha1)) && (Input.GetKey(KeyCode.Alpha2))))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
     private IEnumerator WaitForSceneSwitch()
     {
