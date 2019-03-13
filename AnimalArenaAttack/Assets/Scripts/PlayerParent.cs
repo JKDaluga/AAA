@@ -55,7 +55,7 @@ public class PlayerParent : MonoBehaviour {
     void Start ()
     {
         health = 750;
-        speed = 300;
+        speed = 350;
         rb = GetComponent<Rigidbody2D>();
 
         sp = GetComponent<SpriteRenderer>();         sp.color = normal;

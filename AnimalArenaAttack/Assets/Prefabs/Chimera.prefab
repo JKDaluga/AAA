@@ -118,6 +118,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2596727f1c4d56045a1e964eed25d7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 500
+  cleave: {fileID: 0}
+  cleaveWarning: {fileID: 0}
+  electric: {fileID: 0}
+  waterSpray: {fileID: 1876367379822638, guid: ff03be02fe8537243bc0611a1023271b, type: 2}
+  fireBall: {fileID: 1366752228352556, guid: c33925c702e903d40a57e79047e252b9, type: 2}
+  fireBall2: {fileID: 1153395025078712, guid: 4aaf769c7c71ce84dbaede7dd77e1233, type: 2}
+  redHead: {fileID: 0}
+  HealthBar: {fileID: 0}
+  baseAttackDuration: 0
+  cleaveWarningDuration: 0
+  xCleaveDisplacement: 0
+  yCleaveDisplacement: 0
+  normal: {r: 0, g: 0, b: 0, a: 0}
+  hurt: {r: 0, g: 0, b: 0, a: 0}
 --- !u!212 &212139183787705188
 SpriteRenderer:
   m_ObjectHideFlags: 1
