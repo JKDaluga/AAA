@@ -82,7 +82,6 @@ public class PlayerParent : MonoBehaviour {
             }
             else
             {
-                isVulnerable = true;
                 if (isPlayer1)
                 {
                     horiz = Input.GetAxis("Horizontal1");
@@ -136,6 +135,7 @@ public class PlayerParent : MonoBehaviour {
                             rollTime = .125f;
                             rollVector = rb.velocity.normalized;
                             isVulnerable = false;
+                            Invoke("setVulnerability", .125f);
                         }
                         //Ability2();
                     }
@@ -160,6 +160,7 @@ public class PlayerParent : MonoBehaviour {
                             rollTime = .125f;
                             rollVector = rb.velocity.normalized;
                             isVulnerable = false;
+                            Invoke("setVulnerability", .125f);
                         }
                     }
                 }
@@ -222,7 +223,10 @@ public class PlayerParent : MonoBehaviour {
                 {
                     health = 0;
                 }
+                
             }
+            isVulnerable = false;
+            Invoke("setVulnerability", .125f);
         }
         
     }
@@ -251,5 +255,9 @@ public class PlayerParent : MonoBehaviour {
         anim.SetBool("Attack", true);
         yield return new WaitForSeconds(.6f);
         anim.SetBool("Attack", false);
+    }
+    void setVulnerability()
+    {
+        isVulnerable = true;
     }
 }
