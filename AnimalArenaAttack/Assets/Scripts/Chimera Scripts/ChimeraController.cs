@@ -8,7 +8,8 @@ public class ChimeraController : MonoBehaviour
 
     public int Health;
     float maxHealth;
-
+    public GameObject salamander;
+    public GameObject eagle;
 
     private SpriteRenderer sp;
     //Attack Game Objects
@@ -68,7 +69,28 @@ public class ChimeraController : MonoBehaviour
 
     void Electric()
     {
+        StartCoroutine("lightningStrikes");
+    }
 
+    IEnumerator lightningStrikes()
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            float time = 0;
+            var lightningClone1 = (GameObject)Instantiate(electric, salamander.transform.position, transform.rotation);
+            while (time < 1f)
+            {
+                time += Time.deltaTime;
+                yield return null;
+            }
+            time = 0;
+            lightningClone1 = (GameObject)Instantiate(electric, eagle.transform.position, transform.rotation);
+            while (time < 1f)
+            {
+                time += Time.deltaTime;
+                yield return null;
+            }
+        }
     }
 
     IEnumerator FireBall()
@@ -124,8 +146,7 @@ public class ChimeraController : MonoBehaviour
     //Chimera attack pattern
     IEnumerator AttackPattern()
     {
-        int randomInt = Random.Range(0, 3);
-
+        int randomInt = Random.Range(0, 4);
         if (randomInt == 0)
         {
             FlameBreath();
@@ -143,7 +164,8 @@ public class ChimeraController : MonoBehaviour
         }
         if (randomInt == 3)
         {
-            yield return new WaitForSeconds(1f);
+            Electric();
+            yield return new WaitForSeconds(5f);
 
         }
 

@@ -7,7 +7,7 @@ public class WaterSpray : MonoBehaviour {
     public float minAngle = -80f;
     public float maxAngle = 80f;
     public float progress = 0;
-    public float timeToRotate ;
+    public float timeToRotate;
 
     // Use this for initialization
     void Start () {
