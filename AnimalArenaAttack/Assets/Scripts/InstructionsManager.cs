@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class InstructionsScreen : MonoBehaviour
+public class InstructionsManager : MonoBehaviour
 {
 
     // Use this for initialization
