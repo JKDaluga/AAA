@@ -236,83 +236,12 @@ Prefab:
       propertyPath: P2HealthBar
       value: 
       objectReference: {fileID: 137975635}
-    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: feather
-      value: 
-      objectReference: {fileID: 1742646030460580, guid: f72f59eacfb81484d852bd9bb2f4827e,
-        type: 2}
-    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: source
-      value: 
-      objectReference: {fileID: 74629578}
-    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: featherAttk
-      value: 
-      objectReference: {fileID: 8300000, guid: d844e3b16df95404e80f59d61ad7038b, type: 3}
-    - target: {fileID: 61136159171707884, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: -0.05756831
-      objectReference: {fileID: 0}
-    - target: {fileID: 61136159171707884, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 1.3165464
-      objectReference: {fileID: 0}
-    - target: {fileID: 61136159171707884, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: 0.75152177
-      objectReference: {fileID: 0}
-    - target: {fileID: 61136159171707884, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 2.6756954
-      objectReference: {fileID: 0}
-    - target: {fileID: 61136672383632402, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: -0.061196923
-      objectReference: {fileID: 0}
-    - target: {fileID: 61136672383632402, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: 0.7618482
-      objectReference: {fileID: 0}
-    - target: {fileID: 61136672383632402, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 1.3938885
-      objectReference: {fileID: 0}
-    - target: {fileID: 61136672383632402, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 2.7563782
-      objectReference: {fileID: 0}
-    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: isPlayer1
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
-        type: 2}
-      propertyPath: sensitivity
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d60cb50e5893a2c4793b2f494ce70760, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &74629577 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1227095583050184, guid: d60cb50e5893a2c4793b2f494ce70760,
-    type: 2}
-  m_PrefabInternal: {fileID: 74629576}
---- !u!82 &74629578 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 82621258877308186, guid: d60cb50e5893a2c4793b2f494ce70760,
     type: 2}
   m_PrefabInternal: {fileID: 74629576}
 --- !u!1 &108740951
@@ -1655,76 +1584,6 @@ Prefab:
       propertyPath: P2HealthBar
       value: 
       objectReference: {fileID: 137975635}
-    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: ability1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: SlashAttackName
-      value: Sal_Attack
-      objectReference: {fileID: 0}
-    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: source
-      value: 
-      objectReference: {fileID: 859135324}
-    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: slashAttk
-      value: 
-      objectReference: {fileID: 8300000, guid: f72462b3739fc4b6896dfef4f4b622f1, type: 3}
-    - target: {fileID: 61116947874907288, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.0896039
-      objectReference: {fileID: 0}
-    - target: {fileID: 61116947874907288, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 4.584646
-      objectReference: {fileID: 0}
-    - target: {fileID: 61116947874907288, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: 0.1344049
-      objectReference: {fileID: 0}
-    - target: {fileID: 61116947874907288, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 7.905144
-      objectReference: {fileID: 0}
-    - target: {fileID: 61853665702403598, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: 0.1344049
-      objectReference: {fileID: 0}
-    - target: {fileID: 61853665702403598, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 7.905144
-      objectReference: {fileID: 0}
-    - target: {fileID: 61853665702403598, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.0896039
-      objectReference: {fileID: 0}
-    - target: {fileID: 61853665702403598, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 4.584646
-      objectReference: {fileID: 0}
-    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: isPlayer1
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
-        type: 2}
-      propertyPath: sensitivity
-      value: 0.426
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29f30ba6ca6b64e4eafb18e88e06668a, type: 2}
   m_IsPrefabAsset: 0
@@ -1733,101 +1592,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1518049945991578, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
     type: 2}
   m_PrefabInternal: {fileID: 859135315}
---- !u!82 &859135324
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 859135316}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &901353387
 GameObject:
   m_ObjectHideFlags: 0
@@ -3657,11 +3421,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 1000
-  maxHealth: 0
+  salamander: {fileID: 859135316}
+  eagle: {fileID: 74629577}
   cleave: {fileID: 1064383934232854, guid: 62805b6a1f12bd449926f1850a803b76, type: 2}
   cleaveWarning: {fileID: 1026418562412202, guid: 13db5889f4511584689abf6469ea260c,
     type: 2}
-  electric: {fileID: 0}
+  electric: {fileID: 1857653301647470, guid: d22d83a879a5d2244bab4e606709770b, type: 2}
   waterSpray: {fileID: 1876367379822638, guid: ff03be02fe8537243bc0611a1023271b, type: 2}
   fireBall: {fileID: 1831981782171962, guid: c33925c702e903d40a57e79047e252b9, type: 2}
   fireBall2: {fileID: 1807692037994948, guid: 4aaf769c7c71ce84dbaede7dd77e1233, type: 2}
