@@ -13,6 +13,8 @@ public class PlayerParent : MonoBehaviour {
     public int health;
     float maxHealth;
 
+    Rigidbody2D pRB2D;
+
 
     public bool isPlayer1;
 
@@ -56,6 +58,8 @@ public class PlayerParent : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        pRB2D = GetComponent<Rigidbody2D>();
+
         health = 1500;
         maxHealth = 1500;
         speed = 350;
@@ -146,7 +150,7 @@ public class PlayerParent : MonoBehaviour {
                     if (((Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.Mouse0))))
                     {
                         StartCoroutine(setAttack());
-                        Ability1();
+                        Ability1();MovementP2();
                     }
 
                     //Ability 2 Player 2
@@ -165,6 +169,10 @@ public class PlayerParent : MonoBehaviour {
                     }
                 }
             }
+        }
+        else
+        {
+            pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         }
     }
 

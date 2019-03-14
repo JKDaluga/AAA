@@ -10,6 +10,8 @@ public class GameplayManager : MonoBehaviour
 
     public string FightMusicName;
 
+    public static bool killElements = false;
+
     public GameObject p1;
     public GameObject p2;
     public GameObject chimera;
