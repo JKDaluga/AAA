@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61853665702403598}
   - component: {fileID: 95605576592654378}
   - component: {fileID: 61116947874907288}
-  - component: {fileID: 82605181608494074}
+  - component: {fileID: 82615553843381038}
   m_Layer: 8
   m_Name: Salamander
   m_TagString: Salamander
@@ -266,7 +266,7 @@ MonoBehaviour:
   baseAttackDuration: 0
   turn: {x: 0, y: 0, z: 0, w: 0}
   slashAttk: {fileID: 8300000, guid: f72462b3739fc4b6896dfef4f4b622f1, type: 3}
-  source: {fileID: 82605181608494074}
+  source: {fileID: 82615553843381038}
   SlashAttackName: Sal_Attack
 --- !u!212 &212974269717539756
 SpriteRenderer:

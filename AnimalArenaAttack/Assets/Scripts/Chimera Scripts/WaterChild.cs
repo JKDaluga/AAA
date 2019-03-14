@@ -13,11 +13,4 @@ public class WaterChild : MonoBehaviour {
             col.gameObject.GetComponent<PlayerParent>().Damage(damage);
         }
     }
-    void OnTriggerStay2D(Collider2D col)
-    {
-        if (col.gameObject.tag == "Eagle" || col.gameObject.tag == "Salamander")
-        {
-            col.gameObject.GetComponent<PlayerParent>().Damage(damage);
-        }
-    }
 }
