@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class CheckIfDead : MonoBehaviour
+public class GameplayManager : MonoBehaviour
 {
     private AudioManager audioManager;
 
@@ -16,6 +17,8 @@ public class CheckIfDead : MonoBehaviour
     public int p1h;
     public int p2h;
     public int ch;
+
+    public Text timer;
     // Use this for initialization
     void Start()
     {
