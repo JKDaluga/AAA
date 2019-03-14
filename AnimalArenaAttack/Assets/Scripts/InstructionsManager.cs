@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class InstructionsManager : MonoBehaviour
 {
     public Text timer;
-    public int timeLeft = 10;
+    int timeLeft = 5;
     // Use this for initialization
     void Start()
     {
@@ -26,7 +26,7 @@ public class InstructionsManager : MonoBehaviour
     }
     private IEnumerator WaitForSceneSwitch()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(timeLeft);
         SceneManager.LoadScene(3);
     }
     IEnumerator LoseTime()
