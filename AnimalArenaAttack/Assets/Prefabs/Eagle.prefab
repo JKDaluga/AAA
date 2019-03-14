@@ -40,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1227095583050184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.09, y: -1.83, z: 0}
+  m_LocalPosition: {x: 4.37, y: -1.83, z: 0}
   m_LocalScale: {x: 0.45, y: 0.45, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,7 +78,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05756831, y: 0.17201224}
+  m_Offset: {x: -0.033049345, y: 0.8250804}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -89,7 +89,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3165464, y: 1.5166755}
+  m_Size: {x: 2.0521345, y: 3.0189705}
   m_EdgeRadius: 0
 --- !u!61 &61136672383632402
 BoxCollider2D:
@@ -103,7 +103,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.061196923, y: 0.15793827}
+  m_Offset: {x: 0.049141407, y: 0.83540684}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -114,7 +114,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3938885, y: 1.5485575}
+  m_Size: {x: 5.4396286, y: 3.0015755}
   m_EdgeRadius: 0
 --- !u!82 &82621258877308186
 AudioSource:
@@ -243,7 +243,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   audioManager: {fileID: 0}
   health: 0
-  isPlayer1: 1
+  isPlayer1: 0
   ability1: 0
   ability2: 0
   speed: 0
@@ -266,8 +266,8 @@ MonoBehaviour:
   baseAttackDuration: 1
   featherSpeed: 2
   featherUsed: 0
-  featherAttk: {fileID: 8300000, guid: d844e3b16df95404e80f59d61ad7038b, type: 3}
-  source: {fileID: 82621258877308186}
+  featherAttk: {fileID: 0}
+  source: {fileID: 0}
 --- !u!212 &212483952405749530
 SpriteRenderer:
   m_ObjectHideFlags: 1

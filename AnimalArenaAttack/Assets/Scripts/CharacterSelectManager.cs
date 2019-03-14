@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CSScreen : MonoBehaviour
+public class CharacterSelectManager : MonoBehaviour
 {
     bool p1Sel = false;
     bool p2Sel = false;

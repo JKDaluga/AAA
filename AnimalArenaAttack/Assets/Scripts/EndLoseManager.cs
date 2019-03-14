@@ -1,17 +1,17 @@
-﻿﻿using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EndMenu : MonoBehaviour
-{
-    public AudioClip PlayerVictoryMusic;
+public class EndLoseManager : MonoBehaviour {
+
+    public AudioClip PlayerLoseMusic;
 
     public AudioSource source;
     // Use this for initialization
     void Start()
     {
-        source.PlayOneShot(PlayerVictoryMusic);
+        source.PlayOneShot(PlayerLoseMusic);
     }
 
     // Update is called once per frame

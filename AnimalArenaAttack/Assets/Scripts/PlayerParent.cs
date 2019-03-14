@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerParent : MonoBehaviour {
+public class PlayerParent : MonoBehaviour
+{
 
     private Rigidbody2D rb;
     public Animator anim;
@@ -12,6 +13,8 @@ public class PlayerParent : MonoBehaviour {
 
     public int health;
     float maxHealth;
+
+    Rigidbody2D pRB2D;
 
 
     public bool isPlayer1;
@@ -54,8 +57,10 @@ public class PlayerParent : MonoBehaviour {
         }
     }
     // Use this for initialization
-    void Start ()
+    void Start()
     {
+        pRB2D = GetComponent<Rigidbody2D>();
+
         health = 1500;
         maxHealth = 1500;
         speed = 350;
@@ -75,14 +80,13 @@ public class PlayerParent : MonoBehaviour {
     {
         if (health > 0)
         {
-            if(rollTime > 0)
+            if (rollTime > 0)
             {
                 rollTime -= Time.deltaTime;
                 rb.velocity = rollVector * rollSpeed * Time.deltaTime;
             }
             else
             {
-                isVulnerable = true;
                 if (isPlayer1)
                 {
                     horiz = Input.GetAxis("Horizontal1");
@@ -112,7 +116,7 @@ public class PlayerParent : MonoBehaviour {
                 if (isPlayer1)
                 {
                     MovementP1();
-                    P1HealthBar.value = ((health/maxHealth)*100);
+                    P1HealthBar.value = ((health / maxHealth) * 100);
 
                 }
                 if (!isPlayer1)
@@ -131,11 +135,12 @@ public class PlayerParent : MonoBehaviour {
                     }
                     if ((Input.GetKeyDown(KeyCode.B)))
                     {
-                        if(rb.velocity.magnitude != 0)
+                        if (rb.velocity.magnitude != 0)
                         {
                             rollTime = .125f;
                             rollVector = rb.velocity.normalized;
                             isVulnerable = false;
+                            Invoke("setVulnerability", .125f);
                         }
                         //Ability2();
                     }
@@ -146,7 +151,7 @@ public class PlayerParent : MonoBehaviour {
                     if (((Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.Mouse0))))
                     {
                         StartCoroutine(setAttack());
-                        Ability1();
+                        Ability1(); MovementP2();
                     }
 
                     //Ability 2 Player 2
@@ -160,10 +165,15 @@ public class PlayerParent : MonoBehaviour {
                             rollTime = .125f;
                             rollVector = rb.velocity.normalized;
                             isVulnerable = false;
+                            Invoke("setVulnerability", .125f);
                         }
                     }
                 }
             }
+        }
+        else
+        {
+            pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         }
     }
 
@@ -222,9 +232,12 @@ public class PlayerParent : MonoBehaviour {
                 {
                     health = 0;
                 }
+
             }
+            isVulnerable = false;
+            Invoke("setVulnerability", .125f);
         }
-        
+
     }
     public int getHealth()
     {
@@ -252,4 +265,9 @@ public class PlayerParent : MonoBehaviour {
         yield return new WaitForSeconds(.6f);
         anim.SetBool("Attack", false);
     }
+    void setVulnerability()
+    {
+        isVulnerable = true;
+    }
 }
+
