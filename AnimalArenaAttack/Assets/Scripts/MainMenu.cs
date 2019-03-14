@@ -21,7 +21,12 @@ public class MainMenu : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
-        else if (Input.anyKeyDown)
+        else if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.A) || 
+                  Input.GetKey(KeyCode.X) || Input.GetKey(KeyCode.S) ||
+                  Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.Q) || 
+                  Input.GetKey(KeyCode.V) || Input.GetKey(KeyCode.W) || 
+                  Input.GetKey(KeyCode.B) || Input.GetKey(KeyCode.I) || 
+              Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.K))
         {
             SceneManager.LoadScene(2);
         }
