@@ -1023,7 +1023,7 @@ Prefab:
     - target: {fileID: 114531059333916456, guid: e8fe279e523e641d6a30d2d3ddc56c16,
         type: 2}
       propertyPath: m_FillAmount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224663108549945100, guid: e8fe279e523e641d6a30d2d3ddc56c16,
         type: 2}
