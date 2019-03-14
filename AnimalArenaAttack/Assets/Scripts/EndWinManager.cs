@@ -8,24 +8,27 @@ public class EndWinManager : MonoBehaviour
     public AudioClip PlayerVictoryMusic;
 
     public AudioSource source;
+
+    private bool canSwitch = false;
     // Use this for initialization
     void Start()
     {
         source.PlayOneShot(PlayerVictoryMusic);
+        StartCoroutine(WaitForSceneSwitch());
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKey)
+        if (canSwitch == true && Input.anyKey)
         {
-            StartCoroutine(WaitForSceneSwitch());
-
+            SceneManager.LoadScene(0);
         }
     }
     private IEnumerator WaitForSceneSwitch()
     {
         yield return new WaitForSeconds(5f);
-        SceneManager.LoadScene(0);
+        canSwitch = true;
     }
 }

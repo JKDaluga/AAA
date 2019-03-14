@@ -521,7 +521,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -57.69995, y: 23.799988}
+  m_AnchoredPosition: {x: -57.69995, y: 23.800049}
   m_SizeDelta: {x: 115.399994, y: 47.600006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &137975635
@@ -1584,7 +1584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 57.69995, y: 23.799988}
+  m_AnchoredPosition: {x: 57.69995, y: 23.800049}
   m_SizeDelta: {x: 115.399994, y: 47.600006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647347606
@@ -2088,7 +2088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -23.800003}
+  m_AnchoredPosition: {x: 0, y: -23.800049}
   m_SizeDelta: {x: -174.02002, y: 47.600006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &901353389
@@ -3979,10 +3979,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 1000
+  salamander: {fileID: 859135316}
+  eagle: {fileID: 74629577}
   cleave: {fileID: 1064383934232854, guid: 62805b6a1f12bd449926f1850a803b76, type: 2}
   cleaveWarning: {fileID: 1026418562412202, guid: 13db5889f4511584689abf6469ea260c,
     type: 2}
-  electric: {fileID: 0}
+  electric: {fileID: 1857653301647470, guid: d22d83a879a5d2244bab4e606709770b, type: 2}
   waterSpray: {fileID: 1876367379822638, guid: ff03be02fe8537243bc0611a1023271b, type: 2}
   fireBall: {fileID: 1831981782171962, guid: c33925c702e903d40a57e79047e252b9, type: 2}
   fireBall2: {fileID: 1807692037994948, guid: 4aaf769c7c71ce84dbaede7dd77e1233, type: 2}
