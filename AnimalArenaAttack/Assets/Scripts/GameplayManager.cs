@@ -10,8 +10,6 @@ public class GameplayManager : MonoBehaviour
 
     public string FightMusicName;
 
-    public static bool killElements = false;
-
     public GameObject p1;
     public GameObject p2;
     public GameObject chimera;
@@ -48,10 +46,12 @@ public class GameplayManager : MonoBehaviour
         ch = chimera.GetComponent<ChimeraController>().Health;
         if (ch <= 0)
         {
+            EndDestruction();
             StartCoroutine(WaitForWin());
         }
         if (p1h <= 0 && p2h <= 0)
         {
+            EndDestruction();
             StartCoroutine(WaitForLose());
         }
         if (((Input.GetKey(KeyCode.Alpha1)) && (Input.GetKey(KeyCode.Alpha2))))
@@ -84,6 +84,13 @@ public class GameplayManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             timeLeft--;
         }
+
+    }
+    private void EndDestruction()
+    {
+        Destroy(GameObject.FindWithTag("ChimeraWater"));
+        Destroy(GameObject.FindWithTag("ChimeraFire"));
+        Destroy(GameObject.FindWithTag("PlayerAttack"));
 
     }
 }
