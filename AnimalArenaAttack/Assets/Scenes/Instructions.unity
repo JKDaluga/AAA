@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 363502349}
   - component: {fileID: 363502348}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UI Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -410,8 +410,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 90.632, y: 72.495}
+  m_AnchoredPosition: {x: 0.0014, y: 0.00064}
+  m_SizeDelta: {x: 90.86822, y: 72.83498}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211370941
 MonoBehaviour:
@@ -598,8 +598,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 32}
-  m_SizeDelta: {x: 160, y: 63.94}
+  m_AnchoredPosition: {x: 0, y: 48.199997}
+  m_SizeDelta: {x: 105.9, y: 96.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1764410636
 MonoBehaviour:
@@ -622,11 +622,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
-    m_MaxSize: 50
+    m_MaxSize: 156
     m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
