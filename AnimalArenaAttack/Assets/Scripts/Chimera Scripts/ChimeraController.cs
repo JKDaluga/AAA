@@ -147,7 +147,7 @@ public class ChimeraController : MonoBehaviour
     //Chimera attack pattern
     IEnumerator AttackPattern()
     {
-        int randomInt = Random.Range(0, 4);
+        int randomInt = Random.Range(0, 3);
 
         if (randomInt == 0)
         {
@@ -160,11 +160,6 @@ public class ChimeraController : MonoBehaviour
             yield return new WaitForSeconds(4f);
         }
         if (randomInt == 2)
-        {
-            CleaveAttack();
-            yield return new WaitForSeconds(3f);
-        }
-        if (randomInt == 3)
         {
             Electric();
             yield return new WaitForSeconds(1f);
