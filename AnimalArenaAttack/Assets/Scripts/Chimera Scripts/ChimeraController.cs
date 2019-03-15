@@ -159,11 +159,6 @@ public class ChimeraController : MonoBehaviour
             WaterSprayAttack();
             yield return new WaitForSeconds(4f);
         }
-        /*if (randomInt == 2)
-        {
-            CleaveAttack();
-            yield return new WaitForSeconds(3f);
-        }*/
         if (randomInt == 2)
         {
             Electric();
