@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SalamanderSlash : MonoBehaviour {
 
-    public int damage = 10;
+    public int damage = 15;
     public float timer = 0;
     float speed = 0f;
 
