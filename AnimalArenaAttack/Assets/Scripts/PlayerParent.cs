@@ -61,8 +61,8 @@ public class PlayerParent : MonoBehaviour
     {
         pRB2D = GetComponent<Rigidbody2D>();
 
-        health = 1501;
-        maxHealth = 1501;
+        health = 1500;
+        maxHealth = 1500;
         speed = 350;
         rb = GetComponent<Rigidbody2D>();
 
@@ -173,6 +173,15 @@ public class PlayerParent : MonoBehaviour
         }
         else
         {
+            if (isPlayer1)
+            {
+                P1HealthBar.value = 0;
+            }
+            else if (!isPlayer1)
+            {
+                P2HealthBar.value = 0;
+
+            }
             pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         }
     }
