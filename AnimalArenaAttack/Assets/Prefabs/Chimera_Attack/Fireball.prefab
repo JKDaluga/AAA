@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 58309951589488296}
   - component: {fileID: 50169234347443114}
   - component: {fileID: 114806068097593682}
+  - component: {fileID: 95261292650537964}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: ChimeraFire
@@ -78,6 +79,24 @@ CircleCollider2D:
   m_Offset: {x: 0.013826847, y: -1.5970032}
   serializedVersion: 2
   m_Radius: 0.8249314
+--- !u!95 &95261292650537964
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1504305682540908}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3641760f8e3134342bcde947bf9a093c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114806068097593682
 MonoBehaviour:
   m_ObjectHideFlags: 1
