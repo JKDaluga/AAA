@@ -42,8 +42,8 @@ public class ChimeraController : MonoBehaviour
         StartCoroutine(AttackPattern());
         sp = GetComponent<SpriteRenderer>();
         sp.color = normal;
-        Health = 1000;
-        maxHealth = 1000;
+        Health = 2000;
+        maxHealth = Health;
 
 
     }
@@ -176,11 +176,6 @@ public class ChimeraController : MonoBehaviour
             WaterSprayAttack();
             yield return new WaitForSeconds(4f);
         }
-        /*if (randomInt == 2)
-        {
-            CleaveAttack();
-            yield return new WaitForSeconds(3f);
-        }*/
         if (randomInt == 2)
         {
             Electric();
