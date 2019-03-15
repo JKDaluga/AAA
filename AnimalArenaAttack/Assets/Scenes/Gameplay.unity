@@ -1971,6 +1971,21 @@ Prefab:
       propertyPath: sensitivity
       value: 0.426
       objectReference: {fileID: 0}
+    - target: {fileID: 212974269717539756, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212974269717539756, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212974269717539756, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29f30ba6ca6b64e4eafb18e88e06668a, type: 2}
   m_IsPrefabAsset: 0
