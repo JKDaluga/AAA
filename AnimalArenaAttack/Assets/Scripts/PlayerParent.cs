@@ -61,8 +61,8 @@ public class PlayerParent : MonoBehaviour
     {
         pRB2D = GetComponent<Rigidbody2D>();
 
-        health = 1500;
-        maxHealth = 1500;
+        health = 1501;
+        maxHealth = 1501;
         speed = 350;
         rb = GetComponent<Rigidbody2D>();
 
