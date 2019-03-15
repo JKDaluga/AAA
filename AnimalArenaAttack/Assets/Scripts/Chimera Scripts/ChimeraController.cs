@@ -18,14 +18,16 @@ public class ChimeraController : MonoBehaviour
 
     public GameObject electric;
     public GameObject waterSpray;
+    public GameObject waterSpray2;
     public GameObject fireBall;
     public GameObject fireBall2;
+    public GameObject fireBallBig;
+    public GameObject fireBallBig2;
+    public SpriteRenderer Gem;
 
     public GameObject redHead;
 
     public Slider HealthBar;
-
-
 
     public float baseAttackDuration = 0f;
     public float cleaveWarningDuration = 0f;
@@ -74,18 +76,21 @@ public class ChimeraController : MonoBehaviour
 
     IEnumerator lightningStrikes()
     {
+        float delay = 1.5f;
         for (int i = 0; i < 2; i++)
         {
             float time = 0;
             var lightningClone1 = (GameObject)Instantiate(electric, salamander.transform.position, transform.rotation);
-            while (time < 1f)
+            lightningClone1.GetComponent<Lightning>().trackP1 = false;
+            while (time < delay)
             {
                 time += Time.deltaTime;
                 yield return null;
             }
             time = 0;
             lightningClone1 = (GameObject)Instantiate(electric, eagle.transform.position, transform.rotation);
-            while (time < 1f)
+            lightningClone1.GetComponent<Lightning>().trackP1 = true;
+            while (time < delay)
             {
                 time += Time.deltaTime;
                 yield return null;
@@ -95,24 +100,50 @@ public class ChimeraController : MonoBehaviour
 
 
     IEnumerator FireBall()
-    {
-        for(int i = 0; i < 2; i++)
+    {  
+        if (Health / maxHealth >= .75f)
         {
-            float time = 0;
-            var fireBallClone1 = (GameObject)Instantiate(fireBall, redHead.transform.position, transform.rotation);
-            while (time < 1.5f)
+            for (int i = 0; i < 2; i++)
             {
-                time += Time.deltaTime;
-                yield return null;
-            }
-            time = 0;
-            fireBallClone1 = (GameObject)Instantiate(fireBall2, redHead.transform.position, transform.rotation);
-            while (time < 1.5f)
-            {
-                time += Time.deltaTime;
-                yield return null;
+                float delay = 2f;
+                float time = 0;
+                var fireBallClone1 = (GameObject)Instantiate(fireBallBig, redHead.transform.position, transform.rotation);
+                while (time < delay)
+                {
+                    time += Time.deltaTime;
+                    yield return null;
+                }
+                time = 0;
+                fireBallClone1 = (GameObject)Instantiate(fireBallBig2, redHead.transform.position, transform.rotation);
+                while (time < delay)
+                {
+                    time += Time.deltaTime;
+                    yield return null;
+                }
             }
         }
+        else
+        {
+            float delay = 1.5f;
+            for (int i = 0; i < 2; i++)
+            {
+                float time = 0;
+                var fireBallClone1 = (GameObject)Instantiate(fireBall, redHead.transform.position, transform.rotation);
+                while (time < delay)
+                {
+                    time += Time.deltaTime;
+                    yield return null;
+                }
+                time = 0;
+                fireBallClone1 = (GameObject)Instantiate(fireBall2, redHead.transform.position, transform.rotation);
+                while (time < delay)
+                {
+                    time += Time.deltaTime;
+                    yield return null;
+                }
+            }
+        }
+        
     }
 
     void FlameBreath()
@@ -122,7 +153,22 @@ public class ChimeraController : MonoBehaviour
 
     void WaterSprayAttack()
     {
-        var waterSprayClone = (GameObject)Instantiate(waterSpray, redHead.transform.position, transform.rotation);
+        if(Health / maxHealth >= .5f)
+        {
+            if (Random.Range(0, 2) == 1)
+            {
+                var waterSprayClone = (GameObject)Instantiate(waterSpray, redHead.transform.position, transform.rotation);
+            }
+            else
+            {
+                var waterSprayClone = (GameObject)Instantiate(waterSpray2, redHead.transform.position, transform.rotation);
+            }
+        }
+        else
+        {
+            var waterSprayClone = (GameObject)Instantiate(waterSpray, redHead.transform.position, transform.rotation);
+            var waterSprayClone2 = (GameObject)Instantiate(waterSpray2, redHead.transform.position, transform.rotation);
+        }
     }
 
     void CleaveAttack()
@@ -148,22 +194,36 @@ public class ChimeraController : MonoBehaviour
     IEnumerator AttackPattern()
     {
         int randomInt = Random.Range(0, 3);
-
+        
         if (randomInt == 0)
         {
+            Gem.color = new Color(255f, 0f, 0f);
+            yield return new WaitForSeconds(1f);
             FlameBreath();
-            yield return new WaitForSeconds(6f);
+            if (Health / maxHealth >= .75f)
+            {
+                yield return new WaitForSeconds(6f);
+            }
+            else
+            {
+                yield return new WaitForSeconds(5f);
+            }
+            
         }
         if (randomInt == 1)
         {
+            Gem.color = new Color(0f, 0f, 255f);
+            yield return new WaitForSeconds(1f);
             WaterSprayAttack();
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(3f);
         }
         if (randomInt == 2)
         {
-            Electric();
+            Gem.color = new Color(255f, 218f, 0f);
             yield return new WaitForSeconds(1f);
-
+            Electric();
+            yield return new WaitForSeconds(5f);
+            
         }
 
         yield return new WaitForSeconds(1f);

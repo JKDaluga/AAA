@@ -7,11 +7,13 @@ public class WaterSpray : MonoBehaviour {
     public float minAngle = -80f;
     public float maxAngle = 80f;
     public float progress = 0;
-    public float timeToRotate ;
+    public float timeToRotate;
+    public bool startLeft;
 
     // Use this for initialization
     void Start () {
-		transform.rotation = Quaternion.Euler(0, 0,80);
+        if(startLeft) transform.rotation = Quaternion.Euler(0, 0, -80);
+        else transform.rotation = Quaternion.Euler(0, 0, 80);
     }
 	
 	// Update is called once per frame
