@@ -12,10 +12,10 @@ public class PlayerParent : MonoBehaviour
     public AudioManager audioManager;
 
     public int health;
-    float maxHealth;
+    public float maxHealth;
 
-    Rigidbody2D pRB2D;
-
+    public Rigidbody2D pRB2D;
+    public BoxCollider2D Box;
 
     public bool isPlayer1;
 
@@ -80,6 +80,7 @@ public class PlayerParent : MonoBehaviour
     {
         if (health > 0)
         {
+            anim.SetBool("isDead", false);
             if (rollTime > 0)
             {
                 rollTime -= Time.deltaTime;
@@ -183,6 +184,8 @@ public class PlayerParent : MonoBehaviour
 
             }
             pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+            Box.enabled = false;
+            if (tag != "Eagle") anim.SetBool("isDead", true);
         }
     }
 
@@ -277,6 +280,12 @@ public class PlayerParent : MonoBehaviour
     void setVulnerability()
     {
         isVulnerable = true;
+    }
+
+    public void Revive()
+    {
+        Box.enabled = true;
+        print("REVIVE");
     }
 }
 

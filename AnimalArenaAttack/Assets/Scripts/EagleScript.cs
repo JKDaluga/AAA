@@ -17,6 +17,9 @@ public class EagleScript : PlayerParent {
 
     public AudioSource source;
 
+    public float reviveTime;
+    bool reviving;
+
     public override void Ability1()
     {
 
@@ -33,4 +36,41 @@ public class EagleScript : PlayerParent {
 	
 
 	}
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Salamander")
+        {
+            PlayerParent salamander = GetComponent<PlayerParent>();
+            if (salamander.P2HealthBar.value <= 0)
+            {
+                reviveTime = 0f;
+                reviving = true;
+                Invoke("ReviveOther", 2f);
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Salamander")
+        {
+            PlayerParent salamander = GetComponent<PlayerParent>();
+            if (salamander.P2HealthBar.value <= 0)
+            {
+                reviveTime = 0;
+                reviving = false;
+            }
+        }
+    }
+
+    void ReviveOther()
+    {
+        if (reviving)
+        {
+            SalamanderScript salamander = FindObjectOfType<SalamanderScript>();
+            salamander.health = (int)salamander.maxHealth;
+            salamander.pRB2D.constraints = RigidbodyConstraints2D.None;
+        }
+    }
 }

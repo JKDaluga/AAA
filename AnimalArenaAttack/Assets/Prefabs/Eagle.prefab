@@ -78,7 +78,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05756831, y: 0.26219016}
+  m_Offset: {x: -0.05756831, y: 0.75152177}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -89,7 +89,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3165464, y: 1.6970316}
+  m_Size: {x: 1.3165464, y: 2.6756954}
   m_EdgeRadius: 0
 --- !u!61 &61136672383632402
 BoxCollider2D:
@@ -103,7 +103,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.061196625, y: 0.25980645}
+  m_Offset: {x: -0.061196923, y: 0.7618482}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -114,7 +114,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3176287, y: 1.7014552}
+  m_Size: {x: 1.3938885, y: 2.7563782}
   m_EdgeRadius: 0
 --- !u!82 &82621258877308186
 AudioSource:
@@ -243,6 +243,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   audioManager: {fileID: 0}
   health: 0
+  Box: {fileID: 61136672383632402}
   isPlayer1: 1
   ability1: 0
   ability2: 0

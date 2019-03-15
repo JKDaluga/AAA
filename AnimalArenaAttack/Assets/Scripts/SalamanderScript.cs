@@ -16,6 +16,9 @@ public class SalamanderScript : PlayerParent {
 
     public string SlashAttackName;
 
+    public float reviveTime;
+    bool reviving;
+
     public override void Ability1()
     {
         if (Time.time > slashUsed + .15)
@@ -29,6 +32,45 @@ public class SalamanderScript : PlayerParent {
 	public override void Ability2 ()
     {
 
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Eagle")
+        {
+            print("eagle");
+            PlayerParent eagle = GetComponent<PlayerParent>();
+            if(eagle.P1HealthBar.value <= 0)
+            {
+                print("revive");
+                reviveTime = 0f;
+                reviving = true;
+                Invoke("ReviveOther", 2f);
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Eagle")
+        {
+            PlayerParent eagle = GetComponent<PlayerParent>();
+            if (eagle.P1HealthBar.value <= 0)
+            {
+                reviveTime = 0;
+                reviving = false;
+            }
+        }
+    }
+
+    void ReviveOther()
+    {
+        if(reviving)
+        {
+            EagleScript eagle = FindObjectOfType<EagleScript>();
+            eagle.health = (int)eagle.maxHealth;
+            eagle.pRB2D.constraints = RigidbodyConstraints2D.None;
+        }
     }
 
 }

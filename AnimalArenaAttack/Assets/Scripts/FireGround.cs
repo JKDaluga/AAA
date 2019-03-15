@@ -35,7 +35,6 @@ public class FireGround : MonoBehaviour {
     {
         if (col.gameObject.tag == "Eagle" || col.gameObject.tag == "Salamander")
         {
-            print("thing");
             col.gameObject.GetComponent<PlayerParent>().Damage(damage);
         }
     }
