@@ -177,10 +177,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8b445dc1b1d4f2459a8d8b3a7b1f8ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 2
+  timer: 3
   lighting: {fileID: 1318426696532448}
   FireGround: {fileID: 1796388381881314, guid: 39b1f9d74b2309e41a25654084b094fa, type: 2}
   damage: 30
+  trackP1: 0
+  tracker: {fileID: 0}
 --- !u!212 &212451909541969192
 SpriteRenderer:
   m_ObjectHideFlags: 1

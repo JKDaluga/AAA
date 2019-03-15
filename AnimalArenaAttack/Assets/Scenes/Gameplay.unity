@@ -2196,7 +2196,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4152764696923016, guid: 455f4c10003c54b009af85ca5053f2f8, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114126524547488558, guid: 455f4c10003c54b009af85ca5053f2f8,
         type: 2}
@@ -3895,7 +3895,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2038177717
 GameObject:
@@ -4026,6 +4026,8 @@ MonoBehaviour:
     type: 2}
   electric: {fileID: 1857653301647470, guid: d22d83a879a5d2244bab4e606709770b, type: 2}
   waterSpray: {fileID: 1876367379822638, guid: ff03be02fe8537243bc0611a1023271b, type: 2}
+  waterSpray2: {fileID: 1002901012263830, guid: 4e978f0deb527564f946b66b26cc4c06,
+    type: 2}
   fireBall: {fileID: 1831981782171962, guid: c33925c702e903d40a57e79047e252b9, type: 2}
   fireBall2: {fileID: 1807692037994948, guid: 4aaf769c7c71ce84dbaede7dd77e1233, type: 2}
   redHead: {fileID: 1804436923}
