@@ -21,6 +21,9 @@ public class ChimeraController : MonoBehaviour
     public GameObject waterSpray2;
     public GameObject fireBall;
     public GameObject fireBall2;
+    public GameObject fireBallBig;
+    public GameObject fireBallBig2;
+    public SpriteRenderer Gem;
 
     public GameObject redHead;
 
@@ -97,25 +100,50 @@ public class ChimeraController : MonoBehaviour
 
 
     IEnumerator FireBall()
-    {
-        float delay = 1.5f;
-        for(int i = 0; i < 2; i++)
+    {  
+        if (Health / maxHealth >= .75f)
         {
-            float time = 0;
-            var fireBallClone1 = (GameObject)Instantiate(fireBall, redHead.transform.position, transform.rotation);
-            while (time < delay)
+            for (int i = 0; i < 2; i++)
             {
-                time += Time.deltaTime;
-                yield return null;
-            }
-            time = 0;
-            fireBallClone1 = (GameObject)Instantiate(fireBall2, redHead.transform.position, transform.rotation);
-            while (time < delay)
-            {
-                time += Time.deltaTime;
-                yield return null;
+                float delay = 2f;
+                float time = 0;
+                var fireBallClone1 = (GameObject)Instantiate(fireBallBig, redHead.transform.position, transform.rotation);
+                while (time < delay)
+                {
+                    time += Time.deltaTime;
+                    yield return null;
+                }
+                time = 0;
+                fireBallClone1 = (GameObject)Instantiate(fireBallBig2, redHead.transform.position, transform.rotation);
+                while (time < delay)
+                {
+                    time += Time.deltaTime;
+                    yield return null;
+                }
             }
         }
+        else
+        {
+            float delay = 1.5f;
+            for (int i = 0; i < 2; i++)
+            {
+                float time = 0;
+                var fireBallClone1 = (GameObject)Instantiate(fireBall, redHead.transform.position, transform.rotation);
+                while (time < delay)
+                {
+                    time += Time.deltaTime;
+                    yield return null;
+                }
+                time = 0;
+                fireBallClone1 = (GameObject)Instantiate(fireBall2, redHead.transform.position, transform.rotation);
+                while (time < delay)
+                {
+                    time += Time.deltaTime;
+                    yield return null;
+                }
+            }
+        }
+        
     }
 
     void FlameBreath()
@@ -166,20 +194,36 @@ public class ChimeraController : MonoBehaviour
     IEnumerator AttackPattern()
     {
         int randomInt = Random.Range(0, 3);
+        
         if (randomInt == 0)
         {
+            Gem.color = new Color(255f, 0f, 0f);
+            yield return new WaitForSeconds(1f);
             FlameBreath();
-            yield return new WaitForSeconds(6f);
+            if (Health / maxHealth >= .75f)
+            {
+                yield return new WaitForSeconds(6f);
+            }
+            else
+            {
+                yield return new WaitForSeconds(5f);
+            }
+            
         }
         if (randomInt == 1)
         {
+            Gem.color = new Color(0f, 0f, 255f);
+            yield return new WaitForSeconds(1f);
             WaterSprayAttack();
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(3f);
         }
         if (randomInt == 2)
         {
+            Gem.color = new Color(255f, 218f, 0f);
+            yield return new WaitForSeconds(1f);
             Electric();
-            yield return new WaitForSeconds(6f);
+            yield return new WaitForSeconds(5f);
+            
         }
 
         yield return new WaitForSeconds(1f);
