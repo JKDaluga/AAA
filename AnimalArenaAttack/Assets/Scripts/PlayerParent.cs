@@ -46,6 +46,9 @@ public class PlayerParent : MonoBehaviour
 
     public Color normal, hurt;
 
+    public ParticleSystem smokeTrail;
+
+
     public void Awake()
     {
         horiz = 0;
@@ -142,6 +145,11 @@ public class PlayerParent : MonoBehaviour
                             rollVector = rb.velocity.normalized;
                             isVulnerable = false;
                             Invoke("setVulnerability", .125f);
+                            Instantiate(smokeTrail, transform.position, this.transform.rotation);
+                            smokeTrail.Play();
+                            Invoke("KillSmoke", 1);
+                            
+
                         }
                         //Ability2();
                     }
@@ -167,6 +175,10 @@ public class PlayerParent : MonoBehaviour
                             rollVector = rb.velocity.normalized;
                             isVulnerable = false;
                             Invoke("setVulnerability", .125f);
+                            Instantiate(smokeTrail, transform.position, this.transform.rotation);
+                            smokeTrail.Play();
+                            Invoke("KillSmoke", 1);
+
                         }
                     }
                 }
@@ -281,11 +293,20 @@ public class PlayerParent : MonoBehaviour
     {
         isVulnerable = true;
     }
-
     public void Revive()
     {
         Box.enabled = true;
         print("REVIVE");
+    }
+
+    void KillSmoke()
+    {
+        if (smokeTrail.IsAlive())
+        {
+            smokeTrail.Stop();
+            smokeTrail.Clear();
+            Destroy(smokeTrail.gameObject);
+        }
     }
 }
 

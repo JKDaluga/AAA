@@ -262,6 +262,8 @@ MonoBehaviour:
   P2HealthBar: {fileID: 0}
   normal: {r: 1, g: 1, b: 1, a: 1}
   hurt: {r: 1, g: 0, b: 0, a: 1}
+  smokeTrail: {fileID: 198360986751581716, guid: b09759d51379a6340b658f3ea01a8014,
+    type: 2}
   eagleAnim: {fileID: 0}
   feather: {fileID: 1742646030460580, guid: f72f59eacfb81484d852bd9bb2f4827e, type: 2}
   baseAttackDuration: 1
