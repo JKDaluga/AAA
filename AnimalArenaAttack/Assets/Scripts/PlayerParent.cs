@@ -173,6 +173,15 @@ public class PlayerParent : MonoBehaviour
         }
         else
         {
+            if (isPlayer1)
+            {
+                P1HealthBar.value = 0;
+            }
+            else if (!isPlayer1)
+            {
+                P2HealthBar.value = 0;
+
+            }
             pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
         }
     }
