@@ -70,7 +70,9 @@ public class EagleScript : PlayerParent {
         {
             SalamanderScript salamander = FindObjectOfType<SalamanderScript>();
             salamander.health = (int)salamander.maxHealth;
-            salamander.pRB2D.constraints = RigidbodyConstraints2D.None;
+            salamander.pRB2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+            salamander.Box.enabled = true;
+            salamander.gameObject.layer = 8;
         }
     }
 }

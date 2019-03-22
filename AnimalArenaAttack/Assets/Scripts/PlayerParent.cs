@@ -64,7 +64,7 @@ public class PlayerParent : MonoBehaviour
     {
         pRB2D = GetComponent<Rigidbody2D>();
 
-        health = 200;
+        health = 400;
         maxHealth = health;
         speed = 350;
         rb = GetComponent<Rigidbody2D>();
@@ -195,9 +195,10 @@ public class PlayerParent : MonoBehaviour
                 P2HealthBar.value = 0;
 
             }
-            pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+            pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
             Box.enabled = false;
             if (tag != "Eagle") anim.SetBool("isDead", true);
+            gameObject.layer = 9;
         }
     }
 
