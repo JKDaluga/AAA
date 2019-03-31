@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ChimeraController : MonoBehaviour
 {
-
+    public GameObject darkMask;
     public int Health;
     float maxHealth;
     public GameObject salamander;
@@ -92,10 +92,14 @@ public class ChimeraController : MonoBehaviour
 
     IEnumerator lightningStrikes()
     {
+
         float delay = 1.5f;
         for (int i = 0; i < 2; i++)
         {
             float time = 0;
+
+            darkMask.SetActive(true);
+
             var lightningClone1 = (GameObject)Instantiate(electric, salamander.transform.position, transform.rotation);
             lightningClone1.GetComponent<Lightning>().trackP1 = false;
             while (time < delay)
@@ -112,6 +116,12 @@ public class ChimeraController : MonoBehaviour
                 yield return null;
             }
         }
+        Invoke("DarkMaskWait", 2f);        
+    }
+
+    void DarkMaskWait()
+    {
+        darkMask.SetActive(false);
     }
 
 
@@ -213,21 +223,21 @@ public class ChimeraController : MonoBehaviour
         int randomInt = Random.Range(0, 3);
 
         //Forces upgraded fireball attack one time when health is 75% of original health
-        if ((Health / maxHealth >= 0.75f) && (fireBallUpgrade == false))
+        if ((Health / maxHealth <= 0.75f) && (fireBallUpgrade == false))
         {
             randomInt = 0;
             fireBallUpgrade = true;
             fireBallCounter = 0;
         }
         //Forces upgraded Water Beam attack one time when health is 50% of original health
-        if ((Health / maxHealth >= 0.50f) && (waterUpgrade == false))
+        if ((Health / maxHealth <= 0.50f) && (waterUpgrade == false))
         {
             randomInt = 1;
             waterUpgrade = true;
             waterCounter = 0;
         }
         //Forces upgraded Lightning attack one time when health is 25% of original health
-        if ((Health / maxHealth >= 0.25f) && (lightningUpgrade == false))
+        if ((Health / maxHealth <= 0.25f) && (lightningUpgrade == false))
         {
             randomInt = 2;
             lightningUpgrade = true;
