@@ -93,7 +93,6 @@ public class PlayerParent : MonoBehaviour
             {
             if (isPlayer1)
             {
-                SalamanderReviveBG.gameObject.SetActive(false);
                 SalamanderReviveFill.gameObject.SetActive(false);
                 SalamanderReviveFill.fillAmount = 0;
                 reviveTime = 0;
@@ -101,7 +100,6 @@ public class PlayerParent : MonoBehaviour
             }
             else
             {
-                EagleReviveBG.gameObject.SetActive(false);
                 EagleReviveFill.gameObject.SetActive(false);
                 EagleReviveFill.fillAmount = 0;
                 reviveTime = 0;
@@ -109,6 +107,14 @@ public class PlayerParent : MonoBehaviour
         }
         if (health > 0)
         {
+            if (!isPlayer1)
+            {
+                SalamanderReviveBG.gameObject.SetActive(false);
+            }
+            if (isPlayer1)
+            {
+                EagleReviveBG.gameObject.SetActive(false);
+            }
             if (reviving)
             {
                 reviveTime += Time.deltaTime;
@@ -242,10 +248,13 @@ public class PlayerParent : MonoBehaviour
             if (isPlayer1)
             {
                 P1HealthBar.value = 0;
+                EagleReviveBG.gameObject.SetActive(true);
+
             }
             else if (!isPlayer1)
             {
                 P2HealthBar.value = 0;
+                SalamanderReviveBG.gameObject.SetActive(true);
 
             }
             pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
