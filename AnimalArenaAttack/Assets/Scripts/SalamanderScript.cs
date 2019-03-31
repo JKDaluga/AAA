@@ -16,8 +16,7 @@ public class SalamanderScript : PlayerParent {
 
     public string SlashAttackName;
 
-    public float reviveTime;
-    bool reviving;
+
 
     public override void Ability1()
     {
@@ -43,7 +42,6 @@ public class SalamanderScript : PlayerParent {
             if(eagle.P1HealthBar.value <= 0)
             {
                 print("revive");
-                reviveTime = 0f;
                 reviving = true;
                 Invoke("ReviveOther", 2f);
             }

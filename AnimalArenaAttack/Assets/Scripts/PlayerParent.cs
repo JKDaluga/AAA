@@ -48,6 +48,13 @@ public class PlayerParent : MonoBehaviour
 
     public ParticleSystem smokeTrail;
 
+    public float reviveTime;
+    protected bool reviving;
+
+    public Image SalamanderReviveFill;
+    public Image SalamanderReviveBG;
+    public Image EagleReviveFill;
+    public Image EagleReviveBG;
 
     public void Awake()
     {
@@ -72,6 +79,7 @@ public class PlayerParent : MonoBehaviour
         sp = GetComponent<SpriteRenderer>();
         sp.color = normal;
 
+        reviveTime = 0;
 
         //GameManager.addPlayer(this);
         //dashTime  = startingDashTime;
@@ -81,8 +89,59 @@ public class PlayerParent : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(!reviving)
+            {
+            if (isPlayer1)
+            {
+                SalamanderReviveFill.gameObject.SetActive(false);
+                SalamanderReviveFill.fillAmount = 0;
+                reviveTime = 0;
+
+            }
+            else
+            {
+                EagleReviveFill.gameObject.SetActive(false);
+                EagleReviveFill.fillAmount = 0;
+                reviveTime = 0;
+            }
+        }
         if (health > 0)
         {
+            if (!isPlayer1)
+            {
+                SalamanderReviveBG.gameObject.SetActive(false);
+            }
+            if (isPlayer1)
+            {
+                EagleReviveBG.gameObject.SetActive(false);
+            }
+            if (reviving)
+            {
+                reviveTime += Time.deltaTime;
+                if (isPlayer1)
+                {
+                    SalamanderReviveBG.gameObject.SetActive(true);
+                    SalamanderReviveFill.gameObject.SetActive(true);
+                    SalamanderReviveFill.fillAmount = (reviveTime / 2);
+                    if (reviveTime>=2)
+                    {
+                        reviveTime = 0;
+                        reviving = false;
+                    }
+                }
+                else
+                {
+                    EagleReviveBG.gameObject.SetActive(true);
+                    EagleReviveFill.gameObject.SetActive(true);
+                    EagleReviveFill.fillAmount = (reviveTime / 2);
+                    if (reviveTime >= 2)
+                    {
+                        reviveTime = 0;
+                        reviving = false;
+                    }
+                }
+            }
+            
             anim.SetBool("isDead", false);
             if (rollTime > 0)
             {
@@ -189,15 +248,18 @@ public class PlayerParent : MonoBehaviour
             if (isPlayer1)
             {
                 P1HealthBar.value = 0;
+                EagleReviveBG.gameObject.SetActive(true);
+
             }
             else if (!isPlayer1)
             {
                 P2HealthBar.value = 0;
+                SalamanderReviveBG.gameObject.SetActive(true);
 
             }
             pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
             Box.enabled = false;
-            if (tag != "Eagle") anim.SetBool("isDead", true);
+            anim.SetBool("isDead", true);
             gameObject.layer = 9;
         }
     }
