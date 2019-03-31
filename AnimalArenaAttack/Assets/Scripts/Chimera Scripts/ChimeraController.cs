@@ -222,8 +222,15 @@ public class ChimeraController : MonoBehaviour
             Gem.color = new Color(255f, 218f, 0f);
             yield return new WaitForSeconds(1f);
             Electric();
-            yield return new WaitForSeconds(5f);
-            
+            if (Health / maxHealth >= .25f)
+            {
+                yield return new WaitForSeconds(5f);
+            }
+            else
+            {
+                yield return new WaitForSeconds(2f);
+            }
+
         }
 
         yield return new WaitForSeconds(1f);
