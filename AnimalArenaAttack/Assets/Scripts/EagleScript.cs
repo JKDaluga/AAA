@@ -17,9 +17,6 @@ public class EagleScript : PlayerParent {
 
     public AudioSource source;
 
-    public float reviveTime;
-    bool reviving;
-
     public override void Ability1()
     {
 
@@ -44,7 +41,6 @@ public class EagleScript : PlayerParent {
             PlayerParent salamander = GetComponent<PlayerParent>();
             if (salamander.P2HealthBar.value <= 0)
             {
-                reviveTime = 0f;
                 reviving = true;
                 Invoke("ReviveOther", 2f);
             }
