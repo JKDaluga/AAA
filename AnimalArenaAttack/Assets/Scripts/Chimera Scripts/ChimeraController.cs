@@ -174,17 +174,17 @@ public class ChimeraController : MonoBehaviour
         {
             if (Random.Range(0, 2) == 1)
             {
-                var waterSprayClone = (GameObject)Instantiate(waterSpray, redHead.transform.position, transform.rotation);
+                var waterSprayClone = (GameObject)Instantiate(waterSpray, (redHead.transform.position + new Vector3(1.8f, -.5f, 0)), transform.rotation);
             }
             else
             {
-                var waterSprayClone = (GameObject)Instantiate(waterSpray2, redHead.transform.position, transform.rotation);
+                var waterSprayClone = (GameObject)Instantiate(waterSpray2, (redHead.transform.position + new Vector3(-2.3f, -.5f, 0)), transform.rotation);
             }
         }
         else
         {
-            var waterSprayClone = (GameObject)Instantiate(waterSpray, redHead.transform.position, transform.rotation);
-            var waterSprayClone2 = (GameObject)Instantiate(waterSpray2, redHead.transform.position, transform.rotation);
+            var waterSprayClone = (GameObject)Instantiate(waterSpray, (redHead.transform.position + new Vector3(1.8f, -.5f, 0)), transform.rotation);
+            var waterSprayClone2 = (GameObject)Instantiate(waterSpray2, (redHead.transform.position + new Vector3(-2.3f, -.5f, 0)), transform.rotation);
         }
     }
 
@@ -298,8 +298,14 @@ public class ChimeraController : MonoBehaviour
                 Gem.color = new Color(255f, 218f, 0f);
                 yield return new WaitForSeconds(1f);
                 Electric();
-                yield return new WaitForSeconds(5f);
-
+                if (Health / maxHealth >= .25f)
+                {
+                    yield return new WaitForSeconds(5f);
+                }
+                else
+                {
+                    yield return new WaitForSeconds(2f);
+                }
                 yield return new WaitForSeconds(1f);
                 StartCoroutine(AttackPattern());
 
