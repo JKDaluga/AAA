@@ -26,10 +26,13 @@ public class ChimeraController : MonoBehaviour
     public SpriteRenderer Gem;
 
     //varbiles for no repeating attacks
-    bool lastFire = false;
     int  fireBallCounter = 0;
     int  waterCounter = 0;
     int electricCounter = 0;
+
+    bool fireBallUpgrade = false;
+    bool waterUpgrade = false;
+    bool lightningUpgrade = false;
 
     public GameObject redHead;
 
@@ -47,6 +50,13 @@ public class ChimeraController : MonoBehaviour
     //Use this for initialization
     void Start()
     {
+        fireBallCounter = 0;
+        waterCounter = 0;
+        electricCounter = 0;
+
+        fireBallUpgrade = false;
+        waterUpgrade = false;
+        lightningUpgrade = false;
 
         StartCoroutine(AttackPattern());
         sp = GetComponent<SpriteRenderer>();
@@ -201,6 +211,28 @@ public class ChimeraController : MonoBehaviour
     IEnumerator AttackPattern()
     {
         int randomInt = Random.Range(0, 3);
+
+        //Forces upgraded fireball attack one time when health is 75% of original health
+        if ((Health / maxHealth >= 0.75f) && (fireBallUpgrade == false))
+        {
+            randomInt = 0;
+            fireBallUpgrade = true;
+            fireBallCounter = 0;
+        }
+        //Forces upgraded Water Beam attack one time when health is 50% of original health
+        if ((Health / maxHealth >= 0.50f) && (waterUpgrade == false))
+        {
+            randomInt = 1;
+            waterUpgrade = true;
+            waterCounter = 0;
+        }
+        //Forces upgraded Lightning attack one time when health is 25% of original health
+        if ((Health / maxHealth >= 0.25f) && (lightningUpgrade == false))
+        {
+            randomInt = 2;
+            lightningUpgrade = true;
+            electricCounter = 0;
+        }
 
         if (randomInt == 0)
         {
