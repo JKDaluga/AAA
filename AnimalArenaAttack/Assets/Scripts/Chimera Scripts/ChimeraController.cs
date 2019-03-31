@@ -207,8 +207,8 @@ public class ChimeraController : MonoBehaviour
             fireBallCounter++;
             if (fireBallCounter >= 2)
             {
-                fireBallCounter = 0;
                 StartCoroutine(AttackPattern());
+                
             }
             else
             {
@@ -225,6 +225,10 @@ public class ChimeraController : MonoBehaviour
                 {
                     yield return new WaitForSeconds(5f);
                 }
+
+                yield return new WaitForSeconds(1f);
+                StartCoroutine(AttackPattern());
+
             }
         }
         if (randomInt == 1)
@@ -232,7 +236,6 @@ public class ChimeraController : MonoBehaviour
             waterCounter++;
             if (waterCounter >= 2)
             {
-                waterCounter = 0;
                 StartCoroutine(AttackPattern());
             }
             else
@@ -243,6 +246,10 @@ public class ChimeraController : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 WaterSprayAttack();
                 yield return new WaitForSeconds(3f);
+                yield return new WaitForSeconds(1f);
+
+                StartCoroutine(AttackPattern());
+
             }
         }
         if (randomInt == 2)
@@ -250,7 +257,6 @@ public class ChimeraController : MonoBehaviour
             electricCounter++;
             if (electricCounter >= 2)
             {
-                electricCounter = 0;
                 StartCoroutine(AttackPattern());
             }
             else
@@ -261,11 +267,12 @@ public class ChimeraController : MonoBehaviour
                 yield return new WaitForSeconds(1f);
                 Electric();
                 yield return new WaitForSeconds(5f);
+
+                yield return new WaitForSeconds(1f);
+                StartCoroutine(AttackPattern());
+
             }
         }
-
-        yield return new WaitForSeconds(1f);
-        StartCoroutine(AttackPattern());
     }
 
     private IEnumerator getHurt()
