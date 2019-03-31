@@ -25,6 +25,12 @@ public class ChimeraController : MonoBehaviour
     public GameObject fireBallBig2;
     public SpriteRenderer Gem;
 
+    //varbiles for no repeating attacks
+    bool lastFire = false;
+    public int  fireBallCounter = 0;
+    public int  waterCounter = 0;
+    public int electricCounter = 0;
+
     public GameObject redHead;
 
     public Slider HealthBar;
@@ -100,28 +106,29 @@ public class ChimeraController : MonoBehaviour
 
 
     IEnumerator FireBall()
-    {  
-        if (Health / maxHealth >= .75f)
-        {
-            for (int i = 0; i < 2; i++)
+    {
+            if (Health / maxHealth >= .75f)
             {
-                float delay = 2f;
-                float time = 0;
-                var fireBallClone1 = (GameObject)Instantiate(fireBallBig, redHead.transform.position, transform.rotation);
-                while (time < delay)
+                for (int i = 0; i < 2; i++)
                 {
-                    time += Time.deltaTime;
-                    yield return null;
-                }
-                time = 0;
-                fireBallClone1 = (GameObject)Instantiate(fireBallBig2, redHead.transform.position, transform.rotation);
-                while (time < delay)
-                {
-                    time += Time.deltaTime;
-                    yield return null;
+                    float delay = 2f;
+                    float time = 0;
+                    var fireBallClone1 = (GameObject)Instantiate(fireBallBig, redHead.transform.position, transform.rotation);
+                    while (time < delay)
+                    {
+                        time += Time.deltaTime;
+                        yield return null;
+                    }
+                    time = 0;
+                    fireBallClone1 = (GameObject)Instantiate(fireBallBig2, redHead.transform.position, transform.rotation);
+                    while (time < delay)
+                    {
+                        time += Time.deltaTime;
+                        yield return null;
+                    }
                 }
             }
-        }
+
         else
         {
             float delay = 1.5f;
@@ -143,7 +150,7 @@ public class ChimeraController : MonoBehaviour
                 }
             }
         }
-        
+
     }
 
     void FlameBreath()
@@ -194,47 +201,78 @@ public class ChimeraController : MonoBehaviour
     IEnumerator AttackPattern()
     {
         int randomInt = Random.Range(0, 3);
-        
+
         if (randomInt == 0)
         {
-            Gem.color = new Color(255f, 0f, 0f);
-            yield return new WaitForSeconds(1f);
-            FlameBreath();
-            if (Health / maxHealth >= .75f)
+            fireBallCounter++;
+            if (fireBallCounter >= 2)
             {
-                yield return new WaitForSeconds(6f);
+                StartCoroutine(AttackPattern());
+                
             }
             else
             {
-                yield return new WaitForSeconds(5f);
+                waterCounter = 0;
+                electricCounter = 0;
+                Gem.color = new Color(255f, 0f, 0f);
+                yield return new WaitForSeconds(1f);
+                FlameBreath();
+                if (Health / maxHealth >= .75f)
+                {
+                    yield return new WaitForSeconds(6f);
+                }
+                else
+                {
+                    yield return new WaitForSeconds(5f);
+                }
+
+                yield return new WaitForSeconds(1f);
+                StartCoroutine(AttackPattern());
+
             }
-            
         }
         if (randomInt == 1)
         {
-            Gem.color = new Color(0f, 0f, 255f);
-            yield return new WaitForSeconds(1f);
-            WaterSprayAttack();
-            yield return new WaitForSeconds(3f);
-        }
-        if (randomInt == 2)
-        {
-            Gem.color = new Color(255f, 218f, 0f);
-            yield return new WaitForSeconds(1f);
-            Electric();
-            if (Health / maxHealth >= .25f)
+            waterCounter++;
+            if (waterCounter >= 2)
             {
-                yield return new WaitForSeconds(5f);
+                StartCoroutine(AttackPattern());
             }
             else
             {
-                yield return new WaitForSeconds(2f);
+                fireBallCounter = 0;
+                electricCounter = 0;
+                Gem.color = new Color(0f, 0f, 255f);
+                yield return new WaitForSeconds(1f);
+                WaterSprayAttack();
+                yield return new WaitForSeconds(3f);
+                yield return new WaitForSeconds(1f);
+
+                StartCoroutine(AttackPattern());
+
             }
-
         }
+        if (randomInt == 2)
+        {
+            electricCounter++;
+            if (electricCounter >= 2)
+            {
+                StartCoroutine(AttackPattern());
+            }
+            else
+            {
+                fireBallCounter = 0;
+                waterCounter = 0;
+                Gem.color = new Color(255f, 218f, 0f);
+                yield return new WaitForSeconds(1f);
+                Electric();
+                yield return new WaitForSeconds(5f);
 
-        yield return new WaitForSeconds(1f);
-        StartCoroutine(AttackPattern());
+                yield return new WaitForSeconds(1f);
+                StartCoroutine(AttackPattern());
+
+            }
+        }
     }
 
     private IEnumerator getHurt()
@@ -246,4 +284,3 @@ public class ChimeraController : MonoBehaviour
 
 
 }
-
