@@ -128,7 +128,7 @@ public class ChimeraController : MonoBehaviour
                     }
                 }
             }
-        
+
         else
         {
             float delay = 1.5f;
@@ -150,7 +150,7 @@ public class ChimeraController : MonoBehaviour
                 }
             }
         }
-        
+
     }
 
     void FlameBreath()
@@ -277,4 +277,3 @@ public class ChimeraController : MonoBehaviour
 
 
 }
-
