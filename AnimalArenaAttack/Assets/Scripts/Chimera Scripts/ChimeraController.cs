@@ -27,9 +27,9 @@ public class ChimeraController : MonoBehaviour
 
     //varbiles for no repeating attacks
     bool lastFire = false;
-    int  fireBallCounter = 0;
-    int  waterCounter = 0;
-    int electricCounter = 0;
+    public int  fireBallCounter = 0;
+    public int  waterCounter = 0;
+    public int electricCounter = 0;
 
     public GameObject redHead;
 
