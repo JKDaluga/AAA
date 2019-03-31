@@ -197,7 +197,7 @@ public class PlayerParent : MonoBehaviour
             }
             pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
             Box.enabled = false;
-            if (tag != "Eagle") anim.SetBool("isDead", true);
+            anim.SetBool("isDead", true);
             gameObject.layer = 9;
         }
     }

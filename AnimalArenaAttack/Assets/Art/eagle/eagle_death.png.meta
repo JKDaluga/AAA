@@ -5,6 +5,8 @@ TextureImporter:
     21300000: eagle_death_0
     21300002: eagle_death_1
     21300004: eagle_death_2
+    21300006: eagle_death_3
+    21300008: eagle_death_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -92,8 +94,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2599
-        height: 3057
+        width: 291
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -101,7 +103,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18ea6243f0571475c8da1e828d6e6459
+      spriteID: 0c0e54d6b9f1d42728a59f318c6458cb
       vertices: []
       indices: 
       edges: []
@@ -110,10 +112,10 @@ TextureImporter:
       name: eagle_death_1
       rect:
         serializedVersion: 2
-        x: 2646
+        x: 321
         y: 0
-        width: 3176
-        height: 3057
+        width: 355
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,7 +123,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63222b52cfee2412d95e8b2745b41666
+      spriteID: c311c56bb5a374c999a9055eb6d4b6a2
       vertices: []
       indices: 
       edges: []
@@ -130,10 +132,10 @@ TextureImporter:
       name: eagle_death_2
       rect:
         serializedVersion: 2
-        x: 5893
+        x: 704
         y: 0
-        width: 2981
-        height: 3057
+        width: 433
+        height: 499
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,7 +143,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 189eb852bfb46489c8f46f2a04d2b311
+      spriteID: 6641da577cde142328c48bb9eb54ac81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_death_3
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 460
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62e7aac97e5b45b1ad9560e04b7bc5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_death_4
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 0
+        width: 475
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1111f13e35c43d591964241c40a772
       vertices: []
       indices: 
       edges: []
@@ -149,7 +191,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8fbb63576f62d49cca0a995404cfe293
+    spriteID: 29aa3603aa1394a45a70a2a4d0e886e9
     vertices: []
     indices: 
     edges: []
