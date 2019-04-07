@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerParent : MonoBehaviour
 {
+    public ParticleSystem onDamage;
 
     private Rigidbody2D rb;
     public Animator anim;
@@ -342,6 +343,9 @@ public class PlayerParent : MonoBehaviour
     private IEnumerator getHurt()
     {
         sp.color = hurt;
+
+        Instantiate(onDamage, transform.position, transform.rotation);
+
         yield return new WaitForSeconds(.5f);
         sp.color = normal;
     }

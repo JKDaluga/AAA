@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20336232563cb46c08018f972f1cb37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onDamage: {fileID: 198151712680118572, guid: 3e70db42637c8b54b8d88f6293e95438, type: 2}
   anim: {fileID: 0}
   audioManager: {fileID: 0}
   health: 0
@@ -266,6 +267,11 @@ MonoBehaviour:
   hurt: {r: 1, g: 0, b: 0, a: 1}
   smokeTrail: {fileID: 198360986751581716, guid: b09759d51379a6340b658f3ea01a8014,
     type: 2}
+  reviveTime: 0
+  SalamanderReviveFill: {fileID: 0}
+  SalamanderReviveBG: {fileID: 0}
+  EagleReviveFill: {fileID: 0}
+  EagleReviveBG: {fileID: 0}
   eagleAnim: {fileID: 0}
   feather: {fileID: 1742646030460580, guid: f72f59eacfb81484d852bd9bb2f4827e, type: 2}
   baseAttackDuration: 1
@@ -273,7 +279,6 @@ MonoBehaviour:
   featherUsed: 0
   featherAttk: {fileID: 8300000, guid: d844e3b16df95404e80f59d61ad7038b, type: 3}
   source: {fileID: 82621258877308186}
-  reviveTime: 0
 --- !u!212 &212483952405749530
 SpriteRenderer:
   m_ObjectHideFlags: 1
