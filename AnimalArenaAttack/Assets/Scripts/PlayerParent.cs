@@ -44,6 +44,8 @@ public class PlayerParent : MonoBehaviour
 
     public Slider P1HealthBar;
     public Slider P2HealthBar;
+    public Image p1HB;
+    public Image p2HB;
 
     public Color normal, hurt;
 
@@ -181,12 +183,15 @@ public class PlayerParent : MonoBehaviour
                 {
                     MovementP1();
                     P1HealthBar.value = ((health / maxHealth) * 100);
+                    p1HB.fillAmount = (health / maxHealth);
 
                 }
                 if (!isPlayer1)
                 {
                     MovementP2();
                     P2HealthBar.value = ((health / maxHealth) * 100);
+                    p2HB.fillAmount = (health / maxHealth);
+
 
                 }
                 if (isPlayer1)
