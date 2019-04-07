@@ -131,7 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minAngle: -85
   maxAngle: 85
-  progress: 0
+  progress: -0.1
   timeToRotate: 4
   startLeft: 0
 --- !u!114 &114701890523028408

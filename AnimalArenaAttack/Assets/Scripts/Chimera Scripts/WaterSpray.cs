@@ -6,7 +6,7 @@ public class WaterSpray : MonoBehaviour {
 
     public float minAngle = -80f;
     public float maxAngle = 80f;
-    public float progress = 0;
+    public float progress = 0f;
     public float timeToRotate;
     public bool startLeft;
 
@@ -19,8 +19,11 @@ public class WaterSpray : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         progress += Time.deltaTime / timeToRotate;
-        float angle = Mathf.LerpAngle(maxAngle, minAngle, progress);
-        transform.eulerAngles = new Vector3(0, 0,angle);
+        if (progress > 0f)
+        {
+            float angle = Mathf.LerpAngle(maxAngle, minAngle, progress);
+            transform.eulerAngles = new Vector3(0, 0, angle);
+        }
         if(progress >= 1)
         {
             Destroy(this.gameObject);
