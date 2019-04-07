@@ -65,7 +65,7 @@ public class EagleScript : PlayerParent {
         if (reviving)
         {
             SalamanderScript salamander = FindObjectOfType<SalamanderScript>();
-            salamander.health = (int)salamander.maxHealth;
+            salamander.health = ((int)salamander.maxHealth)/2;
             salamander.pRB2D.constraints = RigidbodyConstraints2D.FreezeRotation;
             salamander.Box.enabled = true;
             salamander.gameObject.layer = 8;
