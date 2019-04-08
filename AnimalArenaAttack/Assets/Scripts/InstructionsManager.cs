@@ -27,7 +27,7 @@ public class InstructionsManager : MonoBehaviour
     private IEnumerator WaitForSceneSwitch()
     {
         yield return new WaitForSeconds(timeLeft);
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
     IEnumerator LoseTime()
     {

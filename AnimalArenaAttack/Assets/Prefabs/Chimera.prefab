@@ -81,7 +81,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 16, y: 16}
-    newSize: {x: 7.9, y: 9.070001}
+    newSize: {x: 16, y: 16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -118,13 +118,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2596727f1c4d56045a1e964eed25d7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  darkMask: {fileID: 0}
   Health: 500
+  salamander: {fileID: 0}
+  eagle: {fileID: 0}
   cleave: {fileID: 0}
   cleaveWarning: {fileID: 0}
   electric: {fileID: 0}
   waterSpray: {fileID: 1876367379822638, guid: ff03be02fe8537243bc0611a1023271b, type: 2}
+  waterSpray2: {fileID: 0}
   fireBall: {fileID: 1366752228352556, guid: c33925c702e903d40a57e79047e252b9, type: 2}
   fireBall2: {fileID: 1153395025078712, guid: 4aaf769c7c71ce84dbaede7dd77e1233, type: 2}
+  fireBallBig: {fileID: 0}
+  fireBallBig2: {fileID: 0}
+  Gem: {fileID: 0}
+  fireBallCounter: 0
+  waterCounter: 0
+  electricCounter: 0
   redHead: {fileID: 0}
   HealthBar: {fileID: 0}
   baseAttackDuration: 0
@@ -173,7 +183,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.9, y: 9.070001}
+  m_Size: {x: 16, y: 16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

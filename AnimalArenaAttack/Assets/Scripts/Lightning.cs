@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Lightning : MonoBehaviour {
+
+
     public float timer;
     public GameObject lighting;
     public GameObject FireGround;
@@ -10,6 +12,11 @@ public class Lightning : MonoBehaviour {
     bool spawned = false;
     public bool trackP1;
     public Transform tracker;
+
+    public float shakeDuration;
+    public float shakeMagnitude;
+
+    private IEnumerator coroutine;
 
 	// Use this for initialization
 	void Start () {
@@ -33,6 +40,9 @@ public class Lightning : MonoBehaviour {
         if (timer <= 1.5f)
         {
             lighting.SetActive(true);
+
+            coroutine = Shake((shakeDuration / 100), (shakeMagnitude / 100));
+            StartCoroutine(coroutine);
         }
         if (timer <= 1)
         {
@@ -65,5 +75,25 @@ public class Lightning : MonoBehaviour {
         {
             col.gameObject.GetComponent<PlayerParent>().Damage(damage);
         }
+    }
+
+    public IEnumerator Shake(float duration, float magnitude)
+    {
+        Vector3 originalPosition = Camera.main.transform.position;
+        float timeElapsed = 0f;
+
+        if (timeElapsed <= duration)
+        {
+            float xRange = Random.Range(-1f, 1f) * magnitude;
+            float yRange = Random.Range(-1f, 1f) * magnitude;
+
+            Camera.main.transform.position = new Vector3(xRange, yRange, originalPosition.z);
+            timeElapsed += Time.deltaTime;
+
+            yield return null;
+
+        }
+
+        Camera.main.transform.position = originalPosition;
     }
 }

@@ -69,13 +69,13 @@ public class GameplayManager : MonoBehaviour
     private IEnumerator WaitForWin()
     {
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(3);
     }
 
     IEnumerator WaitForLose()
     {
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(4);
     }
     IEnumerator LoseTime()
     {

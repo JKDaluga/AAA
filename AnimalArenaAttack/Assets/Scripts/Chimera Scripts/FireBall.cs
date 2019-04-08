@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FireBall : MonoBehaviour
 {
+    public ParticleSystem fireBurst;
+
     public int damage = 30;
     public float fireBallSpeed;
 
@@ -23,8 +25,11 @@ public class FireBall : MonoBehaviour
     {
         if (col.gameObject.tag == "Eagle" || col.gameObject.tag == "Salamander")
         {
+            Instantiate(fireBurst, transform.position, transform.rotation);
+
             col.gameObject.GetComponent<PlayerParent>().Damage(damage);
             GameObject.Destroy(gameObject);
+
         }
     }
 }

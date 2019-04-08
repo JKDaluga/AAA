@@ -224,6 +224,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
+    type: 2}
   damage: 30
   fireBallSpeed: 2
 --- !u!114 &114857571530642688
@@ -237,6 +239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
+    type: 2}
   damage: 30
   fireBallSpeed: 2
 --- !u!212 &212311324646139226
