@@ -228,6 +228,9 @@ public class ChimeraController : MonoBehaviour
             randomInt = 0;
             fireBallUpgrade = true;
             fireBallCounter = 0;
+
+            //Enable roar animation here
+            yield return new WaitForSeconds(1f);
         }
         //Forces upgraded Water Beam attack one time when health is 50% of original health
         if ((Health / maxHealth <= 0.50f) && (waterUpgrade == false))
@@ -235,6 +238,10 @@ public class ChimeraController : MonoBehaviour
             randomInt = 1;
             waterUpgrade = true;
             waterCounter = 0;
+
+            //Enable roar animation here
+            yield return new WaitForSeconds(1f);
+
         }
         //Forces upgraded Lightning attack one time when health is 25% of original health
         if ((Health / maxHealth <= 0.25f) && (lightningUpgrade == false))
@@ -242,6 +249,10 @@ public class ChimeraController : MonoBehaviour
             randomInt = 2;
             lightningUpgrade = true;
             electricCounter = 0;
+
+            //Enable roar animation here
+            yield return new WaitForSeconds(1f);
+
         }
 
         if (randomInt == 0)

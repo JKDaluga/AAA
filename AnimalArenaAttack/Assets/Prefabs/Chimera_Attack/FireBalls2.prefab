@@ -398,6 +398,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
+    type: 2}
   damage: 30
   fireBallSpeed: 3
 --- !u!114 &114151899170553846
@@ -411,6 +413,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
+    type: 2}
   damage: 30
   fireBallSpeed: 3
 --- !u!114 &114200140727469166
@@ -424,6 +428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
+    type: 2}
   damage: 30
   fireBallSpeed: 3
 --- !u!114 &114426563836274912
@@ -437,6 +443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
+    type: 2}
   damage: 30
   fireBallSpeed: 3
 --- !u!212 &212032237043532760

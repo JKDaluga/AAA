@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EagleFeather : MonoBehaviour {
 
+    public ParticleSystem featherBurst;
+
     public int damage = 5;
     public float timer = 0;
     float speed = 10f;
@@ -37,6 +39,10 @@ public class EagleFeather : MonoBehaviour {
         if (col.gameObject.tag == "Monster")
         {
             col.gameObject.GetComponent<ChimeraController>().Damage(damage);
+
+            Vector3 featherBurstPos = new Vector3(transform.position.x, transform.position.y + 0.75f, transform.position.z);
+
+            Instantiate(featherBurst, featherBurstPos, transform.rotation);
             GameObject.Destroy(gameObject);
         }
     }

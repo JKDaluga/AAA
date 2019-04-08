@@ -28,7 +28,7 @@ public class MenuManager : MonoBehaviour
                   Input.GetKey(KeyCode.B) || Input.GetKey(KeyCode.I) ||
               Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.K))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
     }
 }

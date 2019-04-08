@@ -101,6 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe61e558d59ab14c96eba178c389740, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  featherBurst: {fileID: 198420517610157104, guid: e35425eb5cb13c247b30006ddf4b7094,
+    type: 2}
   damage: 5
   timer: 0
   chimera: {fileID: 0}
