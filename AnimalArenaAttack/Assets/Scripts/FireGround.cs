@@ -6,13 +6,25 @@ public class FireGround : MonoBehaviour {
 
     public ParticleSystem burntSpot;
 
+    public SpriteRenderer fireSpot;
+
+    public float fadeSpeed = 0f;
+
     public float timer;
     public int damage;
+
+    public Color firstColor;
+    public Color secondaryColor;
+
+    private bool firstPass;
 
 	// Use this for initialization
 	void Start () {
         Instantiate(burntSpot, transform.position, Quaternion.Euler(new Vector3(-90, transform.rotation.y, transform.rotation.z)));
 
+        firstPass = false;
+
+        StartCoroutine("ColorPulsing");
     }
 
     // Update is called once per frame
@@ -24,6 +36,8 @@ public class FireGround : MonoBehaviour {
             Destroy(this.gameObject);
 
         }
+
+
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -41,5 +55,21 @@ public class FireGround : MonoBehaviour {
         {
             col.gameObject.GetComponent<PlayerParent>().Damage(damage);
         }
+    }
+
+    private IEnumerator ColorPulsing()
+    {
+        if (firstPass == true)
+        {
+            firstPass = false;
+            fireSpot.color = Color.Lerp(firstColor, secondaryColor, fadeSpeed * Time.deltaTime );
+        }
+        else {
+            firstPass = true;
+            fireSpot.color = Color.Lerp(secondaryColor, firstColor, fadeSpeed * Time.deltaTime);
+        }
+  
+        yield return new WaitForSeconds(0.5f);
+        StartCoroutine("ColorPulsing");
     }
 }
