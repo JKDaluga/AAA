@@ -183,6 +183,8 @@ MonoBehaviour:
   damage: 30
   trackP1: 0
   tracker: {fileID: 0}
+  shakeDuration: 4
+  shakeMagnitude: 7
 --- !u!212 &212451909541969192
 SpriteRenderer:
   m_ObjectHideFlags: 1
