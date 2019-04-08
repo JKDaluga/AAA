@@ -125,6 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78f022774464e34991791157e098811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  burntSpot: {fileID: 198322714915972570, guid: 099e1be87c2103a4badeff1e8be44110,
+    type: 2}
   timer: 9
   damage: 10
 --- !u!212 &212996946948464452
