@@ -256,6 +256,10 @@ MonoBehaviour:
   rollTime: 0
   rollSpeed: 800
   chimera: {fileID: 0}
+  eagleRend: {fileID: 212483952405749530}
+  salamanderRend: {fileID: 212974269717539756, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+    type: 2}
+  fadeSpeed: 100
   savedVelocity: {x: 0, y: 0}
   dashTime: 1
   dashDistance: 10
@@ -263,6 +267,8 @@ MonoBehaviour:
   stopDash: 0.1
   P1HealthBar: {fileID: 0}
   P2HealthBar: {fileID: 0}
+  p1HB: {fileID: 0}
+  p2HB: {fileID: 0}
   normal: {r: 1, g: 1, b: 1, a: 1}
   hurt: {r: 1, g: 0, b: 0, a: 1}
   smokeTrail: {fileID: 198360986751581716, guid: b09759d51379a6340b658f3ea01a8014,
@@ -272,6 +278,9 @@ MonoBehaviour:
   SalamanderReviveBG: {fileID: 0}
   EagleReviveFill: {fileID: 0}
   EagleReviveBG: {fileID: 0}
+  endColor: {r: 0, g: 0.8705883, b: 1, a: 1}
+  currentColorEagle: {r: 0, g: 0, b: 0, a: 0}
+  currentColorSalamander: {r: 0, g: 0, b: 0, a: 0}
   eagleAnim: {fileID: 0}
   feather: {fileID: 1742646030460580, guid: f72f59eacfb81484d852bd9bb2f4827e, type: 2}
   baseAttackDuration: 1

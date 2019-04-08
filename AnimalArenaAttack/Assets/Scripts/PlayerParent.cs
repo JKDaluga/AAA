@@ -34,6 +34,11 @@ public class PlayerParent : MonoBehaviour
 
     private SpriteRenderer sp;
 
+    public SpriteRenderer eagleRend;
+    public SpriteRenderer salamanderRend;
+
+    public float fadeSpeed = 0f;
+
     public Vector2 savedVelocity;
     public float dashTime = 1f;
     public float dashDistance = 10f;
@@ -59,6 +64,15 @@ public class PlayerParent : MonoBehaviour
     public Image EagleReviveFill;
     public Image EagleReviveBG;
 
+    bool eagleDeath;
+    bool salamanderDeath;
+
+    public Color endColor;
+    public Color currentColorEagle;
+    public Color currentColorSalamander;
+
+    
+
     public void Awake()
     {
         horiz = 0;
@@ -72,6 +86,9 @@ public class PlayerParent : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+       eagleDeath = false;
+       salamanderDeath = false;
+
         pRB2D = GetComponent<Rigidbody2D>();
 
         health = 400;
@@ -87,13 +104,61 @@ public class PlayerParent : MonoBehaviour
         //GameManager.addPlayer(this);
         //dashTime  = startingDashTime;
 
+        currentColorEagle = normal;
+        currentColorSalamander = normal;
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(!reviving)
+
+        /*
+
+        //if(Input.GetKeyDown(KeyCode.Space))
+        //if (Input.GetKeyDown(KeyCode.Alpha1))
+        if(eagleDeath)
+        {
+            if (currentColorEagle == normal)
             {
+                currentColorEagle = endColor;
+            }
+            else
+            {
+                currentColorEagle = normal;
+            }
+            eagleRend.color = Color.Lerp(eagleRend.color, currentColorEagle, fadeSpeed);
+
+        }
+        else if (!eagleDeath)
+        {
+            currentColorEagle = normal;
+            eagleRend.color = currentColorEagle;
+        }
+        //else if (Input.GetKeyDown(KeyCode.Alpha0))
+        if(salamanderDeath)
+        {
+            if (currentColorSalamander == normal)
+            {
+                currentColorSalamander = endColor;
+            }
+            else
+            {
+                currentColorSalamander = normal;
+            }
+            salamanderRend.color = Color.Lerp(salamanderRend.color, currentColorSalamander, fadeSpeed);
+        }
+        else if(!salamanderDeath)
+        {
+            currentColorSalamander = normal;
+            eagleRend.color = currentColorSalamander;
+        }
+
+
+    */
+
+        if (!reviving)
+        {
             if (isPlayer1)
             {
                 SalamanderReviveFill.gameObject.SetActive(false);
@@ -113,10 +178,12 @@ public class PlayerParent : MonoBehaviour
             if (!isPlayer1)
             {
                 SalamanderReviveBG.gameObject.SetActive(false);
+                salamanderDeath = false;
             }
             if (isPlayer1)
             {
                 EagleReviveBG.gameObject.SetActive(false);
+                eagleDeath = false;
             }
             if (reviving)
             {
@@ -255,12 +322,16 @@ public class PlayerParent : MonoBehaviour
             {
                 P1HealthBar.value = 0;
                 EagleReviveBG.gameObject.SetActive(true);
+                eagleDeath = true;
+
 
             }
             else if (!isPlayer1)
             {
                 P2HealthBar.value = 0;
                 SalamanderReviveBG.gameObject.SetActive(true);
+                salamanderDeath = true;
+                
 
             }
             pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
@@ -268,6 +339,11 @@ public class PlayerParent : MonoBehaviour
             anim.SetBool("isDead", true);
             gameObject.layer = 9;
         }
+
+
+
+       
+
     }
 
     public virtual void Ability1()

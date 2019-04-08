@@ -448,6 +448,10 @@ MonoBehaviour:
   rollTime: 0
   rollSpeed: 800
   chimera: {fileID: 0}
+  eagleRend: {fileID: 212483952405749530, guid: d60cb50e5893a2c4793b2f494ce70760,
+    type: 2}
+  salamanderRend: {fileID: 212974269717539756}
+  fadeSpeed: 100
   savedVelocity: {x: 0, y: 0}
   dashTime: 1
   dashDistance: 10
@@ -455,6 +459,8 @@ MonoBehaviour:
   stopDash: 0.1
   P1HealthBar: {fileID: 0}
   P2HealthBar: {fileID: 0}
+  p1HB: {fileID: 0}
+  p2HB: {fileID: 0}
   normal: {r: 1, g: 1, b: 1, a: 1}
   hurt: {r: 1, g: 0, b: 0, a: 1}
   smokeTrail: {fileID: 198360986751581716, guid: b09759d51379a6340b658f3ea01a8014,
@@ -464,6 +470,9 @@ MonoBehaviour:
   SalamanderReviveBG: {fileID: 0}
   EagleReviveFill: {fileID: 0}
   EagleReviveBG: {fileID: 0}
+  endColor: {r: 0, g: 0.8745098, b: 1, a: 1}
+  currentColorEagle: {r: 0, g: 0, b: 0, a: 0}
+  currentColorSalamander: {r: 0, g: 0, b: 0, a: 0}
   slash: {fileID: 1986031310715116, guid: d961c8aee44265643a20ec111351a835, type: 2}
   slashUsed: 0
   baseAttackDuration: 0
@@ -507,7 +516,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 800595d0d8c38e44d8b0a9890132d665, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.99999976, g: 0.99999976, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
