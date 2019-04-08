@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198360986751581716}
   - component: {fileID: 199330243385433552}
   m_Layer: 0
-  m_Name: DefensiveSmoke
+  m_Name: DefensiveSmoke ParticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

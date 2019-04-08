@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198767007248254722}
   - component: {fileID: 199187875455458940}
   m_Layer: 0
-  m_Name: FireBurst
+  m_Name: FireBurst ParticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
