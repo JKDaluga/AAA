@@ -256,6 +256,16 @@ Prefab:
       propertyPath: SalamanderReviveBG
       value: 
       objectReference: {fileID: 1706833118}
+    - target: {fileID: 61136159171707884, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 61136672383632402, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.19
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d60cb50e5893a2c4793b2f494ce70760, type: 2}
   m_IsPrefabAsset: 0
@@ -4797,7 +4807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   darkMask: {fileID: 1608955332}
-  Health: 1000
+  Health: 4000
   salamander: {fileID: 859135316}
   eagle: {fileID: 74629577}
   cleave: {fileID: 1064383934232854, guid: 62805b6a1f12bd449926f1850a803b76, type: 2}
