@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class WaterChild : MonoBehaviour {
 
-    public int damage = 30;
+    public int damage = 5;
 
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerStay2D(Collider2D col)
     {
         if (col.gameObject.tag == "Eagle" || col.gameObject.tag == "Salamander")
         {
