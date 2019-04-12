@@ -54,11 +54,11 @@ public class Lightning : MonoBehaviour {
             }
             
         }
-        if (timer <= .9f)
+        if (timer <= .95f)
         {
             GetComponent<BoxCollider2D>().enabled = false;
         }
-        if (timer <= 0)
+        if (timer <= .9f)
         {
             DestroyMe();
         }
