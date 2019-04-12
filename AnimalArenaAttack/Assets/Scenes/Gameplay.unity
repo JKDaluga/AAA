@@ -4089,7 +4089,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1795973735}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7, y: 0.54, z: 0}
+  m_LocalPosition: {x: 0, y: 0.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2087923107}
@@ -4246,11 +4246,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4353938501745954, guid: d65eef858fbdb74419a6c6c7c7275444, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.6
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4353938501745954, guid: d65eef858fbdb74419a6c6c7c7275444, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.66
+      value: 0.9499999
       objectReference: {fileID: 0}
     - target: {fileID: 4353938501745954, guid: d65eef858fbdb74419a6c6c7c7275444, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4776,7 +4776,7 @@ Animator:
   m_GameObject: {fileID: 2087923101}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 578ed5b8d29ab476aad3f1266bfb3a28, type: 2}
+  m_Controller: {fileID: 9100000, guid: d811bea692ef8429097bda4eb29191cb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4841,8 +4841,8 @@ BoxCollider2D:
   m_Offset: {x: -0.060003042, y: 1.673954}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 16, y: 16}
+    pivot: {x: 0.44239157, y: 0.43218726}
+    oldSize: {x: 14, y: 13.38}
     newSize: {x: 7.9, y: 9.070001}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4908,7 +4908,7 @@ SpriteRenderer:
   m_SortingLayerID: -1686782959
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7cd27e8d267238e4986edd84e0f912a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a6e463677b5f34144914b5c06b442067, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4927,7 +4927,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2087923101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49, y: 1.6934617, z: -0.01}
+  m_LocalPosition: {x: 0.19, y: 1.6934617, z: -0.01}
   m_LocalScale: {x: 0.45, y: 0.45, z: 1}
   m_Children:
   - {fileID: 1804436924}
