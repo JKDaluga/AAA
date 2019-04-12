@@ -13,8 +13,8 @@ public class Lightning : MonoBehaviour {
     public bool trackP1;
     public Transform tracker;
 
-    public float shakeDuration;
-    public float shakeMagnitude;
+    //public float shakeDuration;
+    //public float shakeMagnitude;
 
     private IEnumerator coroutine;
 
@@ -41,8 +41,8 @@ public class Lightning : MonoBehaviour {
         {
             lighting.SetActive(true);
 
-            coroutine = Shake((shakeDuration / 100), (shakeMagnitude / 100));
-            StartCoroutine(coroutine);
+            //coroutine = Shake((shakeDuration / 100), (shakeMagnitude / 100));
+            //StartCoroutine(coroutine);
         }
         if (timer <= 1)
         {
