@@ -14,8 +14,8 @@ public class ParticleDestroy : MonoBehaviour {
     void Update () {
 		
 	}
-
-   /* void Kill()
+    /*
+    void Kill()
     {
         if (ParticleSystem.IsAlive())
         {
