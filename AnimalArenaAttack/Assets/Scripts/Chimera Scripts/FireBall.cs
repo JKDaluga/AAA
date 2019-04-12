@@ -29,7 +29,16 @@ public class FireBall : MonoBehaviour
 
             col.gameObject.GetComponent<PlayerParent>().Damage(damage);
             GameObject.Destroy(gameObject);
-
+            Invoke("KillBurst", 1);
+        }
+    }
+    void KillSmoke()
+    {
+        if (fireBurst.IsAlive())
+        {
+            fireBurst.Stop();
+            fireBurst.Clear();
+            Destroy(fireBurst.gameObject);
         }
     }
 }
