@@ -181,7 +181,7 @@ public class SalamanderScript : PlayerParent
                 Instantiate(smokeTrail, transform.position, this.transform.rotation);
                 smokeTrail.Play();
                 Invoke("KillSmoke", 1);
-                gameObject.layer = 9;
+                gameObject.layer = 11;
             }
         }
         else
