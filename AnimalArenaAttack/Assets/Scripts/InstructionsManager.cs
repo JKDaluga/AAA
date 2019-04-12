@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class InstructionsManager : MonoBehaviour
 {
     public Text timer;
-    int timeLeft = 5;
+    public int timeLeft = 5;
     // Use this for initialization
     void Start()
     {
