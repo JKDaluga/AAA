@@ -61,7 +61,6 @@ public class ChimeraController : MonoBehaviour
         StartCoroutine(AttackPattern());
         sp = GetComponent<SpriteRenderer>();
         sp.color = normal;
-        Health = 2000;
         maxHealth = Health;
 
 

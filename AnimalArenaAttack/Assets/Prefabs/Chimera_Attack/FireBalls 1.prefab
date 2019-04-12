@@ -313,7 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
-  damage: 30
+  damage: 50
   fireBallSpeed: 2
 --- !u!114 &114712724923574602
 MonoBehaviour:
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
-  damage: 30
+  damage: 50
   fireBallSpeed: 2
 --- !u!114 &114727747810311988
 MonoBehaviour:
@@ -343,7 +343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
-  damage: 30
+  damage: 50
   fireBallSpeed: 2
 --- !u!212 &212169540056782940
 SpriteRenderer:
