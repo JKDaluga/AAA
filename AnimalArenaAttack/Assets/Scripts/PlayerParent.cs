@@ -8,7 +8,7 @@ public class PlayerParent : MonoBehaviour
 {
     public ParticleSystem onDamage;
 
-    private Rigidbody2D rb;
+    protected Rigidbody2D rb;
     public Animator anim;
     public AudioManager audioManager;
 
@@ -26,13 +26,13 @@ public class PlayerParent : MonoBehaviour
     public bool facingRight = true;
     public float horiz;
     public float rollTime;
-    private Vector2 rollVector;
+    protected Vector2 rollVector;
     public int rollSpeed;
-    private bool isVulnerable = true;
+    protected bool isVulnerable = true;
 
     public GameObject chimera;
 
-    private SpriteRenderer sp;
+    protected SpriteRenderer sp;
 
     public SpriteRenderer eagleRend;
     public SpriteRenderer salamanderRend;
@@ -45,7 +45,7 @@ public class PlayerParent : MonoBehaviour
     public float dashSpeed = 1f;
     public float stopDash = .1f;
 
-    private float currentDashTime;
+    protected float currentDashTime;
 
     public Slider P1HealthBar;
     public Slider P2HealthBar;
@@ -380,7 +380,7 @@ public class PlayerParent : MonoBehaviour
         rb.velocity = movement * speed;
     }
 
-    void MovementP2()
+    protected void MovementP2()
     {
         float x = Input.GetAxisRaw("Horizontal1") * Time.deltaTime;
         float y = Input.GetAxisRaw("Vertical1") * Time.deltaTime;
@@ -413,7 +413,7 @@ public class PlayerParent : MonoBehaviour
         return health;
     }
 
-    private void Flip()
+    protected void Flip()
     {
         facingRight = !facingRight;
         Vector3 theScale = transform.localScale;
@@ -421,7 +421,7 @@ public class PlayerParent : MonoBehaviour
         transform.localScale = theScale;
     }
 
-    private IEnumerator getHurt()
+    protected IEnumerator getHurt()
     {
         sp.color = hurt;
 
@@ -431,7 +431,7 @@ public class PlayerParent : MonoBehaviour
         sp.color = normal;
     }
 
-    IEnumerator setAttack()
+    protected IEnumerator setAttack()
     {
         anim.SetBool("Attack", true);
         yield return new WaitForSeconds(.6f);
