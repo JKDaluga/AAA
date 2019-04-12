@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4540026876764540}
   - component: {fileID: 212451909541969192}
   - component: {fileID: 50647502327626292}
+  - component: {fileID: 95802425371949054}
+  - component: {fileID: 111161671754915954}
   m_Layer: 0
   m_Name: Telegraph
   m_TagString: Untagged
@@ -82,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1253204056484810}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.65, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 4663191360925682}
@@ -148,6 +150,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
+--- !u!95 &95802425371949054
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1253204056484810}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 38aaa3c5d7695514181cf470d906a726, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!95 &95928306374378074
 Animator:
   serializedVersion: 3
@@ -166,6 +186,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &111161671754915954
+Animation:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1253204056484810}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e2079d97d08019d44a3625bb404c039a, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114866300827390072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,8 +217,6 @@ MonoBehaviour:
   damage: 30
   trackP1: 0
   tracker: {fileID: 0}
-  shakeDuration: 4
-  shakeMagnitude: 7
 --- !u!212 &212451909541969192
 SpriteRenderer:
   m_ObjectHideFlags: 1

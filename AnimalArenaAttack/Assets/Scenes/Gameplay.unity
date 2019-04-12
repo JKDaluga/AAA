@@ -1190,6 +1190,7 @@ GameObject:
   - component: {fileID: 499613133}
   - component: {fileID: 499613132}
   - component: {fileID: 499613134}
+  - component: {fileID: 499613135}
   m_Layer: 5
   m_Name: GameplayForeground
   m_TagString: Untagged
@@ -1250,7 +1251,7 @@ SpriteRenderer:
   m_SortingLayerID: 1478740453
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4eeb9e17291050148897e50673b00810, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 570ca2ae48784e646b745f79a8fc4cdc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1363,6 +1364,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &499613135
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 499613130}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e59b73c92fb35fa4883c3d8c2ae31ae6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &512006328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,7 +1555,7 @@ SpriteRenderer:
   m_SortingLayerID: 1764212775
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 637f3823f0f4f404fa51ee530c65c815, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2a7343d0defc9c45b5caefd5f31839c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3594,7 +3613,7 @@ SpriteRenderer:
   m_SortingLayerID: -1476345075
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d39ae7bebc4fa0046ae29f300f418093, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 854186b6cdd51c84d90deba816718135, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4768,7 +4787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &2068033789
 BoxCollider2D:
   m_ObjectHideFlags: 0

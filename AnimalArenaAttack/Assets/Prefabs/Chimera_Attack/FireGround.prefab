@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61942065404152260}
   - component: {fileID: 61482538021038320}
   - component: {fileID: 114880468411594210}
+  - component: {fileID: 95422592933548054}
   m_Layer: 0
   m_Name: FireGround
   m_TagString: Untagged
@@ -114,6 +115,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.17261939, y: 0.077283345}
   m_EdgeRadius: 0
+--- !u!95 &95422592933548054
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1796388381881314}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b1c9824097e188843b126a8ae21a46e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114880468411594210
 MonoBehaviour:
   m_ObjectHideFlags: 1
