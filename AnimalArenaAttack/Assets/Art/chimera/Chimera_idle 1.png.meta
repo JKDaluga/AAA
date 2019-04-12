@@ -1,16 +1,18 @@
 fileFormatVersion: 2
-guid: cbb8065336e34744ca9caed5cd7a5c7d
+guid: a6e463677b5f34144914b5c06b442067
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Chimera_lightning.psd Sheet_0
-    21300002: Chimera_lightning.psd Sheet_1
-    21300004: Chimera_lightning.psd Sheet_2
-    21300006: Chimera_lightning.psd Sheet_3
-    21300008: Chimera_lightning.psd Sheet_4
-    21300010: Chimera_lightning.psd Sheet_5
-    21300012: Chimera_lightning.psd Sheet_6
-    21300014: Chimera_lightning.psd Sheet_7
-    21300016: Chimera_lightning.psd Sheet_8
+    21300000: Chimera_idle 1_0
+    21300002: Chimera_idle 1_1
+    21300004: Chimera_idle 1_2
+    21300006: Chimera_idle 1_3
+    21300008: Chimera_idle 1_4
+    21300010: Chimera_idle 1_5
+    21300012: Chimera_idle 1_6
+    21300014: Chimera_idle 1_7
+    21300016: Chimera_idle 1_8
+    21300018: Chimera_idle 1_9
+    21300020: Chimera_idle 1_10
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -72,7 +74,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -83,7 +85,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,181 +95,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_0
+      name: Chimera_idle 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1400
+        height: 1338
+      alignment: 9
+      pivot: {x: 0.44239157, y: 0.43218726}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5299a34eb95554b6298f5404d285331e
+      spriteID: 86abe75983ff2416c95bb09b579e08ce
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_1
+      name: Chimera_idle 1_1
       rect:
         serializedVersion: 2
-        x: 1788
+        x: 1518
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1500
+        height: 1338
+      alignment: 9
+      pivot: {x: 0.46471485, y: 0.43972194}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c06d18050ee2e4a019501cdaca32c20a
+      spriteID: 6ec6fdcd852a3450fa40a806c979330f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_2
+      name: Chimera_idle 1_2
       rect:
         serializedVersion: 2
-        x: 3485
+        x: 3280
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1500
+        height: 1338
+      alignment: 9
+      pivot: {x: 0.43951124, y: 0.46044257}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84c4578a1e18d434da6104dcc1185be8
+      spriteID: 48ea1aa3f759a43d0a40e969402eda5b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_3
+      name: Chimera_idle 1_3
       rect:
         serializedVersion: 2
-        x: 5245
+        x: 4991
         y: 0
-        width: 1742
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1513
+        height: 1338
+      alignment: 9
+      pivot: {x: 0.4200413, y: 0.44537303}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 535f72e532a6b40fda174d3fa53f3505
+      spriteID: c0fd24b8fff124ba88655a96c517408f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_4
+      name: Chimera_idle 1_4
       rect:
         serializedVersion: 2
-        x: 6989
+        x: 6766
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1585
+        height: 1338
+      alignment: 9
+      pivot: {x: 0.40618193, y: 0.46232626}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c22e3a1be7ba47b19bf42f47a24e543
+      spriteID: 5828cc15b44a84e0cbb425e5a23d18cc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_5
+      name: Chimera_idle 1_5
       rect:
         serializedVersion: 2
-        x: 8703
+        x: 8561
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1611
+        height: 1338
+      alignment: 9
+      pivot: {x: 0.4061318, y: 0.46044257}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7f0eff2f04e64c14a5f8a9cffb72d74
+      spriteID: 20ddc751cba914e568c43e987dced86d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_6
+      name: Chimera_idle 1_6
       rect:
         serializedVersion: 2
-        x: 10448
+        x: 10319
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1547
+        height: 1338
+      alignment: 9
+      pivot: {x: 0.42179862, y: 0.44348934}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: def7566b5134642e69cf55a680e65a5b
+      spriteID: d1c7c5ef3eedd4090aecf4a9c555d592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_7
+      name: Chimera_idle 1_7
       rect:
         serializedVersion: 2
-        x: 12201
+        x: 12089
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1514
+        height: 1338
+      alignment: 9
+      pivot: {x: 0.4234237, y: 0.44348934}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4baeb460a39d24837ae7c8904eaf7900
+      spriteID: 5e57466613e804632b563e6b7011ac30
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_8
+      name: Chimera_idle 1_8
       rect:
         serializedVersion: 2
-        x: 13904
+        x: 13775
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1422
+        height: 1338
+      alignment: 9
+      pivot: {x: 0.44505566, y: 0.43595454}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55d22dc8864764cb6b480d3e6aa1777d
+      spriteID: 1c11b50ae63b54727bd0a9303ade5fce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera_idle 1_9
+      rect:
+        serializedVersion: 2
+        x: 15368
+        y: 0
+        width: 1409
+        height: 1338
+      alignment: 9
+      pivot: {x: 0.44119623, y: 0.4354953}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d48e69cc1894ce4a3720f54f288683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera_idle 1_10
+      rect:
+        serializedVersion: 2
+        x: 16963
+        y: 0
+        width: 1377
+        height: 1338
+      alignment: 9
+      pivot: {x: 0.44735074, y: 0.43807545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1da3b40187d4d1cab341762966ec46
       vertices: []
       indices: 
       edges: []
@@ -275,7 +317,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a0cbd9db873ce894ea7de83c379c9562
+    spriteID: 0c0025939bc5d4e0da83bf1833a337d6
     vertices: []
     indices: 
     edges: []
