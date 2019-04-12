@@ -427,7 +427,7 @@ public class PlayerParent : MonoBehaviour
 
         Instantiate(onDamage, transform.position, transform.rotation);
 
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(1f);
         sp.color = normal;
     }
 
