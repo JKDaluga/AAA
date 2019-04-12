@@ -98,7 +98,7 @@ public class ChimeraController : MonoBehaviour
         {
             float time = 0;
 
-            darkMask.SetActive(true);
+            //darkMask.SetActive(true);
 
             var lightningClone1 = (GameObject)Instantiate(electric, salamander.transform.position, transform.rotation);
             lightningClone1.GetComponent<Lightning>().trackP1 = false;
@@ -116,7 +116,7 @@ public class ChimeraController : MonoBehaviour
                 yield return null;
             }
         }
-        Invoke("DarkMaskWait", 2f);        
+        //Invoke("DarkMaskWait", 2f);        
     }
 
     void DarkMaskWait()
