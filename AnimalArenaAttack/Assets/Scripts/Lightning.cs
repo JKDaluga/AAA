@@ -49,7 +49,7 @@ public class Lightning : MonoBehaviour {
             GetComponent<BoxCollider2D>().enabled = true;
             if(!spawned)
             {
-                Instantiate(FireGround, transform.position, transform.rotation);
+                Instantiate(FireGround,  new Vector3 (transform.position.x, transform.position.y-.65f, transform.position.z), transform.rotation);
                 spawned = true;
             }
             
