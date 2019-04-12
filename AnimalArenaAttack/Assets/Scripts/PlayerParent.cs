@@ -273,10 +273,10 @@ public class PlayerParent : MonoBehaviour
                     {
                         if (rb.velocity.magnitude != 0)
                         {
-                            rollTime = .125f;
+                            rollTime = .2f;
                             rollVector = rb.velocity.normalized;
                             isVulnerable = false;
-                            Invoke("setVulnerability", .125f);
+                            Invoke("setVulnerability", .2f);
                             Instantiate(smokeTrail, transform.position, this.transform.rotation);
                             smokeTrail.Play();
                             Invoke("KillSmoke", 1);

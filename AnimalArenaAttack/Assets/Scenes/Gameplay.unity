@@ -266,6 +266,11 @@ Prefab:
       propertyPath: m_Offset.y
       value: 0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: health
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d60cb50e5893a2c4793b2f494ce70760, type: 2}
   m_IsPrefabAsset: 0
@@ -2235,6 +2240,11 @@ Prefab:
       propertyPath: EagleReviveBG
       value: 
       objectReference: {fileID: 424243784}
+    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: health
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29f30ba6ca6b64e4eafb18e88e06668a, type: 2}
   m_IsPrefabAsset: 0
@@ -4807,7 +4817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   darkMask: {fileID: 1608955332}
-  Health: 4000
+  Health: 7000
   salamander: {fileID: 859135316}
   eagle: {fileID: 74629577}
   cleave: {fileID: 1064383934232854, guid: 62805b6a1f12bd449926f1850a803b76, type: 2}
