@@ -5,14 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    public AudioClip MenuMusic;
-
-    public AudioSource source;
     // Use this for initialization
-    void Start()
-    {
-        source.PlayOneShot(MenuMusic);
-    }
 
     // Update is called once per frame
     void Update()
