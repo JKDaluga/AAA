@@ -22,11 +22,25 @@ public class Lightning : MonoBehaviour {
 	void Start () {
         if (trackP1)
         {
-            tracker = GameObject.FindGameObjectWithTag("Eagle").GetComponent<Transform>();
+            if (GameObject.FindGameObjectWithTag("Eagle").GetComponent<EagleScript>().health != 0)
+            {
+                tracker = GameObject.FindGameObjectWithTag("Eagle").GetComponent<Transform>();
+            }
+            else
+            {
+                tracker = GameObject.FindGameObjectWithTag("Salamander").GetComponent<Transform>();
+            }
         }
-        else
+        else 
         {
-            tracker = GameObject.FindGameObjectWithTag("Salamander").GetComponent<Transform>();
+            if (GameObject.FindGameObjectWithTag("Salamander").GetComponent<SalamanderScript>().health != 0)
+            {
+                tracker = GameObject.FindGameObjectWithTag("Salamander").GetComponent<Transform>();
+            }
+            else
+            {
+                tracker = GameObject.FindGameObjectWithTag("Eagle").GetComponent<Transform>();
+            }
         }
     }
 	
