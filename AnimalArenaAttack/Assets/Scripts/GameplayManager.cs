@@ -64,8 +64,25 @@ public class GameplayManager : MonoBehaviour
             StopCoroutine("LoseTime");
             StartCoroutine(WaitForLose());
         }
+        if (timeLeft == 30 || timeLeft==60)
+        {
+            StartCoroutine("TimeNotice");
+        }
+        if (timeLeft <= 15)
+        {
+            timer.color = Color.red;
+        }
 
     }
+    private IEnumerator TimeNotice()
+    {
+        timer.color = Color.red;
+        //timer.transform.localScale *= 1.1f;
+        yield return new WaitForSeconds(1f);
+        timer.color = Color.white;
+    }
+    
+
     private IEnumerator WaitForWin()
     {
         yield return new WaitForSeconds(1f);
