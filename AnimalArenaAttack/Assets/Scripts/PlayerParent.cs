@@ -249,7 +249,8 @@ public class PlayerParent : MonoBehaviour
                             rollTime = .2f;
                             rollVector = rb.velocity.normalized;
                             isVulnerable = false;
-                            Invoke("setVulnerability", .2f);
+                            gameObject.layer = 11;
+                            Invoke("setVulnerability", .25f);
                             Instantiate(smokeTrail, transform.position, this.transform.rotation);
                             smokeTrail.Play();
                             Invoke("KillSmoke", 1);
@@ -283,7 +284,6 @@ public class PlayerParent : MonoBehaviour
                             Instantiate(smokeTrail, transform.position, this.transform.rotation);
                             smokeTrail.Play();
                             Invoke("KillSmoke", 1);
-
                         }
                     }
                 }
@@ -413,6 +413,8 @@ public class PlayerParent : MonoBehaviour
     void setVulnerability()
     {
         isVulnerable = true;
+        gameObject.layer = 8;
+
     }
     public void Revive()
     {
