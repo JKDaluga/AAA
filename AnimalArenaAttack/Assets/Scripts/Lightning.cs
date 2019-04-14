@@ -51,6 +51,14 @@ public class Lightning : MonoBehaviour {
         {
             transform.position = tracker.position;
         }
+        /*if (timer <= 3)
+        {
+            SpriteRenderer s = tracker.GetComponent<SpriteRenderer>();
+            Color color = new Color(255f, 0, 0);
+            color.a = 255f;
+            s.color = color;
+        }
+        */
         if (timer <= 1.5f)
         {
             lighting.SetActive(true);
