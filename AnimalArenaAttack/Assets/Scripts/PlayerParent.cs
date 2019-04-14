@@ -90,8 +90,6 @@ public class PlayerParent : MonoBehaviour
        salamanderDeath = false;
 
         pRB2D = GetComponent<Rigidbody2D>();
-
-        health = 400;
         maxHealth = health;
         speed = 350;
         rb = GetComponent<Rigidbody2D>();
@@ -185,32 +183,7 @@ public class PlayerParent : MonoBehaviour
                 EagleReviveBG.gameObject.SetActive(false);
                 eagleDeath = false;
             }
-            if (reviving)
-            {
-                reviveTime += Time.deltaTime;
-                if (isPlayer1)
-                {
-                    SalamanderReviveBG.gameObject.SetActive(true);
-                    SalamanderReviveFill.gameObject.SetActive(true);
-                    SalamanderReviveFill.fillAmount = (reviveTime / 2);
-                    if (reviveTime>=2)
-                    {
-                        reviveTime = 0;
-                        reviving = false;
-                    }
-                }
-                else
-                {
-                    EagleReviveBG.gameObject.SetActive(true);
-                    EagleReviveFill.gameObject.SetActive(true);
-                    EagleReviveFill.fillAmount = (reviveTime / 2);
-                    if (reviveTime >= 2)
-                    {
-                        reviveTime = 0;
-                        reviving = false;
-                    }
-                }
-            }
+            
             
             anim.SetBool("isDead", false);
             if (rollTime > 0)

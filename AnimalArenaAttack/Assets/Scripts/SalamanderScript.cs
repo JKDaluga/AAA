@@ -44,7 +44,41 @@ public class SalamanderScript : PlayerParent
             {
                 print("revive");
                 reviving = true;
-                Invoke("ReviveOther", 2f);
+            }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.gameObject.tag != "Eagle") return;
+        if (reviving)
+        {
+            reviveTime += Time.deltaTime;
+            if (isPlayer1)
+            {
+                SalamanderReviveBG.gameObject.SetActive(true);
+                SalamanderReviveFill.gameObject.SetActive(true);
+                SalamanderReviveFill.fillAmount = (reviveTime / 1.5f);
+                if (reviveTime >= 1.5f)
+                {
+                    print("THING");
+                    reviveTime = 0;
+                    reviving = false;
+                    ReviveOther();
+                }
+            }
+            else
+            {
+                EagleReviveBG.gameObject.SetActive(true);
+                EagleReviveFill.gameObject.SetActive(true);
+                EagleReviveFill.fillAmount = (reviveTime / 1.5f);
+                if (reviveTime >= 1.5f)
+                {
+                    print("THING");
+                    reviveTime = 0;
+                    reviving = false;
+                    ReviveOther();
+                }
             }
         }
     }
@@ -64,14 +98,12 @@ public class SalamanderScript : PlayerParent
 
     void ReviveOther()
     {
-        if (reviving)
-        {
-            EagleScript eagle = FindObjectOfType<EagleScript>();
-            eagle.health = ((int)eagle.maxHealth) / 2;
-            eagle.pRB2D.constraints = RigidbodyConstraints2D.FreezeRotation;
-            eagle.Box.enabled = true;
-            eagle.gameObject.layer = 8;
-        }
+        print("eagle");
+        EagleScript eagle = FindObjectOfType<EagleScript>();
+        eagle.health = ((int)eagle.maxHealth) / 2;
+        eagle.pRB2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+        eagle.Box.enabled = true;
+        eagle.gameObject.layer = 8;
     }
 
 

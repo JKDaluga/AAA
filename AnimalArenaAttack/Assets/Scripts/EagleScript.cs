@@ -42,7 +42,45 @@ public class EagleScript : PlayerParent {
             if (salamander.P2HealthBar.value <= 0)
             {
                 reviving = true;
-                Invoke("ReviveOther", 2f);
+            }
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Salamander")
+        {
+            PlayerParent salamander = GetComponent<PlayerParent>();
+            if (salamander.P2HealthBar.value <= 0)
+            {
+                if (reviving)
+                {
+                    reviveTime += Time.deltaTime;
+                    if (isPlayer1)
+                    {
+                        SalamanderReviveBG.gameObject.SetActive(true);
+                        SalamanderReviveFill.gameObject.SetActive(true);
+                        SalamanderReviveFill.fillAmount = (reviveTime / 1.5f);
+                        if (reviveTime >= 1.5f)
+                        {
+                            reviveTime = 0;
+                            reviving = false;
+                            ReviveOther();
+                        }
+                    }
+                    else
+                    {
+                        EagleReviveBG.gameObject.SetActive(true);
+                        EagleReviveFill.gameObject.SetActive(true);
+                        EagleReviveFill.fillAmount = (reviveTime / 1.5f);
+                        if (reviveTime >= 1.5f)
+                        {
+                            reviveTime = 0;
+                            reviving = false;
+                            ReviveOther();
+                        }
+                    }
+                }
             }
         }
     }
@@ -62,13 +100,10 @@ public class EagleScript : PlayerParent {
 
     void ReviveOther()
     {
-        if (reviving)
-        {
-            SalamanderScript salamander = FindObjectOfType<SalamanderScript>();
-            salamander.health = ((int)salamander.maxHealth)/2;
-            salamander.pRB2D.constraints = RigidbodyConstraints2D.FreezeRotation;
-            salamander.Box.enabled = true;
-            salamander.gameObject.layer = 8;
-        }
+        SalamanderScript salamander = FindObjectOfType<SalamanderScript>();
+        salamander.health = ((int)salamander.maxHealth)/2;
+        salamander.pRB2D.constraints = RigidbodyConstraints2D.FreezeRotation;
+        salamander.Box.enabled = true;
+        salamander.gameObject.layer = 8;
     }
 }
