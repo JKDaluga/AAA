@@ -4817,7 +4817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   darkMask: {fileID: 1608955332}
-  Health: 7000
+  Health: 5000
   salamander: {fileID: 859135316}
   eagle: {fileID: 74629577}
   cleave: {fileID: 1064383934232854, guid: 62805b6a1f12bd449926f1850a803b76, type: 2}
