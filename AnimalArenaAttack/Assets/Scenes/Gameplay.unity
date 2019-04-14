@@ -4562,7 +4562,7 @@ MonoBehaviour:
   p2h: 0
   ch: 0
   timer: {fileID: 1897989869}
-  timeLeft: 90
+  timeLeft: 20
 --- !u!4 &1899559280
 Transform:
   m_ObjectHideFlags: 0
