@@ -5,7 +5,7 @@ using UnityEngine;
 public class EagleFeather : MonoBehaviour {
 
     public ParticleSystem featherBurst;
-
+    GameObject GameManager;
     public int damage = 5;
     public float timer = 0;
     float speed = 10f;
@@ -17,6 +17,7 @@ public class EagleFeather : MonoBehaviour {
     {
         chimera = GameObject.FindGameObjectWithTag("Monster");
         speed *= Time.deltaTime;
+        GameManager = GameObject.Find("GameManager");
     }
 
     private void FixedUpdate()
@@ -38,6 +39,7 @@ public class EagleFeather : MonoBehaviour {
     {
         if (col.gameObject.tag == "Monster")
         {
+            GameManager.GetComponent<AnalyticManager>().eagle += damage;
             col.gameObject.GetComponent<ChimeraController>().Damage(damage);
 
             Vector3 featherBurstPos = new Vector3(transform.position.x, transform.position.y + 0.75f, transform.position.z);
