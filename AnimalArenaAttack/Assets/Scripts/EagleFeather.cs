@@ -11,6 +11,7 @@ public class EagleFeather : MonoBehaviour {
     float speed = 10f;
 
     public GameObject chimera;
+    public GameObject redHead;
 
     // Use this for initialization
     void Start ()
@@ -28,7 +29,8 @@ public class EagleFeather : MonoBehaviour {
         }
         timer += 1.0F * Time.deltaTime;
         
-        transform.position = Vector3.MoveTowards(transform.position, chimera.transform.position, speed);
+       // transform.position = Vector3.MoveTowards(transform.position,  new Vector3(chimera.transform.position.x, chimera.transform.position.y, chimera.transform.position.z), speed);
+        transform.position = Vector3.MoveTowards(transform.position,  redHead.transform.position, speed);
         transform.up = chimera.transform.position - transform.position;
 
 
@@ -44,7 +46,9 @@ public class EagleFeather : MonoBehaviour {
 
             Vector3 featherBurstPos = new Vector3(transform.position.x, transform.position.y + 0.75f, transform.position.z);
 
-            Instantiate(featherBurst, featherBurstPos, transform.rotation);
+            GameObject fBurst = Instantiate(featherBurst.gameObject, featherBurstPos, transform.rotation);
+            featherBurst.Play();
+            Destroy(fBurst, 1);
             GameObject.Destroy(gameObject);
         }
     }
