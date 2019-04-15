@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 7cd27e8d267238e4986edd84e0f912a4
+guid: e1946c3022fc54295901eeccb41002b7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Chimera_Idle_0
-    21300002: Chimera_Idle_1
-    21300004: Chimera_Idle_2
-    21300006: Chimera_Idle_3
-    21300008: Chimera_Idle_4
-    21300010: Chimera_Idle_5
+    21300000: Chimera_lightning_0
+    21300002: Chimera_lightning_1
+    21300004: Chimera_lightning_2
+    21300006: Chimera_lightning_3
+    21300008: Chimera_lightning_4
+    21300010: Chimera_lightning_5
+    21300012: Chimera_lightning_6
+    21300014: Chimera_lightning_7
+    21300016: Chimera_lightning_8
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -66,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -77,43 +80,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,121 +93,181 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chimera_Idle_0
+      name: Chimera_lightning_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 325
         y: 0
-        width: 1600
-        height: 1600
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 1399
+        height: 1309
+      alignment: 9
+      pivot: {x: 0.472286, y: 0.16233887}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9512c255c4a69a46917774ea4b05773
+      spriteID: 4508b8645d053415aac74db012c0476d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_Idle_1
+      name: Chimera_lightning_1
       rect:
         serializedVersion: 2
-        x: 1655
+        x: 1841
         y: 0
-        width: 1600
-        height: 1600
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 1644
+        height: 1305
+      alignment: 9
+      pivot: {x: 0.5471674, y: 0.1613039}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c7950c309e3ab14dbecb048dfa5867a
+      spriteID: 9200edeeb21e44fcfba90e0af1ba9e29
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_Idle_2
+      name: Chimera_lightning_2
       rect:
         serializedVersion: 2
-        x: 3322
+        x: 3601
         y: 0
-        width: 1600
-        height: 1600
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 1636
+        height: 1301
+      alignment: 9
+      pivot: {x: 0.55213773, y: 0.161446}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 393eb0f51bb8b954583954f04c9138fc
+      spriteID: a812a619bf6714e53ae8e66a72171932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_Idle_3
+      name: Chimera_lightning_3
       rect:
         serializedVersion: 2
-        x: 5026
+        x: 5291
         y: 0
-        width: 1600
-        height: 1600
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 1699
+        height: 1402
+      alignment: 9
+      pivot: {x: 0.5683402, y: 0.1462828}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d315675b3c4f922418ee06c6355fd5b8
+      spriteID: d1c6b3209a3ae491dbb0c05c36fae11e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_Idle_4
+      name: Chimera_lightning_4
       rect:
         serializedVersion: 2
-        x: 6740
+        x: 6987
         y: 0
-        width: 1600
-        height: 1600
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 1630
+        height: 1676
+      alignment: 9
+      pivot: {x: 0.55539, y: 0.12134417}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd3dc83fbb46ee143b01003824fc6b5b
+      spriteID: c1ea1320d79e148d19c8bea9b236e196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_Idle_5
+      name: Chimera_lightning_5
       rect:
         serializedVersion: 2
-        x: 8400
+        x: 8902
         y: 0
-        width: 1600
-        height: 1600
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 1473
+        height: 1785
+      alignment: 9
+      pivot: {x: 0.49538836, y: 0.11373303}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5570a9a01fa643740937f94dfbe9850f
+      spriteID: e3b23549477f24a6e95db9489c053fa7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera_lightning_6
+      rect:
+        serializedVersion: 2
+        x: 10667
+        y: 0
+        width: 1461
+        height: 1783
+      alignment: 9
+      pivot: {x: 0.49200368, y: 0.11340004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b468414d2b211446f9eb44d755a43d09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera_lightning_7
+      rect:
+        serializedVersion: 2
+        x: 12249
+        y: 0
+        width: 1635
+        height: 1768
+      alignment: 9
+      pivot: {x: 0.5452558, y: 0.112322785}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7acdaf808ed84441f9635305aeae0a1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera_lightning_8
+      rect:
+        serializedVersion: 2
+        x: 14184
+        y: 0
+        width: 1398
+        height: 1297
+      alignment: 9
+      pivot: {x: 0.4694171, y: 0.15537642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468a7a5f243ff472c9bc130ca2a2a4ad
       vertices: []
       indices: 
       edges: []
@@ -245,7 +275,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7bd47b77a0c795944b3899ef37a4aefc
+    spriteID: 0a46da83a2bfe4f04b76aae8ea9e94ec
     vertices: []
     indices: 
     edges: []

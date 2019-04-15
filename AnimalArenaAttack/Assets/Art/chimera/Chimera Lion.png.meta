@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 8c2cbae179b6d4749ae37395361ee820
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Chimera Lion_0
+    21300002: Chimera Lion_1
+    21300004: Chimera Lion_2
+    21300006: Chimera Lion_3
+    21300008: Chimera Lion_4
+    21300010: Chimera Lion_5
+    21300012: Chimera Lion_6
+    21300014: Chimera Lion_7
+    21300016: Chimera Lion_8
+    21300018: Chimera Lion_9
+    21300020: Chimera Lion_10
+    21300022: Chimera Lion_11
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -45,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -60,10 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -71,10 +83,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,7 +94,247 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Chimera Lion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1399
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.46843025, y: 0.17105173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398dad44da4f648959d1b64d2fd91000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera Lion_1
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 1451
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.4852242, y: 0.16620867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50931705faf74db783df8035c6131c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera Lion_2
+      rect:
+        serializedVersion: 2
+        x: 3391
+        y: 0
+        width: 1605
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.5178115, y: 0.16103362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3f146cd69b94a0489ae89dcde7e9ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera Lion_3
+      rect:
+        serializedVersion: 2
+        x: 5260
+        y: 0
+        width: 1662
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.5172003, y: 0.16103362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1db9a59f53a4446390336adc2327e6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera Lion_4
+      rect:
+        serializedVersion: 2
+        x: 7172
+        y: 0
+        width: 1740
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.5102682, y: 0.15327102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d83db9e95b8c410f8205dee35c90614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera Lion_5
+      rect:
+        serializedVersion: 2
+        x: 9016
+        y: 0
+        width: 1729
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.5248004, y: 0.15068349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff667373aa7924c5ea48a9ea8acbc69c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera Lion_6
+      rect:
+        serializedVersion: 2
+        x: 10935
+        y: 0
+        width: 1729
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.52273375, y: 0.15068349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3a300714a9c4aa7b6816ea9baeb908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera Lion_7
+      rect:
+        serializedVersion: 2
+        x: 12807
+        y: 0
+        width: 1726
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.52691376, y: 0.14809597}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d43ed9193bb94ce1a63416dd4427952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera Lion_8
+      rect:
+        serializedVersion: 2
+        x: 14662
+        y: 0
+        width: 1754
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.51426035, y: 0.15585855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468a450b2a6a54c8d8631abfd40dbab3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera Lion_9
+      rect:
+        serializedVersion: 2
+        x: 16652
+        y: 0
+        width: 1654
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.52160364, y: 0.15844609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6347d8847fee94295af3273c8c255b92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera Lion_10
+      rect:
+        serializedVersion: 2
+        x: 18478
+        y: 0
+        width: 1608
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.51555574, y: 0.15844609}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff99d6c1cd10442a99f75aab50c5448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera Lion_11
+      rect:
+        serializedVersion: 2
+        x: 20322
+        y: 0
+        width: 1438
+        height: 1381
+      alignment: 9
+      pivot: {x: 0.48757496, y: 0.14550844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52d32dca63d44bbca56d8714b8660d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
