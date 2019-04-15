@@ -25,7 +25,9 @@ public class FireBall : MonoBehaviour
     {
         if (col.gameObject.tag == "Eagle" || col.gameObject.tag == "Salamander")
         {
-            Instantiate(fireBurst, transform.position, transform.rotation);
+            GameObject fire = Instantiate(fireBurst.gameObject, transform.position, transform.rotation);
+            fireBurst.Play();
+            Destroy(fire, .3f);
 
             col.gameObject.GetComponent<PlayerParent>().Damage(damage);
             GameObject.Destroy(gameObject);

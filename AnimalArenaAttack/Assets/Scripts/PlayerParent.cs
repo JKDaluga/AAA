@@ -71,7 +71,6 @@ public class PlayerParent : MonoBehaviour
     public Color currentColorEagle;
     public Color currentColorSalamander;
 
-    
 
     public void Awake()
     {
@@ -421,7 +420,9 @@ public class PlayerParent : MonoBehaviour
     {
         sp.color = hurt;
 
-        Instantiate(onDamage, transform.position, transform.rotation);
+        GameObject damage = Instantiate(onDamage.gameObject, transform.position,transform.rotation);
+        onDamage.Play();
+        Destroy(damage, 1);
 
         yield return new WaitForSeconds(1f);
         sp.color = normal;
@@ -452,6 +453,15 @@ public class PlayerParent : MonoBehaviour
             smokeTrail.Stop();
             smokeTrail.Clear();
             Destroy(smokeTrail.gameObject);
+        }
+    }
+    void KillOnDamage()
+    {
+        if (onDamage.IsAlive())
+        {
+            onDamage.Stop();
+            onDamage.Clear();
+            Destroy(onDamage.gameObject);
         }
     }
 }

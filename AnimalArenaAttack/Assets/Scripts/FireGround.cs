@@ -20,8 +20,10 @@ public class FireGround : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Instantiate(burntSpot, transform.position, Quaternion.Euler(new Vector3(-90, transform.rotation.y, transform.rotation.z)));
-
+       
+        GameObject burn = Instantiate(burntSpot.gameObject, transform.position, Quaternion.Euler(new Vector3(-90, transform.rotation.y, transform.rotation.z)));
+        burntSpot.Play();
+        Destroy(burn, 5);
         firstPass = false;
 
         StartCoroutine("ColorPulsing");
