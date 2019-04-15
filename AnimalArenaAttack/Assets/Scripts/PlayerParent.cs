@@ -420,9 +420,9 @@ public class PlayerParent : MonoBehaviour
     {
         sp.color = hurt;
 
-        Instantiate(onDamage, transform.position,this.transform.rotation);
+        GameObject damage = Instantiate(onDamage.gameObject, transform.position,transform.rotation);
         onDamage.Play();
-        Invoke("KillDmg", 1);
+        Destroy(damage, 1);
 
         yield return new WaitForSeconds(1f);
         sp.color = normal;
@@ -455,11 +455,10 @@ public class PlayerParent : MonoBehaviour
             Destroy(smokeTrail.gameObject);
         }
     }
-    void KillDmg()
+    void KillOnDamage()
     {
         if (onDamage.IsAlive())
         {
-            Debug.Log("HERE");
             onDamage.Stop();
             onDamage.Clear();
             Destroy(onDamage.gameObject);
