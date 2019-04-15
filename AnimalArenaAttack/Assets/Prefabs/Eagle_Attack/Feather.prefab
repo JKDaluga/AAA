@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1742646030460580}
   m_LocalRotation: {x: 0, y: -0, z: 0.9238796, w: -0.38268325}
-  m_LocalPosition: {x: 0.35, y: -1.72, z: 0}
+  m_LocalPosition: {x: -5.5361567, y: -1.7206886, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,6 +106,7 @@ MonoBehaviour:
   damage: 8
   timer: 0
   chimera: {fileID: 0}
+  redHead: {fileID: 1613382745597270, guid: d65eef858fbdb74419a6c6c7c7275444, type: 2}
 --- !u!212 &212241348157089496
 SpriteRenderer:
   m_ObjectHideFlags: 1
