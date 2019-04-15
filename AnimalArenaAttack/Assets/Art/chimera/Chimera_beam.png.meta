@@ -1,16 +1,18 @@
 fileFormatVersion: 2
-guid: cbb8065336e34744ca9caed5cd7a5c7d
+guid: a82eeafef1fbf4625921804abf268ffb
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Chimera_lightning.psd Sheet_0
-    21300002: Chimera_lightning.psd Sheet_1
-    21300004: Chimera_lightning.psd Sheet_2
-    21300006: Chimera_lightning.psd Sheet_3
-    21300008: Chimera_lightning.psd Sheet_4
-    21300010: Chimera_lightning.psd Sheet_5
-    21300012: Chimera_lightning.psd Sheet_6
-    21300014: Chimera_lightning.psd Sheet_7
-    21300016: Chimera_lightning.psd Sheet_8
+    21300000: Chimera_beam_0
+    21300002: Chimera_beam_1
+    21300004: Chimera_beam_2
+    21300006: Chimera_beam_3
+    21300008: Chimera_beam_4
+    21300010: Chimera_beam_5
+    21300012: Chimera_beam_6
+    21300014: Chimera_beam_7
+    21300016: Chimera_beam_8
+    21300018: Chimera_beam_9
+    21300020: Chimera_beam_10
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -93,181 +95,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_0
+      name: Chimera_beam_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1396
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.4750237, y: 0.15570778}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5299a34eb95554b6298f5404d285331e
+      spriteID: 9f48725d61e8d4d0cba0d6f7719a083f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_1
+      name: Chimera_beam_1
       rect:
         serializedVersion: 2
-        x: 1788
+        x: 1544
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1586
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.52921635, y: 0.15573165}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c06d18050ee2e4a019501cdaca32c20a
+      spriteID: 2bd1e010f232249ee894324fc3952298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_2
+      name: Chimera_beam_2
       rect:
         serializedVersion: 2
-        x: 3485
+        x: 3160
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1663
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.55054414, y: 0.16845284}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84c4578a1e18d434da6104dcc1185be8
+      spriteID: bb76c1a56d0bd4e27b8f285028c45f69
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_3
+      name: Chimera_beam_3
       rect:
         serializedVersion: 2
-        x: 5245
+        x: 4918
         y: 0
-        width: 1742
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1504
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.5022888, y: 0.1768097}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 535f72e532a6b40fda174d3fa53f3505
+      spriteID: 81889cc0e4cad4947821aee32b0f6dea
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_4
+      name: Chimera_beam_4
       rect:
         serializedVersion: 2
-        x: 6989
+        x: 6508
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1435
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.48081583, y: 0.16905312}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c22e3a1be7ba47b19bf42f47a24e543
+      spriteID: f660c7b1a6f5443039cae895ca9da9cc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_5
+      name: Chimera_beam_5
       rect:
         serializedVersion: 2
-        x: 8703
+        x: 8101
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1284
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.45711872, y: 0.16129656}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7f0eff2f04e64c14a5f8a9cffb72d74
+      spriteID: 8858f1c62189b491088c0ae91b7bdc00
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_6
+      name: Chimera_beam_6
       rect:
         serializedVersion: 2
-        x: 10448
+        x: 9519
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1280
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.46505052, y: 0.16388208}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: def7566b5134642e69cf55a680e65a5b
+      spriteID: f6683d355af90443790eee433b8457da
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_7
+      name: Chimera_beam_7
       rect:
         serializedVersion: 2
-        x: 12201
+        x: 11040
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1277
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.45957857, y: 0.15612552}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4baeb460a39d24837ae7c8904eaf7900
+      spriteID: 3ed18b32a36424a638dda044470fac6e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chimera_lightning.psd Sheet_8
+      name: Chimera_beam_8
       rect:
         serializedVersion: 2
-        x: 13904
+        x: 12400
         y: 0
-        width: 1800
-        height: 1800
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1338
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.48714194, y: 0.15353999}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55d22dc8864764cb6b480d3e6aa1777d
+      spriteID: edfff7cb3ff7846a5a5e9ec5a9b0635b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera_beam_9
+      rect:
+        serializedVersion: 2
+        x: 13917
+        y: 0
+        width: 1384
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.4651902, y: 0.15353999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b7bd9d5fed14aec8ef73e26eb5f058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chimera_beam_10
+      rect:
+        serializedVersion: 2
+        x: 15369
+        y: 0
+        width: 1397
+        height: 1331
+      alignment: 9
+      pivot: {x: 0.4729044, y: 0.15871103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dc63e7752cc44cc695da8ca0b74d0d8
       vertices: []
       indices: 
       edges: []
@@ -275,7 +317,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: a0cbd9db873ce894ea7de83c379c9562
+    spriteID: c8b64eac781d146c6825e2e0053748a0
     vertices: []
     indices: 
     edges: []
