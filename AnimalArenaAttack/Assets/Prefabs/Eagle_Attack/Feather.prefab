@@ -106,7 +106,7 @@ MonoBehaviour:
   damage: 8
   timer: 0
   chimera: {fileID: 0}
-  redHead: {fileID: 1613382745597270, guid: d65eef858fbdb74419a6c6c7c7275444, type: 2}
+  RedHead: {fileID: 1613382745597270, guid: d65eef858fbdb74419a6c6c7c7275444, type: 2}
 --- !u!212 &212241348157089496
 SpriteRenderer:
   m_ObjectHideFlags: 1
