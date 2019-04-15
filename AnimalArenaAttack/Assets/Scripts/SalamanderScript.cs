@@ -169,10 +169,6 @@ public class SalamanderScript : PlayerParent
             }
             else
             {
-                SpriteRenderer s = GetComponent<SpriteRenderer>();
-                Color color = new Color(255f, 255f, 255f);
-                color.a = 1f;
-                s.color = color;
                 gameObject.layer = 8;
                 //Ability 1 Player 2
                 if (((Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.Mouse0))))
@@ -210,6 +206,7 @@ public class SalamanderScript : PlayerParent
                 rollVector = rb.velocity.normalized;
                 isVulnerable = false;
                 Invoke("setVulnerability", invulTime);
+                Invoke("ColorChange", invulTime);
                 Instantiate(smokeTrail, transform.position, this.transform.rotation);
                 smokeTrail.Play();
                 Invoke("KillSmoke", 1);
@@ -235,5 +232,12 @@ public class SalamanderScript : PlayerParent
             anim.SetBool("isDead", true);
             gameObject.layer = 9;
         }
+    }
+    public void ColorChange()
+    {
+        SpriteRenderer s = GetComponent<SpriteRenderer>();
+        Color color = new Color(255f, 255f, 255f);
+        color.a = 1f;
+        s.color = color;
     }
 }
