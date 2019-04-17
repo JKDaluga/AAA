@@ -38,10 +38,10 @@ public class EagleFeather : MonoBehaviour {
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Monster")
+        if (col.gameObject.tag == "FeatherCollisionBox")
         {
             GameManager.GetComponent<AnalyticManager>().eagle += damage;
-            col.gameObject.GetComponent<ChimeraController>().Damage(damage);
+            chimera.GetComponent<ChimeraController>().Damage(damage);
 
             Vector3 featherBurstPos = new Vector3(transform.position.x, transform.position.y + 0.75f, transform.position.z);
 

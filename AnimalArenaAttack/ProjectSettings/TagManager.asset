@@ -12,6 +12,7 @@ TagManager:
   - Cleave
   - ChimeraFire
   - Monster
+  - FeatherCollisionBox
   layers:
   - Default
   - TransparentFX
