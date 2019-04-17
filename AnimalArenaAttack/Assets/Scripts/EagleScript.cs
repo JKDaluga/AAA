@@ -14,15 +14,20 @@ public class EagleScript : PlayerParent {
     public float featherUsed;
 
     public AudioClip featherAttk;
+    public AudioClip attack;
+    public AudioClip dodge;
+    public AudioClip cry;
 
     public AudioSource source;
+
+    
 
     public override void Ability1()
     {
 
         if (Time.time > featherUsed + .15)
         {
-            source.PlayOneShot(featherAttk);
+            source.PlayOneShot(attack);
             Instantiate(feather, transform.position, transform.rotation);
             featherUsed = Time.time;
         }
@@ -30,9 +35,10 @@ public class EagleScript : PlayerParent {
 
     public override void Ability2() 
     {
-	
+        source.PlayOneShot(dodge);
 
-	}
+
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {

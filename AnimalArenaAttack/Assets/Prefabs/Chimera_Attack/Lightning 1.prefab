@@ -217,6 +217,8 @@ MonoBehaviour:
   damage: 30
   trackP1: 0
   tracker: {fileID: 0}
+  source: {fileID: 0}
+  lightning: {fileID: 8300000, guid: 0c18b8050ec804b4d883da7099da6907, type: 3}
 --- !u!212 &212451909541969192
 SpriteRenderer:
   m_ObjectHideFlags: 1

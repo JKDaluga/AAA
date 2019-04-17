@@ -71,6 +71,9 @@ public class PlayerParent : MonoBehaviour
     public Color currentColorEagle;
     public Color currentColorSalamander;
 
+    public AudioSource eagleSrc;
+    public AudioClip eagleDodge;
+
 
     public void Awake()
     {
@@ -243,6 +246,7 @@ public class PlayerParent : MonoBehaviour
                     }
                     if ((Input.GetKeyDown(KeyCode.B)))
                     {
+                        eagleSrc.PlayOneShot(eagleDodge);
                         if (rb.velocity.magnitude != 0)
                         {
                             rollTime = .2f;

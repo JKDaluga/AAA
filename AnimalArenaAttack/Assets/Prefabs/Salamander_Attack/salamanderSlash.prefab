@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 50929411217612594}
   m_Layer: 0
   m_Name: salamanderSlash
-  m_TagString: Untagged
+  m_TagString: SalamanderSlash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 15
   timer: 0
+  source: {fileID: 0}
+  slashDagger: {fileID: 8300000, guid: f93a885fb24635e498d1a5a66c5ea6df, type: 3}
   chimera: {fileID: 0}
 --- !u!212 &212560372478972778
 SpriteRenderer:

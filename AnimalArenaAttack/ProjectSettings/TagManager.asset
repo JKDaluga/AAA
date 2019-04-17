@@ -13,6 +13,8 @@ TagManager:
   - ChimeraFire
   - Monster
   - FeatherCollisionBox
+  - Undefined
+  - SalamanderSlash
   layers:
   - Default
   - TransparentFX

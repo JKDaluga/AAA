@@ -14,6 +14,10 @@ public class SalamanderScript : PlayerParent
     public AudioClip slashAttk;
     public float invulTime;
     public AudioSource source;
+    public AudioClip attack;
+    public AudioClip dodge;
+    public AudioClip cry;
+    
 
     public string SlashAttackName;
 
@@ -23,10 +27,11 @@ public class SalamanderScript : PlayerParent
     {
         if (Time.time > slashUsed + .15)
         {
-            source.PlayOneShot(slashAttk);
+            source.PlayOneShot(attack, .125f);
             Instantiate(slash, (transform.position * .8f), transform.rotation);
             slashUsed = Time.time;
         }
+        //source.Play();
     }
 
     public override void Ability2()

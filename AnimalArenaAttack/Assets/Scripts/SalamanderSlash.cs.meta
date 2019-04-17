@@ -3,7 +3,10 @@ guid: 536380b5879df264aa33a7b18faabec2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - source: {instanceID: 0}
+  - slashDagger: {fileID: 8300000, guid: f93a885fb24635e498d1a5a66c5ea6df, type: 3}
+  - chimera: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

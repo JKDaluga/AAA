@@ -47,6 +47,15 @@ public class ChimeraController : MonoBehaviour
 
     public Color normal, hurt;
 
+    public AudioSource source;
+
+    public AudioClip thunder;
+    public AudioClip fireball;
+    public AudioClip water;
+    float waterVol = .25f;
+    public AudioClip roar;
+    public AudioClip salamanderSlash;
+
     //Use this for initialization
     void Start()
     {
@@ -62,6 +71,7 @@ public class ChimeraController : MonoBehaviour
         sp = GetComponent<SpriteRenderer>();
         sp.color = normal;
         maxHealth = Health;
+        source.PlayOneShot(roar);
 
 
     }
@@ -91,6 +101,7 @@ public class ChimeraController : MonoBehaviour
 
     IEnumerator lightningStrikes()
     {
+        source.PlayOneShot(thunder,.5f);
 
         float delay = 1.5f;
         for (int i = 0; i < 2; i++)
@@ -130,6 +141,7 @@ public class ChimeraController : MonoBehaviour
             {
                 for (int i = 0; i < 2; i++)
                 {
+                    source.PlayOneShot(fireball);
                     float delay = 2f;
                     float time = 0;
                     var fireBallClone1 = (GameObject)Instantiate(fireBallBig, redHead.transform.position, transform.rotation);
@@ -139,7 +151,8 @@ public class ChimeraController : MonoBehaviour
                         yield return null;
                     }
                     time = 0;
-                    fireBallClone1 = (GameObject)Instantiate(fireBallBig2, redHead.transform.position, transform.rotation);
+                source.PlayOneShot(fireball);
+                fireBallClone1 = (GameObject)Instantiate(fireBallBig2, redHead.transform.position, transform.rotation);
                     while (time < delay)
                     {
                         time += Time.deltaTime;
@@ -154,6 +167,7 @@ public class ChimeraController : MonoBehaviour
             for (int i = 0; i < 2; i++)
             {
                 float time = 0;
+                source.PlayOneShot(fireball);
                 var fireBallClone1 = (GameObject)Instantiate(fireBall, redHead.transform.position, transform.rotation);
                 while (time < delay)
                 {
@@ -161,6 +175,7 @@ public class ChimeraController : MonoBehaviour
                     yield return null;
                 }
                 time = 0;
+                source.PlayOneShot(fireball);
                 fireBallClone1 = (GameObject)Instantiate(fireBall2, redHead.transform.position, transform.rotation);
                 while (time < delay)
                 {
@@ -183,15 +198,18 @@ public class ChimeraController : MonoBehaviour
         {
             if (Random.Range(0, 2) == 1)
             {
+                source.PlayOneShot(water, waterVol);
                 var waterSprayClone = (GameObject)Instantiate(waterSpray, (redHead.transform.position + new Vector3(1.8f, -.5f, 0)), transform.rotation);
             }
             else
             {
+                source.PlayOneShot(water, waterVol);
                 var waterSprayClone = (GameObject)Instantiate(waterSpray2, (redHead.transform.position + new Vector3(-2.3f, -.5f, 0)), transform.rotation);
             }
         }
         else
         {
+            source.PlayOneShot(water, waterVol);
             var waterSprayClone = (GameObject)Instantiate(waterSpray, (redHead.transform.position + new Vector3(1.8f, -.5f, 0)), transform.rotation);
             var waterSprayClone2 = (GameObject)Instantiate(waterSpray2, (redHead.transform.position + new Vector3(-2.3f, -.5f, 0)), transform.rotation);
         }
@@ -339,6 +357,12 @@ public class ChimeraController : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         sp.color = normal;
     }
-
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "SalamanderSlash")
+        {
+            source.PlayOneShot(salamanderSlash, .25f);
+        }
+    }
 
 }

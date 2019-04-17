@@ -8,6 +8,8 @@ public class SalamanderSlash : MonoBehaviour {
     public float timer = 0;
     float speed = 0f;
     GameObject GameManager;
+    public AudioSource source;
+    public AudioClip slashDagger;
 
 
     public GameObject chimera;
@@ -15,6 +17,7 @@ public class SalamanderSlash : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        source = GameObject.FindGameObjectWithTag("Salamander").GetComponent<AudioSource>();
         chimera = GameObject.FindGameObjectWithTag("Monster");
         speed *= Time.deltaTime;
         GameManager = GameObject.Find("GameManager");
@@ -23,7 +26,7 @@ public class SalamanderSlash : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if (timer >= .01)
+        if (timer >= 1)
         {
             GameObject.Destroy(gameObject);
         }
@@ -39,6 +42,7 @@ public class SalamanderSlash : MonoBehaviour {
     {
         if (col.gameObject.tag == "Monster")
         {
+            //source.PlayOneShot(slashDagger);
             col.gameObject.GetComponent<ChimeraController>().Damage(damage);
             //GameManager.GetComponent<AnalyticManager>().salamander = 15;
             GameObject.Destroy(gameObject);
