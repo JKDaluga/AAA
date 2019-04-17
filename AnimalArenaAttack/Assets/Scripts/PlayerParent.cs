@@ -431,7 +431,7 @@ public class PlayerParent : MonoBehaviour
     protected IEnumerator setAttack()
     {
         anim.SetBool("Attack", true);
-        yield return new WaitForSeconds(.6f);
+        yield return new WaitForSeconds(.125f);
         anim.SetBool("Attack", false);
     }
     void setVulnerability()

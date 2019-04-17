@@ -11,7 +11,7 @@ public class EagleFeather : MonoBehaviour {
     float speed = 10f;
 
     public GameObject chimera;
-    public GameObject redHead;
+    public GameObject RedHead;
 
     // Use this for initialization
     void Start ()
@@ -29,9 +29,8 @@ public class EagleFeather : MonoBehaviour {
         }
         timer += 1.0F * Time.deltaTime;
         
-       // transform.position = Vector3.MoveTowards(transform.position,  new Vector3(chimera.transform.position.x, chimera.transform.position.y, chimera.transform.position.z), speed);
-        transform.position = Vector3.MoveTowards(transform.position,  redHead.transform.position, speed);
-        transform.up = chimera.transform.position - transform.position;
+        transform.position = Vector3.MoveTowards(transform.position, RedHead.transform.position, speed);
+        transform.up = RedHead.transform.position - transform.position;
 
 
     }
@@ -39,10 +38,10 @@ public class EagleFeather : MonoBehaviour {
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Monster")
+        if (col.gameObject.tag == "FeatherCollisionBox")
         {
             GameManager.GetComponent<AnalyticManager>().eagle += damage;
-            col.gameObject.GetComponent<ChimeraController>().Damage(damage);
+            chimera.GetComponent<ChimeraController>().Damage(damage);
 
             Vector3 featherBurstPos = new Vector3(transform.position.x, transform.position.y + 0.75f, transform.position.z);
 
