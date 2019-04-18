@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: d990c01d52fb89949997fa39acb5af52
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: smoke_cloud_0
+    21300002: smoke_cloud_1
+    21300004: smoke_cloud_2
+    21300006: smoke_cloud_3
+    21300008: smoke_cloud_4
+    21300010: smoke_cloud_6
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +75,140 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: smoke_cloud_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 433
+        height: 658
+      alignment: 9
+      pivot: {x: 0.5116561, y: 0.28874692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb063e07e48894f88b64bb6db9e43262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_cloud_1
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 151
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db696a530ca0d4b2bb5f733bd1b63add
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_cloud_2
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 0
+        width: 372
+        height: 658
+      alignment: 9
+      pivot: {x: 0.51356786, y: 0.3211864}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba57546078b0474491f3829c493156a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_cloud_3
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 1
+        width: 782
+        height: 656
+      alignment: 9
+      pivot: {x: 0.519363, y: 0.3069205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b88b9354bec4dd3baa548c2b204750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_cloud_4
+      rect:
+        serializedVersion: 2
+        x: 2930
+        y: 1
+        width: 822
+        height: 657
+      alignment: 9
+      pivot: {x: 0.5000009, y: 0.2859292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e706ae999b3c4718b3a32ae29662987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_cloud_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 43
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134aeb652e16b4fe096e25045cf49a42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

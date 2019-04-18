@@ -101,7 +101,7 @@ public class ChimeraController : MonoBehaviour
 
     IEnumerator lightningStrikes()
     {
-        source.PlayOneShot(thunder,.5f);
+        source.PlayOneShot(thunder,.3f);
 
         float delay = 1.5f;
         for (int i = 0; i < 2; i++)

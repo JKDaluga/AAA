@@ -1,7 +1,12 @@
 fileFormatVersion: 2
 guid: 492c7f30c58954a0e97e908f68a4924f
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: eagle_feather_darts_critical_0
+    21300002: eagle_feather_darts_critical_1
+    21300004: eagle_feather_darts_critical_2
+    21300006: eagle_feather_darts_critical_3
+    21300008: eagle_feather_darts_critical_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +45,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +74,120 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: eagle_feather_darts_critical_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 630
+        height: 492
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899684ac6a10249d196b9aad05e62195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_feather_darts_critical_1
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 0
+        width: 586
+        height: 500
+      alignment: 9
+      pivot: {x: 0.47947824, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df69361b6bd5b467aa053a64886ea6ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_feather_darts_critical_2
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 0
+        width: 538
+        height: 500
+      alignment: 9
+      pivot: {x: 0.45529437, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a5ab88b4dca445ca44255bb28b157d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_feather_darts_critical_3
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 0
+        width: 543
+        height: 500
+      alignment: 9
+      pivot: {x: 0.44832358, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c968ade7be5dd4943acb89711d2f1bc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_feather_darts_critical_4
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 0
+        width: 680
+        height: 500
+      alignment: 9
+      pivot: {x: 0.35262486, y: 0.54810333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81aa20ed50be2417e92ac143d636cf2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

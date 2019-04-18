@@ -1,7 +1,15 @@
 fileFormatVersion: 2
 guid: e886d1839f58446ef846b37b14c8dee7
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: eagle_idle_bandaged_0
+    21300002: eagle_idle_bandaged_1
+    21300004: eagle_idle_bandaged_2
+    21300006: eagle_idle_bandaged_3
+    21300008: eagle_idle_bandaged_4
+    21300010: eagle_idle_bandaged_5
+    21300012: eagle_idle_bandaged_6
+    21300014: eagle_idle_bandaged_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +48,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +77,180 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: eagle_idle_bandaged_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 579
+        height: 380
+      alignment: 9
+      pivot: {x: 0.5126196, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44a2da4a1c2a4cfca026d61b63eacea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_bandaged_1
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 138
+        width: 654
+        height: 350
+      alignment: 9
+      pivot: {x: 0.49627572, y: 0.49304113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe908f67e74834bc6b6b09361e84dcd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_bandaged_2
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 138
+        width: 670
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2530eda65d909493ab6f3e167b6cceb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_bandaged_3
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 128
+        width: 593
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd826bf5933e64bc08e4d8e75dee5e58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_bandaged_4
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 0
+        width: 279
+        height: 500
+      alignment: 9
+      pivot: {x: 0.4039731, y: 0.60229486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba618d0952814a00adcdbab8fcc809a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_bandaged_5
+      rect:
+        serializedVersion: 2
+        x: 3321
+        y: 101
+        width: 598
+        height: 387
+      alignment: 9
+      pivot: {x: 0.49592677, y: 0.5314676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461ce6b96a47d4ccf977be770a0eb1c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_bandaged_6
+      rect:
+        serializedVersion: 2
+        x: 4002
+        y: 138
+        width: 654
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5653732f4a4984329a56637f4bf01b9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_bandaged_7
+      rect:
+        serializedVersion: 2
+        x: 4685
+        y: 138
+        width: 716
+        height: 355
+      alignment: 9
+      pivot: {x: 0.51700866, y: 0.47255653}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0284a1c36f4f4da38688056e9fbef0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

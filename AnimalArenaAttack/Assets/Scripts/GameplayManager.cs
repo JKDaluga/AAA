@@ -6,9 +6,8 @@ using UnityEngine.UI;
 
 public class GameplayManager : MonoBehaviour
 {
-    private AudioManager audioManager;
-
-    public string FightMusicName;
+    public AudioSource audioSource;
+    public AudioClip battleMusic;
 
     public GameObject p1;
     public GameObject p2;
@@ -24,18 +23,13 @@ public class GameplayManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        StartCoroutine("MusicStart");
         StartCoroutine("LoseTime");
         Time.timeScale = 1;
         int p1h = p1.GetComponent<PlayerParent>().health;
         int p2h = p2.GetComponent<PlayerParent>().health;
         int ch = chimera.GetComponent<ChimeraController>().Health;
 
-        audioManager = AudioManager.instance;
-        if (audioManager == null)
-        {
-            Debug.LogError("No AudioManager found in the scene.");
-        }
-        audioManager.PlaySound(FightMusicName);
     }
 
     // Update is called once per frame
@@ -85,13 +79,19 @@ public class GameplayManager : MonoBehaviour
 
     private IEnumerator WaitForWin()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.2f);
         SceneManager.LoadScene(3);
+    }
+
+    IEnumerator MusicStart()
+    {
+        yield return new WaitForSeconds(1.5f);
+        audioSource.PlayOneShot(battleMusic);
     }
 
     IEnumerator WaitForLose()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.2f);
         SceneManager.LoadScene(4);
     }
     IEnumerator LoseTime()

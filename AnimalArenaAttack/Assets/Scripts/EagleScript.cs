@@ -35,7 +35,7 @@ public class EagleScript : PlayerParent {
 
     public override void Ability2() 
     {
-        source.PlayOneShot(dodge);
+        source.PlayOneShot(dodge, .2f);
 
 
     }

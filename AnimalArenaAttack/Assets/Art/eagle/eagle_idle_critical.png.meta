@@ -1,7 +1,15 @@
 fileFormatVersion: 2
 guid: 396b194a23b9d4504afc0a0bc3e0b2c1
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: eagle_idle_critical_0
+    21300002: eagle_idle_critical_1
+    21300004: eagle_idle_critical_2
+    21300006: eagle_idle_critical_3
+    21300008: eagle_idle_critical_4
+    21300010: eagle_idle_critical_5
+    21300012: eagle_idle_critical_6
+    21300014: eagle_idle_critical_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +48,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +77,180 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: eagle_idle_critical_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 137
+        width: 579
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bf53bfd50064ff59ac660da461f672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_critical_1
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 138
+        width: 654
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0e81146291b490a96599cd2e34b6e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_critical_2
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 138
+        width: 670
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89d03b7c35b540718ce704d168cf153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_critical_3
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 128
+        width: 593
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5756e6cefb714424aa41d9310afd60b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_critical_4
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 0
+        width: 279
+        height: 500
+      alignment: 9
+      pivot: {x: 0.4033693, y: 0.602447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608f9a92c21ff43e49a9bb50a473e9e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_critical_5
+      rect:
+        serializedVersion: 2
+        x: 3319
+        y: 101
+        width: 598
+        height: 387
+      alignment: 9
+      pivot: {x: 0.49549115, y: 0.5348317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affb56b609e3a48d1854192d9191e04b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_critical_6
+      rect:
+        serializedVersion: 2
+        x: 4002
+        y: 138
+        width: 654
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521166c9ab04848b2847e4231f9d2d95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eagle_idle_critical_7
+      rect:
+        serializedVersion: 2
+        x: 4685
+        y: 138
+        width: 716
+        height: 355
+      alignment: 9
+      pivot: {x: 0.5188261, y: 0.48481146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150769ff0b53147fb8d594af0105fc30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

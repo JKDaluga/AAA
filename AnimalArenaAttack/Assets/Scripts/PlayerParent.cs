@@ -10,7 +10,6 @@ public class PlayerParent : MonoBehaviour
 
     protected Rigidbody2D rb;
     public Animator anim;
-    public AudioManager audioManager;
 
     public int health;
     public float maxHealth;
@@ -79,11 +78,7 @@ public class PlayerParent : MonoBehaviour
     {
         horiz = 0;
         anim = gameObject.GetComponent<Animator>();
-        audioManager = AudioManager.instance;
-        if (audioManager == null)
-        {
-            Debug.LogError("No AudioManager found in the scene.");
-        }
+
     }
     // Use this for initialization
     void Start()
@@ -153,10 +148,21 @@ public class PlayerParent : MonoBehaviour
             currentColorSalamander = normal;
             eagleRend.color = currentColorSalamander;
         }
-
+       
 
     */
+        Debug.Log((health / maxHealth * 100f));
+        if (((health / maxHealth * 100f) < 70))
+        {
+            anim.SetBool("isInjured", true);
+            Debug.Log("fuck");
+        }
 
+        if (((health / maxHealth * 100f) < 40))
+        {
+            anim.SetBool("isCritical", true);
+            anim.SetBool("isInjured", false);
+        }
         if (!reviving)
         {
             if (isPlayer1)
@@ -175,6 +181,8 @@ public class PlayerParent : MonoBehaviour
         }
         if (health > 0)
         {
+
+
             if (!isPlayer1)
             {
                 SalamanderReviveBG.gameObject.SetActive(false);
@@ -303,13 +311,11 @@ public class PlayerParent : MonoBehaviour
                         Ability2();
                         if (rb.velocity.magnitude != 0)
                         {
-                            rollTime = .125f;
+                            rollTime = 2f;
                             rollVector = rb.velocity.normalized;
                             isVulnerable = false;
-                            Invoke("setVulnerability", .125f);
-                            Instantiate(smokeTrail, transform.position, this.transform.rotation);
-                            smokeTrail.Play();
-                            Invoke("KillSmoke", 1);
+                            Invoke("setVulnerability", 2f);
+
                         }
                     }
                 }
@@ -336,6 +342,7 @@ public class PlayerParent : MonoBehaviour
             pRB2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
             Box.enabled = false;
             anim.SetBool("isDead", true);
+            anim.SetBool("isCritical", false);
             gameObject.layer = 9;
         }
 

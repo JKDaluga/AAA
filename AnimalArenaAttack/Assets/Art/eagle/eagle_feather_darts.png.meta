@@ -96,8 +96,8 @@ TextureImporter:
         y: 0
         width: 636
         height: 500
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5054921, y: 0.49301398}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -117,7 +117,7 @@ TextureImporter:
         width: 582
         height: 500
       alignment: 9
-      pivot: {x: 0.46331567, y: 0.49786496}
+      pivot: {x: 0.46931747, y: 0.49786496}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -137,7 +137,7 @@ TextureImporter:
         width: 524
         height: 500
       alignment: 9
-      pivot: {x: 0.40832403, y: 0.50213504}
+      pivot: {x: 0.41499013, y: 0.49514905}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
       name: eagle_feather_darts_3
       rect:
         serializedVersion: 2
-        x: 1760
+        x: 1762
         y: 0
         width: 550
         height: 500
@@ -172,12 +172,12 @@ TextureImporter:
       name: eagle_feather_darts_4
       rect:
         serializedVersion: 2
-        x: 2310
+        x: 2308
         y: 0
         width: 670
         height: 500
       alignment: 9
-      pivot: {x: 0.33379707, y: 0.54497063}
+      pivot: {x: 0.35725754, y: 0.5170265}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

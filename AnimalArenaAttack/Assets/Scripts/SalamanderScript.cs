@@ -7,17 +7,19 @@ public class SalamanderScript : PlayerParent
 {
     public GameObject slash;
     public float slashUsed;
+    public GameObject smoke;
 
     public float baseAttackDuration = 1f;
     public Quaternion turn;
 
-    public AudioClip slashAttk;
     public float invulTime;
-    public AudioSource source;
+
+    public AudioClip slashAttk;
     public AudioClip attack;
     public AudioClip dodge;
     public AudioClip cry;
-    
+
+    public AudioSource source;
 
     public string SlashAttackName;
 
@@ -130,6 +132,17 @@ public class SalamanderScript : PlayerParent
                 reviveTime = 0;
             }
         }
+        if (((health / maxHealth * 100f) <= 70) && ((health / maxHealth * 100f) > 40))
+        {
+            anim.SetBool("isInjured", true);
+            Debug.Log("fuck");
+        }
+
+        if (((health / maxHealth * 100f) <= 40))
+        {
+            anim.SetBool("isCritical", true);
+            anim.SetBool("isInjured", false);
+        }
         if (health > 0)
         {
             if (!isPlayer1)
@@ -179,7 +192,8 @@ public class SalamanderScript : PlayerParent
                 if (((Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.Mouse0))))
                 {
                     StartCoroutine(setAttack());
-                    Ability1(); MovementP2();
+                    Ability1(); 
+                    MovementP2();
                 }
             }
             horiz = Input.GetAxis("Horizontal2");
@@ -198,12 +212,12 @@ public class SalamanderScript : PlayerParent
             p2HB.fillAmount = (health / maxHealth);
 
             //Ability 2 Player 2
-            if ((Input.GetKeyDown(KeyCode.I)))
+            if ((Input.GetKeyDown(KeyCode.I)) && isVulnerable)
             {
                 //Debug.Log("Am I Work?");
-                //anim.SetBool("Ability2", true);
-                Ability2();
-                rollTime = invulTime;
+                //anim.SetBool("Ability2", true)
+                Instantiate(smoke, this.transform.position, transform.rotation);
+                invulTime = 2f;
                 SpriteRenderer s = GetComponent<SpriteRenderer>();
                 Color color = new Color(102f, 144f, 192f);
                 color.a = .5f;
@@ -212,10 +226,9 @@ public class SalamanderScript : PlayerParent
                 isVulnerable = false;
                 Invoke("setVulnerability", invulTime);
                 Invoke("ColorChange", invulTime);
-                Instantiate(smokeTrail, transform.position, this.transform.rotation);
-                smokeTrail.Play();
-                Invoke("KillSmoke", 1);
                 gameObject.layer = 11;
+
+
             }
         }
         else
