@@ -11,6 +11,8 @@ public class ChimeraController : MonoBehaviour
     public GameObject salamander;
     public GameObject eagle;
 
+    public Animator anim;
+
     private SpriteRenderer sp;
     //Attack Game Objects
     public GameObject cleave;
@@ -73,7 +75,7 @@ public class ChimeraController : MonoBehaviour
         maxHealth = Health;
         source.PlayOneShot(roar);
 
-
+        StartCoroutine(playRoar());
     }
 
     //Update is called once per frame
@@ -137,6 +139,7 @@ public class ChimeraController : MonoBehaviour
 
     IEnumerator FireBall()
     {
+        StartCoroutine(playFire());
             if (Health / maxHealth >= .75f)
             {
                 for (int i = 0; i < 2; i++)
@@ -356,6 +359,20 @@ public class ChimeraController : MonoBehaviour
         sp.color = hurt;
         yield return new WaitForSeconds(.5f);
         sp.color = normal;
+    }
+
+    private IEnumerator playRoar()
+    {
+        yield return new WaitForSeconds(0.15f);
+        anim.SetBool("roar",true);
+        yield return new WaitForSeconds(2f);
+        anim.SetBool("roar", false);
+    }
+     private IEnumerator playFire()
+    {
+        anim.SetBool("fireBreath", true);
+        yield return new WaitForSeconds(1.2f);
+        anim.SetBool("fireBreath", false);
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
