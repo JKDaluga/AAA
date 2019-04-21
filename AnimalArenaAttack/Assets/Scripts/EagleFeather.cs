@@ -10,6 +10,8 @@ public class EagleFeather : MonoBehaviour {
     public float timer = 0;
     float speed = 10f;
 
+    public float yOffset = 0f;
+
     public GameObject chimera;
     public GameObject RedHead;
 
@@ -43,7 +45,7 @@ public class EagleFeather : MonoBehaviour {
             GameManager.GetComponent<AnalyticManager>().eagle += damage;
             chimera.GetComponent<ChimeraController>().Damage(damage);
 
-            Vector3 featherBurstPos = new Vector3(transform.position.x, transform.position.y + 0.75f, transform.position.z);
+            Vector3 featherBurstPos = new Vector3(transform.position.x, transform.position.y + yOffset, transform.position.z);
 
             GameObject fBurst = Instantiate(featherBurst.gameObject, featherBurstPos, transform.rotation);
             featherBurst.Play();

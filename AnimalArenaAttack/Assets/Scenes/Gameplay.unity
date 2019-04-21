@@ -5058,6 +5058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1899559282}
   battleMusic: {fileID: 8300000, guid: c5776ebd871f04fa896dbb01ce091b68, type: 3}
+  timerWarning: {fileID: 0}
   p1: {fileID: 859135316}
   p2: {fileID: 74629577}
   chimera: {fileID: 2087923101}
