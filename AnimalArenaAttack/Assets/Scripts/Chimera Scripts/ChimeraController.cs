@@ -280,7 +280,7 @@ public class ChimeraController : MonoBehaviour
         if (randomInt == 0)
         {
             fireBallCounter++;
-            if (fireBallCounter >= attackRepeatAmount)
+            if (fireBallCounter > attackRepeatAmount)
             {
                 StartCoroutine(AttackPattern());
                 
@@ -309,7 +309,7 @@ public class ChimeraController : MonoBehaviour
         if (randomInt == 1)
         {
             waterCounter++;
-            if (waterCounter >= attackRepeatAmount)
+            if (waterCounter > attackRepeatAmount)
             {
                 StartCoroutine(AttackPattern());
             }
@@ -330,7 +330,7 @@ public class ChimeraController : MonoBehaviour
         if (randomInt == 2)
         {
             electricCounter++;
-            if (electricCounter >= attackRepeatAmount)
+            if (electricCounter > attackRepeatAmount)
             {
                 StartCoroutine(AttackPattern());
             }
