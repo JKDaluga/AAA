@@ -146,14 +146,16 @@ public class ChimeraController : MonoBehaviour
 
     IEnumerator FireBall()
     {
-        StartCoroutine(playFire());
+
             if (Health / maxHealth >= .75f)
             {
                 for (int i = 0; i < 2; i++)
                 {
+                    StartCoroutine(playFire());
                     source.PlayOneShot(fireball);
-                    float delay = 2f;
+                    float delay = 1.5f;
                     float time = 0;
+                    yield return new WaitForSeconds(0.5f);
                     var fireBallClone1 = (GameObject)Instantiate(fireBallBig, redHead.transform.position, transform.rotation);
                     while (time < delay)
                     {
@@ -161,8 +163,10 @@ public class ChimeraController : MonoBehaviour
                         yield return null;
                     }
                     time = 0;
-                source.PlayOneShot(fireball);
-                fireBallClone1 = (GameObject)Instantiate(fireBallBig2, redHead.transform.position, transform.rotation);
+                    StartCoroutine(playFire());
+                    source.PlayOneShot(fireball);
+                    yield return new WaitForSeconds(0.5f);
+                    fireBallClone1 = (GameObject)Instantiate(fireBallBig2, redHead.transform.position, transform.rotation);
                     while (time < delay)
                     {
                         time += Time.deltaTime;
@@ -176,8 +180,10 @@ public class ChimeraController : MonoBehaviour
             float delay = 1.5f;
             for (int i = 0; i < 2; i++)
             {
+                StartCoroutine(playFire());
                 float time = 0;
                 source.PlayOneShot(fireball);
+                yield return new WaitForSeconds(0.5f);
                 var fireBallClone1 = (GameObject)Instantiate(fireBall, redHead.transform.position, transform.rotation);
                 while (time < delay)
                 {
@@ -185,7 +191,9 @@ public class ChimeraController : MonoBehaviour
                     yield return null;
                 }
                 time = 0;
+                StartCoroutine(playFire());
                 source.PlayOneShot(fireball);
+                yield return new WaitForSeconds(0.5f);
                 fireBallClone1 = (GameObject)Instantiate(fireBall2, redHead.transform.position, transform.rotation);
                 while (time < delay)
                 {
