@@ -8,6 +8,7 @@ public class GameplayManager : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip battleMusic;
+    public AudioClip timerWarning;
 
     public GameObject p1;
     public GameObject p2;
@@ -65,6 +66,7 @@ public class GameplayManager : MonoBehaviour
         if (timeLeft <= 15)
         {
             timer.color = Color.red;
+            audioSource.PlayOneShot(timerWarning);
         }
 
     }
