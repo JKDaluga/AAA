@@ -111,7 +111,7 @@ public class ChimeraController : MonoBehaviour
     IEnumerator lightningStrikes()
     {
         source.PlayOneShot(thunder,.3f);
-
+        StartCoroutine("summonLightning");
         float delay = 1.5f;
         for (int i = 0; i < 2; i++)
         {
@@ -371,7 +371,12 @@ public class ChimeraController : MonoBehaviour
             }
         }
     }
-
+    private IEnumerator summonLightning()
+    {
+        anim.SetBool("lightning", true);
+        yield return new WaitForSeconds(1.2f);
+        anim.SetBool("lightning", false);
+    }
     private IEnumerator getHurt()
     {
         sp.color = hurt;

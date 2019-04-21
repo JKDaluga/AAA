@@ -103,6 +103,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: fireBreath
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: waterBeam
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102799127726554214}
   m_Solo: 0
@@ -151,6 +154,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: waterBeam
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: roar
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102930189755436952}
   m_Solo: 0
@@ -174,6 +180,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: roar
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: waterBeam
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102530417741852886}
@@ -247,6 +256,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: lightning
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: waterBeam
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102952090171961152}
   m_Solo: 0
@@ -295,6 +307,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: fireBreath
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: lightning
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102799127726554214}
   m_Solo: 0
@@ -342,6 +357,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: waterBeam
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: fireBreath
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102930189755436952}
@@ -493,6 +511,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: lightning
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: roar
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102952090171961152}
   m_Solo: 0
@@ -516,6 +537,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: lightning
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: fireBreath
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102952090171961152}
@@ -670,7 +694,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400000, guid: 428254d4c7d6847539f64ee7c431bbaa, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
