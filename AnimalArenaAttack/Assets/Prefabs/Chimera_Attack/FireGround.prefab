@@ -148,7 +148,7 @@ MonoBehaviour:
     type: 2}
   fireSpot: {fileID: 212996946948464452}
   fadeSpeed: 0.1
-  timer: 4.5
+  timer: 3
   damage: 10
   firstColor: {r: 1, g: 0, b: 0, a: 1}
   secondaryColor: {r: 1, g: 0.20784314, b: 0, a: 1}
