@@ -107,7 +107,7 @@ public class SalamanderScript : PlayerParent
     {
         print("eagle");
         EagleScript eagle = FindObjectOfType<EagleScript>();
-        eagle.health = ((int)eagle.maxHealth) / 2;
+        eagle.health = ((int)eagle.maxHealth)*3 / 4;
         eagle.pRB2D.constraints = RigidbodyConstraints2D.FreezeRotation;
         eagle.Box.enabled = true;
         eagle.gameObject.layer = 8;
