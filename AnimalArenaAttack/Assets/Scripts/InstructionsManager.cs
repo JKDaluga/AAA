@@ -6,11 +6,16 @@ using UnityEngine.UI;
 
 public class InstructionsManager : MonoBehaviour
 {
+    public GameObject instructions1;
     public Text timer;
     public int timeLeft = 5;
+    public AudioClip music;
+    public AudioSource src;
     // Use this for initialization
     void Start()
     {
+        src = this.gameObject.GetComponent<AudioSource>();
+        src.PlayOneShot(music);
         StartCoroutine("LoseTime");
         Time.timeScale = 1;
         StartCoroutine(WaitForSceneSwitch());
@@ -23,6 +28,10 @@ public class InstructionsManager : MonoBehaviour
             SceneManager.LoadScene(0);
         }
         timer.text = ("" + timeLeft);
+        if (timeLeft==7)
+        {
+            instructions1.SetActive(false);
+        }
     }
     private IEnumerator WaitForSceneSwitch()
     {

@@ -151,11 +151,9 @@ public class PlayerParent : MonoBehaviour
        
 
     */
-        Debug.Log((health / maxHealth * 100f));
         if (((health / maxHealth * 100f) < 70))
         {
             anim.SetBool("isInjured", true);
-            Debug.Log("fuck");
         }
 
         if (((health / maxHealth * 100f) < 40))

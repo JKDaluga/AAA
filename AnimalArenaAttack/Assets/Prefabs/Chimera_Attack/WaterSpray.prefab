@@ -148,11 +148,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f4d024ba18daaf4ca32a895ff35bea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waterSpray: {fileID: 198553442499797124, guid: 285cf6624e73af4408655d7e4cf185ad,
+    type: 2}
   minAngle: -85
   maxAngle: 85
   progress: -0.1
   timeToRotate: 4
   startLeft: 0
+  xOffset: 0
+  yOffset: -0.3
 --- !u!114 &114701890523028408
 MonoBehaviour:
   m_ObjectHideFlags: 1

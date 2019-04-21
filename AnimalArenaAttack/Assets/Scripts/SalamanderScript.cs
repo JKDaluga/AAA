@@ -18,6 +18,7 @@ public class SalamanderScript : PlayerParent
     public AudioClip attack;
     public AudioClip dodge;
     public AudioClip cry;
+    public AudioClip revive;
 
     public AudioSource source;
 
@@ -69,6 +70,7 @@ public class SalamanderScript : PlayerParent
                 if (reviveTime >= 1.5f)
                 {
                     print("THING");
+                    source.PlayOneShot(revive);
                     reviveTime = 0;
                     reviving = false;
                     ReviveOther();
