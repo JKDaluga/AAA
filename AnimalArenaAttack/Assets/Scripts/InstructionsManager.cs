@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class InstructionsManager : MonoBehaviour
 {
+    public GameObject instructions1;
     public Text timer;
     public int timeLeft = 5;
     // Use this for initialization
@@ -23,6 +24,10 @@ public class InstructionsManager : MonoBehaviour
             SceneManager.LoadScene(0);
         }
         timer.text = ("" + timeLeft);
+        if (timeLeft==7)
+        {
+            instructions1.SetActive(false);
+        }
     }
     private IEnumerator WaitForSceneSwitch()
     {
