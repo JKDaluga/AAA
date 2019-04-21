@@ -104,18 +104,18 @@ TextureImporter:
       name: waterbeam_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 2886
-        width: 50
-        height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 0
+        y: 0
+        width: 707
+        height: 4027
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e60d0c712c014164b800e741d53da86
+      spriteID: 6900730883b763543a6935749d1e980a
       vertices: []
       indices: 
       edges: []
@@ -124,18 +124,18 @@ TextureImporter:
       name: waterbeam_1
       rect:
         serializedVersion: 2
-        x: 54
+        x: 1214
         y: 0
-        width: 623
+        width: 715
         height: 4027
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 096dac420990f4095ace06dd09dfbce3
+      spriteID: 679801013de7cac4b8a5146096965caa
       vertices: []
       indices: 
       edges: []
@@ -144,18 +144,18 @@ TextureImporter:
       name: waterbeam_2
       rect:
         serializedVersion: 2
-        x: 1240
-        y: 16
-        width: 682
-        height: 3995
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2454
+        y: 0
+        width: 804
+        height: 4027
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 001a4359a2e0a4cd38f706d978d469c1
+      spriteID: 96c9d447e505e2b4997142581d85eb52
       vertices: []
       indices: 
       edges: []
@@ -164,278 +164,18 @@ TextureImporter:
       name: waterbeam_3
       rect:
         serializedVersion: 2
-        x: 2467
-        y: 17
-        width: 759
-        height: 3987
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b39eb64be55a343a0ad35895fbfb7321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_4
-      rect:
-        serializedVersion: 2
-        x: 3645
+        x: 3641
         y: 0
-        width: 820
+        width: 805
         height: 4027
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f3f8b1390f174e82b1341f00a6b0025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2819
-        width: 23
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4353acd9e8e3b4854a3189102be11bf3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_6
-      rect:
-        serializedVersion: 2
-        x: 1222
-        y: 2386
-        width: 26
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98fa40fff58ee482f970b07e864c3475
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_7
-      rect:
-        serializedVersion: 2
-        x: 4427
-        y: 2153
-        width: 28
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24d1b5f88ec9e4fef97f8b8174aee38a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_8
-      rect:
-        serializedVersion: 2
-        x: 651
-        y: 2009
-        width: 43
-        height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b075e796768e472aab261280049f4dc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_9
-      rect:
-        serializedVersion: 2
-        x: 677
-        y: 1946
-        width: 28
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46861c1c6259847d5a26ab5855eddcb6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_10
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 1242
-        width: 43
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 259c2230af3da4d3498c2aaf9855d74c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_11
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 1205
-        width: 28
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ef614e46bf734694bf787e2afba51ce
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_12
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1111
-        width: 53
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aaf573f62c92c4c1fbaba32f7a4bb7ea
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_13
-      rect:
-        serializedVersion: 2
-        x: 4438
-        y: 1106
-        width: 27
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3da355ada90044e89b0c07ae8e27fe94
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_14
-      rect:
-        serializedVersion: 2
-        x: 668
-        y: 568
-        width: 29
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b8556e7a07a64fce8ae7ac46df6d54f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_15
-      rect:
-        serializedVersion: 2
-        x: 3621
-        y: 566
-        width: 27
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc4bf4a782e9a493fb3c68671c26e7e8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: waterbeam_16
-      rect:
-        serializedVersion: 2
-        x: 1896
-        y: 245
-        width: 30
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfc0b6ce5994f4db7962515f137d8e15
+      spriteID: 4d2e5a4212823a74f808f0a18cf1b348
       vertices: []
       indices: 
       edges: []
