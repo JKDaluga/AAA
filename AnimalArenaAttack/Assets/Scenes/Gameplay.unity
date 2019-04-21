@@ -5283,6 +5283,7 @@ MonoBehaviour:
   salamander: {fileID: 859135316}
   eagle: {fileID: 74629577}
   anim: {fileID: 2087923102}
+  attackRepeatAmount: 1
   cleave: {fileID: 1064383934232854, guid: 62805b6a1f12bd449926f1850a803b76, type: 2}
   cleaveWarning: {fileID: 1026418562412202, guid: 13db5889f4511584689abf6469ea260c,
     type: 2}
