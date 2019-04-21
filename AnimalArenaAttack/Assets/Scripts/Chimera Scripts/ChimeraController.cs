@@ -13,6 +13,8 @@ public class ChimeraController : MonoBehaviour
 
     public Animator anim;
 
+    public int attackRepeatAmount;
+
     private SpriteRenderer sp;
     //Attack Game Objects
     public GameObject cleave;
@@ -278,7 +280,7 @@ public class ChimeraController : MonoBehaviour
         if (randomInt == 0)
         {
             fireBallCounter++;
-            if (fireBallCounter >= 2)
+            if (fireBallCounter > attackRepeatAmount)
             {
                 StartCoroutine(AttackPattern());
                 
@@ -307,7 +309,7 @@ public class ChimeraController : MonoBehaviour
         if (randomInt == 1)
         {
             waterCounter++;
-            if (waterCounter >= 2)
+            if (waterCounter > attackRepeatAmount)
             {
                 StartCoroutine(AttackPattern());
             }
@@ -328,7 +330,7 @@ public class ChimeraController : MonoBehaviour
         if (randomInt == 2)
         {
             electricCounter++;
-            if (electricCounter >= 2)
+            if (electricCounter > attackRepeatAmount)
             {
                 StartCoroutine(AttackPattern());
             }
