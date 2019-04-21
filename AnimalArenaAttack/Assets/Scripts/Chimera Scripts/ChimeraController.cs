@@ -266,7 +266,7 @@ public class ChimeraController : MonoBehaviour
 
             //Enable roar animation here
             playRoar();
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1.4f);
         }
         //Forces upgraded Water Beam attack one time when health is 50% of original health
         if ((Health / maxHealth <= 0.50f) && (waterUpgrade == false))
