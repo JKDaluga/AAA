@@ -23,7 +23,7 @@ GameObject:
   m_Layer: 0
   m_Name: WaterSpray
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -37,9 +37,9 @@ GameObject:
   - component: {fileID: 4842968509929756}
   - component: {fileID: 212514498982799268}
   - component: {fileID: 114701890523028408}
-  - component: {fileID: 61279803759212412}
   - component: {fileID: 50885537094969888}
   - component: {fileID: 95259768132946310}
+  - component: {fileID: 61880990273291778}
   m_Layer: 0
   m_Name: Water
   m_TagString: ChimeraWater
@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1876367379822638}
   m_LocalRotation: {x: 0, y: 0, z: 0.67559016, w: 0.7372774}
-  m_LocalPosition: {x: 13.537101, y: -7.8575954, z: 0}
+  m_LocalPosition: {x: 13.81806, y: -4.0573683, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4842968509929756}
@@ -68,8 +68,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1905357228648554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: -10.43, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.92, y: -0.02, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.35, z: 1}
   m_Children: []
   m_Father: {fileID: 4196003731476248}
   m_RootOrder: 0
@@ -94,7 +94,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61279803759212412
+--- !u!61 &61880990273291778
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,18 +106,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.011142731}
+  m_Offset: {x: 4.424321, y: -20.135}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.1500001, y: 20.92}
+    pivot: {x: 0, y: 1}
+    oldSize: {x: 7.07, y: 40.27}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 20.929764}
+  m_Size: {x: 3.5093846, y: 40.27}
   m_EdgeRadius: 0
 --- !u!95 &95259768132946310
 Animator:
@@ -200,7 +200,7 @@ SpriteRenderer:
   m_SortingLayerID: 1764212775
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0e39caba4ead89644bf86fcfbda91985, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7bc4e3b50c579fa4b90721c24c2ac9c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
