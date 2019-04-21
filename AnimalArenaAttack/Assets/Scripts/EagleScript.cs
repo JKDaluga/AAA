@@ -17,6 +17,7 @@ public class EagleScript : PlayerParent {
     public AudioClip attack;
     public AudioClip dodge;
     public AudioClip cry;
+    public AudioClip revive;
 
     public AudioSource source;
 
@@ -70,6 +71,7 @@ public class EagleScript : PlayerParent {
                         if (reviveTime >= 1.5f)
                         {
                             reviveTime = 0;
+                            source.PlayOneShot(revive);
                             reviving = false;
                             ReviveOther();
                         }
