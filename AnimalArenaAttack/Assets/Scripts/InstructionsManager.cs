@@ -9,9 +9,13 @@ public class InstructionsManager : MonoBehaviour
     public GameObject instructions1;
     public Text timer;
     public int timeLeft = 5;
+    public AudioClip music;
+    public AudioSource src;
     // Use this for initialization
     void Start()
     {
+        src = this.gameObject.GetComponent<AudioSource>();
+        src.PlayOneShot(music);
         StartCoroutine("LoseTime");
         Time.timeScale = 1;
         StartCoroutine(WaitForSceneSwitch());
