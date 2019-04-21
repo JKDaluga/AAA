@@ -63,6 +63,10 @@ public class ChimeraController : MonoBehaviour
     //Use this for initialization
     void Start()
     {
+        sp = GetComponent<SpriteRenderer>();
+        sp.color = normal;
+        maxHealth = Health;
+
         fireBallCounter = 0;
         waterCounter = 0;
         electricCounter = 0;
@@ -71,13 +75,14 @@ public class ChimeraController : MonoBehaviour
         waterUpgrade = false;
         lightningUpgrade = false;
 
-        StartCoroutine(AttackPattern());
-        sp = GetComponent<SpriteRenderer>();
-        sp.color = normal;
-        maxHealth = Health;
-        source.PlayOneShot(roar);
-
         StartCoroutine(playRoar());
+        //Invoke();
+        Invoke("FirstAttack", 1.4f);
+    }
+
+    public void FirstAttack()
+    {
+        StartCoroutine(AttackPattern());
     }
 
     //Update is called once per frame
@@ -260,6 +265,7 @@ public class ChimeraController : MonoBehaviour
             fireBallCounter = 0;
 
             //Enable roar animation here
+            playRoar();
             yield return new WaitForSeconds(1f);
         }
         //Forces upgraded Water Beam attack one time when health is 50% of original health
@@ -270,7 +276,8 @@ public class ChimeraController : MonoBehaviour
             waterCounter = 0;
 
             //Enable roar animation here
-            yield return new WaitForSeconds(1f);
+            playRoar();
+            yield return new WaitForSeconds(1.4f);
 
         }
         //Forces upgraded Lightning attack one time when health is 25% of original health
@@ -281,7 +288,8 @@ public class ChimeraController : MonoBehaviour
             electricCounter = 0;
 
             //Enable roar animation here
-            yield return new WaitForSeconds(1f);
+            playRoar();
+            yield return new WaitForSeconds(1.4f);
 
         }
 
@@ -375,6 +383,7 @@ public class ChimeraController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.15f);
         anim.SetBool("roar",true);
+        source.PlayOneShot(roar);
         yield return new WaitForSeconds(2f);
         anim.SetBool("roar", false);
     }
