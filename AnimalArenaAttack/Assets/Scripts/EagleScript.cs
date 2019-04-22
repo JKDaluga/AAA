@@ -83,6 +83,7 @@ public class EagleScript : PlayerParent {
                         EagleReviveFill.fillAmount = (reviveTime / 1.5f);
                         if (reviveTime >= 1.5f)
                         {
+                            source.PlayOneShot(revive);
                             reviveTime = 0;
                             reviving = false;
                             ReviveOther();
