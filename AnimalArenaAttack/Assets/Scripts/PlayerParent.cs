@@ -253,6 +253,7 @@ public class PlayerParent : MonoBehaviour
                     if ((Input.GetKeyDown(KeyCode.B)))
                     {
                         eagleSrc.PlayOneShot(eagleDodge);
+                        anim.SetBool("isDodging", true);
                         if (rb.velocity.magnitude != 0)
                         {
                             rollTime = .2f;
@@ -260,6 +261,7 @@ public class PlayerParent : MonoBehaviour
                             isVulnerable = false;
                             gameObject.layer = 11;
                             Invoke("setVulnerability", 1f);
+                            Invoke("endDodgeAnimation", .025f);
                             Instantiate(smokeTrail, transform.position, this.transform.rotation);
                             smokeTrail.Play();
                             Invoke("KillSmoke", 1);
@@ -273,6 +275,7 @@ public class PlayerParent : MonoBehaviour
                                 isVulnerable = false;
                                 gameObject.layer = 11;
                                 Invoke("setVulnerability", 1f);
+                                Invoke("endDodgeAnimation", .025f);
                                 Instantiate(smokeTrail, transform.position, this.transform.rotation);
                                 smokeTrail.Play();
                                 Invoke("KillSmoke", 1);
@@ -284,6 +287,7 @@ public class PlayerParent : MonoBehaviour
                                 isVulnerable = false;
                                 gameObject.layer = 11;
                                 Invoke("setVulnerability", 1f);
+                                Invoke("endDodgeAnimation", .025f);
                                 Instantiate(smokeTrail, transform.position, this.transform.rotation);
                                 smokeTrail.Play();
                                 Invoke("KillSmoke", 1);
@@ -454,9 +458,13 @@ public class PlayerParent : MonoBehaviour
     }
     void setVulnerability()
     {
+        anim.SetBool("isDodging", false);
         isVulnerable = true;
         gameObject.layer = 8;
-
+    }
+    void endDodgeAnimation()
+    {
+        anim.SetBool("isDodging", false);
     }
     public void Revive()
     {

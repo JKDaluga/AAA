@@ -220,6 +220,7 @@ public class SalamanderScript : PlayerParent
             //Ability 2 Player 2
             if ((Input.GetKeyDown(KeyCode.I)) && isVulnerable)
             {
+                anim.SetBool("isDodging", true);
                 //Debug.Log("Am I Work?");
                 //anim.SetBool("Ability2", true)
                 Instantiate(smoke, this.transform.position, transform.rotation);
@@ -233,7 +234,7 @@ public class SalamanderScript : PlayerParent
                 Invoke("setVulnerability", invulTime);
                 Invoke("ColorChange", invulTime);
                 gameObject.layer = 11;
-
+                Invoke("endDodgeAnimation", .025f);
 
             }
         }
