@@ -15,6 +15,7 @@ TagManager:
   - FeatherCollisionBox
   - Undefined
   - SalamanderSlash
+  - GameManager
   layers:
   - Default
   - TransparentFX
