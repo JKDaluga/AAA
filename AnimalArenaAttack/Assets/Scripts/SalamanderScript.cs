@@ -163,10 +163,12 @@ public class SalamanderScript : PlayerParent
                     SalamanderReviveBG.gameObject.SetActive(true);
                     SalamanderReviveFill.gameObject.SetActive(true);
                     SalamanderReviveFill.fillAmount = (reviveTime / 2);
-                    if (reviveTime >= 2)
+                    if (reviveTime >= 1.5)
                     {
+                        source.PlayOneShot(revive);
                         reviveTime = 0;
                         reviving = false;
+                        ReviveOther();
                     }
                 }
                 else
@@ -174,10 +176,12 @@ public class SalamanderScript : PlayerParent
                     EagleReviveBG.gameObject.SetActive(true);
                     EagleReviveFill.gameObject.SetActive(true);
                     EagleReviveFill.fillAmount = (reviveTime / 2);
-                    if (reviveTime >= 2)
+                    if (reviveTime >= 1.5)
                     {
+                        source.PlayOneShot(revive);
                         reviveTime = 0;
                         reviving = false;
+                        ReviveOther();
                     }
                 }
             }

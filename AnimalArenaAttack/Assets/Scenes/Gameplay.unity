@@ -301,6 +301,11 @@ Prefab:
       propertyPath: m_Volume
       value: 0.63
       objectReference: {fileID: 0}
+    - target: {fileID: 114053842247477328, guid: d60cb50e5893a2c4793b2f494ce70760,
+        type: 2}
+      propertyPath: revive
+      value: 
+      objectReference: {fileID: 8300000, guid: 6610c4d77ed54430096ac1b89e44064c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d60cb50e5893a2c4793b2f494ce70760, type: 2}
   m_IsPrefabAsset: 0
@@ -2673,6 +2678,21 @@ Prefab:
       value: 
       objectReference: {fileID: 1340250144992748, guid: 77fc90d5998e1488fac94814c5cbb212,
         type: 2}
+    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: revive
+      value: 
+      objectReference: {fileID: 8300000, guid: 6610c4d77ed54430096ac1b89e44064c, type: 3}
+    - target: {fileID: 114957450499613094, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: source
+      value: 
+      objectReference: {fileID: 859135317}
+    - target: {fileID: 82138765316906372, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 82006448065542426, guid: 29f30ba6ca6b64e4eafb18e88e06668a, type: 2}
     - {fileID: 82735802888676784, guid: 29f30ba6ca6b64e4eafb18e88e06668a, type: 2}
@@ -2681,6 +2701,11 @@ Prefab:
 --- !u!1 &859135316 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1518049945991578, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+    type: 2}
+  m_PrefabInternal: {fileID: 859135315}
+--- !u!82 &859135317 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 82138765316906372, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
     type: 2}
   m_PrefabInternal: {fileID: 859135315}
 --- !u!4 &859135326 stripped
