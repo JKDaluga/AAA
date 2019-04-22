@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 50169234347443114}
   - component: {fileID: 114806068097593682}
   - component: {fileID: 95261292650537964}
-  - component: {fileID: 82615949444235742}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: ChimeraFire
@@ -189,7 +188,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -202,9 +201,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  expl: {fileID: 82615949444235742}
+  m_Name:
+  m_EditorClassIdentifier:
+  expl: {fileID: 8300000, guid: 6438d22343cf14b7088c4ebe05e2f7cf, type: 3}
   gpm: {fileID: 0}
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
