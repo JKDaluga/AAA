@@ -62,6 +62,8 @@ public class ChimeraController : MonoBehaviour
     public AudioClip roar;
     public AudioClip salamanderSlash;
 
+    public Image chimeraHB;
+
     //Use this for initialization
     void Start()
     {
@@ -91,6 +93,8 @@ public class ChimeraController : MonoBehaviour
     void Update()
     {
         HealthBar.value = ((Health / maxHealth) * 100);
+        chimeraHB.fillAmount = (Health / maxHealth);
+
     }
 
     //Method determines how much damage is delt to the Chimera

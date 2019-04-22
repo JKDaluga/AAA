@@ -15,7 +15,7 @@ public class InstructionsManager : MonoBehaviour
     void Start()
     {
         src = this.gameObject.GetComponent<AudioSource>();
-        src.PlayOneShot(music);
+        src.PlayOneShot(music, .5f);
         StartCoroutine("LoseTime");
         Time.timeScale = 1;
         StartCoroutine(WaitForSceneSwitch());
