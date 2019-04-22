@@ -15,9 +15,9 @@ public class GameplayManager : MonoBehaviour
     public GameObject p2;
     public GameObject chimera;
 
-    public int p1h;
-    public int p2h;
-    public int ch;
+    int p1h;
+    int p2h;
+    int ch;
 
     public Text timer;
     public int timeLeft = 90;

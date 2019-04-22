@@ -144,6 +144,7 @@ public class SalamanderScript : PlayerParent
             anim.SetBool("isCritical", true);
             anim.SetBool("isInjured", false);
         }
+
         if (health > 0)
         {
             if (!isPlayer1)
@@ -202,12 +203,12 @@ public class SalamanderScript : PlayerParent
                 }
             }
             horiz = Input.GetAxis("Horizontal2");
-            if (this.transform.position.x < chimera.transform.position.x && !facingRight)
+            if (this.transform.position.x < chimera.transform.position.x && !facingRight && anim.GetBool("isRunning"))
             {
                 Flip();
             }
 
-            else if (this.transform.position.x > chimera.transform.position.x && facingRight)
+            else if (this.transform.position.x > chimera.transform.position.x && facingRight && anim.GetBool("isRunning"))
             {
                 Flip();
             }

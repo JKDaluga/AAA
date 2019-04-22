@@ -391,6 +391,15 @@ public class PlayerParent : MonoBehaviour
 
         Vector2 movement = new Vector2(x, y);
         rb.velocity = movement * speed;
+        if (movement.x != 0 || movement.y != 0)
+        {
+            anim.SetBool("isRunning", true);
+
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
+        }
     }
     public void Damage(int amount)
     {

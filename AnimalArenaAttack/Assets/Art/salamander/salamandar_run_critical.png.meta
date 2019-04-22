@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 270fb62c0691c4b4d84803c428d12ad3
+guid: 63b82bece2eaa3248bd471305adfbe7a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: salamander_run_0
-    21300002: salamander_run_1
-    21300004: salamander_run_2
-    21300006: salamander_run_3
-    21300008: salamander_run_4
+    21300000: salamandar_run_critical_0
+    21300002: salamandar_run_critical_1
+    21300004: salamandar_run_critical_2
+    21300006: salamandar_run_critical_3
+    21300008: salamandar_run_critical_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: salamander_run_0
+      name: salamandar_run_critical_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 718
+        width: 713
         height: 972
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -114,38 +114,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f63e7f051839cd541a76216e68044120
+      spriteID: 97af331bfefd58749b28db519d7351cd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: salamander_run_1
+      name: salamandar_run_critical_1
       rect:
         serializedVersion: 2
         x: 1024
         y: 0
         width: 807
-        height: 944
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4004f6559d341bd46a5a286f5f3d4dc7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: salamander_run_2
-      rect:
-        serializedVersion: 2
-        x: 2041
-        y: 0
-        width: 779
         height: 972
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -154,18 +134,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c51b456eecef78f4dafc38c2996cf369
+      spriteID: 67ccf80b86679cb4c8a2cd3ebe584a83
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: salamander_run_3
+      name: salamandar_run_critical_2
       rect:
         serializedVersion: 2
-        x: 3135
+        x: 2042
         y: 0
-        width: 735
+        width: 776
         height: 972
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -174,18 +154,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d940339f4d22dc042b7e4ae480e54010
+      spriteID: 8de83156b8758204c911519e1b93b1e7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: salamander_run_4
+      name: salamandar_run_critical_3
       rect:
         serializedVersion: 2
-        x: 4157
+        x: 3134
         y: 0
-        width: 735
+        width: 709
         height: 972
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,7 +174,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68a2f5612f289da45826b82a4cd29a93
+      spriteID: 8519ec7c6ed460849aac4268dbffd4f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salamandar_run_critical_4
+      rect:
+        serializedVersion: 2
+        x: 4156
+        y: 0
+        width: 737
+        height: 972
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa64daa592272d4cadec5f19f5d1801
       vertices: []
       indices: 
       edges: []
@@ -202,7 +202,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 79de28de8987f7d468d2e44bb9d4c58d
+    spriteID: 683245726f98d0448919f5de8711af8e
     vertices: []
     indices: 
     edges: []
