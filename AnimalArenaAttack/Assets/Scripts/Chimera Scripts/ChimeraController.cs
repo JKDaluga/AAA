@@ -12,6 +12,8 @@ public class ChimeraController : MonoBehaviour
     public GameObject eagle;
 
     public Animator anim;
+    public Animator BrazierControllerLeft;
+    public Animator BrazierControllerRight;
 
     public int attackRepeatAmount;
 
@@ -305,7 +307,10 @@ public class ChimeraController : MonoBehaviour
             {
                 waterCounter = 0;
                 electricCounter = 0;
-                Gem.color = new Color(255f, 0f, 0f);
+
+                BrazierControllerLeft.SetBool("FireBrazier", true);
+                BrazierControllerRight.SetBool("FireBrazier", true);
+
                 yield return new WaitForSeconds(1f);
                 FlameBreath();
                 if (Health / maxHealth >= .75f)
@@ -318,6 +323,10 @@ public class ChimeraController : MonoBehaviour
                 }
 
                 yield return new WaitForSeconds(1f);
+
+                BrazierControllerLeft.SetBool("FireBrazier", false);
+                BrazierControllerRight.SetBool("FireBrazier", false);
+
                 StartCoroutine(AttackPattern());
 
             }
@@ -333,11 +342,19 @@ public class ChimeraController : MonoBehaviour
             {
                 fireBallCounter = 0;
                 electricCounter = 0;
-                Gem.color = new Color(0f, 0f, 255f);
+
+                BrazierControllerLeft.SetBool("WaterBrazier", true);
+                BrazierControllerRight.SetBool("WaterBrazier", true);
+
+                // Gem.color = new Color(0f, 0f, 255f);
                 yield return new WaitForSeconds(1f);
                 WaterSprayAttack();
                 yield return new WaitForSeconds(3f);
                 yield return new WaitForSeconds(1f);
+
+                BrazierControllerLeft.SetBool("WaterBrazier", false);
+                BrazierControllerRight.SetBool("WaterBrazier", false);
+
 
                 StartCoroutine(AttackPattern());
 
@@ -354,7 +371,11 @@ public class ChimeraController : MonoBehaviour
             {
                 fireBallCounter = 0;
                 waterCounter = 0;
-                Gem.color = new Color(255f, 218f, 0f);
+
+                BrazierControllerLeft.SetBool("LightningBrazier", true);
+                BrazierControllerRight.SetBool("LightningBrazier", true);
+
+                //Gem.color = new Color(255f, 218f, 0f);
                 yield return new WaitForSeconds(1f);
                 Electric();
                 if (Health / maxHealth >= .25f)
@@ -366,6 +387,10 @@ public class ChimeraController : MonoBehaviour
                     yield return new WaitForSeconds(2f);
                 }
                 yield return new WaitForSeconds(1f);
+
+                BrazierControllerLeft.SetBool("LightningBrazier", false);
+                BrazierControllerRight.SetBool("LightningBrazier", false);
+
                 StartCoroutine(AttackPattern());
 
             }

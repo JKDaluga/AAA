@@ -134,7 +134,7 @@ Transform:
   m_GameObject: {fileID: 1834653209337190}
   m_LocalRotation: {x: 0, y: 0, z: 0.5, w: 0.8660254}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 4969994936857402}
   m_RootOrder: 4
@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 1988277278391344}
   m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 4969994936857402}
   m_RootOrder: 1
@@ -160,7 +160,7 @@ Transform:
   m_GameObject: {fileID: 1334050743983470}
   m_LocalRotation: {x: 0, y: 0, z: -0.5, w: 0.8660254}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 4969994936857402}
   m_RootOrder: 2
@@ -173,7 +173,7 @@ Transform:
   m_GameObject: {fileID: 1907601825897054}
   m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 4969994936857402}
   m_RootOrder: 3
@@ -186,7 +186,7 @@ Transform:
   m_GameObject: {fileID: 1331463469168390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 4969994936857402}
   m_RootOrder: 0
@@ -198,7 +198,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1831981782171962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.626479, y: -2.2947187, z: 0}
+  m_LocalPosition: {x: -1.97, y: -2.2947187, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 4883256631821566}
@@ -321,9 +321,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.019530311, y: -1.5839176}
+  m_Offset: {x: 0, y: -5.44}
   serializedVersion: 2
-  m_Radius: 0.8318452
+  m_Radius: 1.83
 --- !u!58 &58361204571297804
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -336,9 +336,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.014716888, y: -1.5092922}
+  m_Offset: {x: 0, y: -5.39}
   serializedVersion: 2
-  m_Radius: 0.8802388
+  m_Radius: 1.83
 --- !u!58 &58443997311168180
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -351,9 +351,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.5347819}
+  m_Offset: {x: 0, y: -5.44}
   serializedVersion: 2
-  m_Radius: 0.84567165
+  m_Radius: 1.83
 --- !u!58 &58490523249221520
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -366,9 +366,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.020207932, y: -1.6242218}
+  m_Offset: {x: 0, y: -5.34}
   serializedVersion: 2
-  m_Radius: 0.8041916
+  m_Radius: 1.83
 --- !u!58 &58679517689169890
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -381,9 +381,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.012185945, y: -1.4998494}
+  m_Offset: {x: 0, y: -5.25}
   serializedVersion: 2
-  m_Radius: 0.8387575
+  m_Radius: 1.83
 --- !u!95 &95079069733697126
 Animator:
   serializedVersion: 3
@@ -485,10 +485,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expl: {fileID: 8300000, guid: 6438d22343cf14b7088c4ebe05e2f7cf, type: 3}
+  gpm: {fileID: 0}
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
   damage: 50
   fireBallSpeed: 3
+  src: {fileID: 0}
 --- !u!114 &114341689021419584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -500,10 +503,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expl: {fileID: 8300000, guid: 6438d22343cf14b7088c4ebe05e2f7cf, type: 3}
+  gpm: {fileID: 0}
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
   damage: 50
   fireBallSpeed: 3
+  src: {fileID: 0}
 --- !u!114 &114354057252196800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -515,10 +521,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expl: {fileID: 8300000, guid: 6438d22343cf14b7088c4ebe05e2f7cf, type: 3}
+  gpm: {fileID: 0}
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
   damage: 50
   fireBallSpeed: 3
+  src: {fileID: 0}
 --- !u!114 &114496614551919512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -530,10 +539,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expl: {fileID: 8300000, guid: 6438d22343cf14b7088c4ebe05e2f7cf, type: 3}
+  gpm: {fileID: 0}
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
   damage: 50
   fireBallSpeed: 3
+  src: {fileID: 0}
 --- !u!114 &114665662996684394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -545,10 +557,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expl: {fileID: 8300000, guid: 6438d22343cf14b7088c4ebe05e2f7cf, type: 3}
+  gpm: {fileID: 0}
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
   damage: 50
   fireBallSpeed: 3
+  src: {fileID: 0}
 --- !u!212 &212059733586921320
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -584,7 +599,7 @@ SpriteRenderer:
   m_SortingLayerID: 103353123
   m_SortingLayer: 4
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: a93b071d358fe4f2c84f22fc9f59d8cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76a4356eafa62034e9c00f603ee81273, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -630,7 +645,7 @@ SpriteRenderer:
   m_SortingLayerID: 103353123
   m_SortingLayer: 4
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: a93b071d358fe4f2c84f22fc9f59d8cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76a4356eafa62034e9c00f603ee81273, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -676,7 +691,7 @@ SpriteRenderer:
   m_SortingLayerID: 103353123
   m_SortingLayer: 4
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: a93b071d358fe4f2c84f22fc9f59d8cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76a4356eafa62034e9c00f603ee81273, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -722,7 +737,7 @@ SpriteRenderer:
   m_SortingLayerID: 103353123
   m_SortingLayer: 4
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: a93b071d358fe4f2c84f22fc9f59d8cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76a4356eafa62034e9c00f603ee81273, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -768,7 +783,7 @@ SpriteRenderer:
   m_SortingLayerID: 103353123
   m_SortingLayer: 4
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: a93b071d358fe4f2c84f22fc9f59d8cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76a4356eafa62034e9c00f603ee81273, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

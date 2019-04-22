@@ -114,7 +114,7 @@ Transform:
   m_GameObject: {fileID: 1533645135453246}
   m_LocalRotation: {x: 0, y: 0, z: -0.13052624, w: 0.9914449}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 4244598021528400}
   m_RootOrder: 1
@@ -127,7 +127,7 @@ Transform:
   m_GameObject: {fileID: 1770987911787676}
   m_LocalRotation: {x: 0, y: 0, z: 0.13052616, w: 0.9914449}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 4244598021528400}
   m_RootOrder: 2
@@ -157,7 +157,7 @@ Transform:
   m_GameObject: {fileID: 1318616961511950}
   m_LocalRotation: {x: 0, y: 0, z: -0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 4244598021528400}
   m_RootOrder: 0
@@ -170,7 +170,7 @@ Transform:
   m_GameObject: {fileID: 1563469615273304}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 4244598021528400}
   m_RootOrder: 3
@@ -267,9 +267,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011493227, y: -1.5597944}
+  m_Offset: {x: 0, y: -5.45}
   serializedVersion: 2
-  m_Radius: 0.88023865
+  m_Radius: 1.83
 --- !u!58 &58636406955265778
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -282,9 +282,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.024443064, y: -1.588773}
+  m_Offset: {x: 0, y: -5.45}
   serializedVersion: 2
-  m_Radius: 0.88023865
+  m_Radius: 1.83
 --- !u!58 &58709693757157314
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -297,9 +297,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00270722, y: -1.4590237}
+  m_Offset: {x: 0, y: -5.45}
   serializedVersion: 2
-  m_Radius: 0.9234479
+  m_Radius: 1.83
 --- !u!58 &58834352139566348
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -312,9 +312,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.012220583, y: -1.6132151}
+  m_Offset: {x: 0, y: -5.45}
   serializedVersion: 2
-  m_Radius: 0.81110543
+  m_Radius: 1.83
 --- !u!95 &95350061774797566
 Animator:
   serializedVersion: 3
@@ -398,10 +398,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expl: {fileID: 8300000, guid: 6438d22343cf14b7088c4ebe05e2f7cf, type: 3}
+  gpm: {fileID: 0}
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
   damage: 50
   fireBallSpeed: 3
+  src: {fileID: 0}
 --- !u!114 &114151899170553846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -413,10 +416,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expl: {fileID: 8300000, guid: 6438d22343cf14b7088c4ebe05e2f7cf, type: 3}
+  gpm: {fileID: 0}
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
   damage: 50
   fireBallSpeed: 3
+  src: {fileID: 0}
 --- !u!114 &114200140727469166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -428,10 +434,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expl: {fileID: 8300000, guid: 6438d22343cf14b7088c4ebe05e2f7cf, type: 3}
+  gpm: {fileID: 0}
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
   damage: 50
   fireBallSpeed: 3
+  src: {fileID: 0}
 --- !u!114 &114426563836274912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -443,10 +452,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbbd5c514d2557646b550340667e392e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expl: {fileID: 8300000, guid: 6438d22343cf14b7088c4ebe05e2f7cf, type: 3}
+  gpm: {fileID: 0}
   fireBurst: {fileID: 198767007248254722, guid: d96c127b4035f954a9bf79e10de30de0,
     type: 2}
   damage: 50
   fireBallSpeed: 3
+  src: {fileID: 0}
 --- !u!212 &212032237043532760
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -482,7 +494,7 @@ SpriteRenderer:
   m_SortingLayerID: 103353123
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a93b071d358fe4f2c84f22fc9f59d8cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76a4356eafa62034e9c00f603ee81273, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -528,7 +540,7 @@ SpriteRenderer:
   m_SortingLayerID: 103353123
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a93b071d358fe4f2c84f22fc9f59d8cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76a4356eafa62034e9c00f603ee81273, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -574,7 +586,7 @@ SpriteRenderer:
   m_SortingLayerID: 103353123
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a93b071d358fe4f2c84f22fc9f59d8cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76a4356eafa62034e9c00f603ee81273, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -620,7 +632,7 @@ SpriteRenderer:
   m_SortingLayerID: 103353123
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a93b071d358fe4f2c84f22fc9f59d8cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76a4356eafa62034e9c00f603ee81273, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

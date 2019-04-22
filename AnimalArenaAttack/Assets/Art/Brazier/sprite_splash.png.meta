@@ -1,11 +1,15 @@
 fileFormatVersion: 2
-guid: 76a4356eafa62034e9c00f603ee81273
+guid: a58671c7bf904f74cade9e1dcd071a5a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: new_fireball_2
-    21300002: new_fireball_3
-    21300004: new_fireball_4
-    21300006: new_fireball_5
+    21300000: sprite_splash_1
+    21300002: sprite_splash_2
+    21300004: sprite_splash_3
+    21300006: sprite_splash_7
+    21300008: sprite_splash_12
+    21300010: sprite_splash_14
+    21300012: sprite_splash_0
+    21300014: sprite_splash_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -64,10 +68,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -75,21 +79,10 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,81 +92,101 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: new_fireball_2
-      rect:
-        serializedVersion: 2
-        x: 1898
-        y: 0
-        width: 448
-        height: 1446
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 831e921e92b20fc4ea55b2a8d4f28397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: new_fireball_3
+      name: sprite_splash_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 5
-        width: 454
-        height: 1441
+        y: 0
+        width: 886.8
+        height: 482
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70f029db31c5ac0458cf073e14f8bdab
+      spriteID: 456f887eb5b8d7241955c933c66ccdf6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new_fireball_4
+      name: sprite_splash_1
       rect:
         serializedVersion: 2
-        x: 618
+        x: 886
         y: 0
-        width: 454
-        height: 1446
+        width: 886.8
+        height: 482
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb0995520c6880443ad1589d7673174c
+      spriteID: 05956f8693a74dc4eab6d894c353872b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: new_fireball_5
+      name: sprite_splash_2
       rect:
         serializedVersion: 2
-        x: 1241
+        x: 1772
         y: 0
-        width: 454
-        height: 1446
+        width: 886.8
+        height: 482
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b619296f989a75c468e6c563d0238f33
+      spriteID: a3d7276b5aa435e48b07486697d8fa8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_splash_3
+      rect:
+        serializedVersion: 2
+        x: 2658
+        y: 0
+        width: 886.8
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e15ac569bcc86649a5b0e2a8a01a443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_splash_4
+      rect:
+        serializedVersion: 2
+        x: 3544
+        y: 0
+        width: 886.8
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94ddfc44efa5a944a2905282861717f
       vertices: []
       indices: 
       edges: []
@@ -181,7 +194,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b73cf300ec4ba234c96a87dc625a1c98
+    spriteID: b255cc899b9ccef42a4018e8495dfe47
     vertices: []
     indices: 
     edges: []

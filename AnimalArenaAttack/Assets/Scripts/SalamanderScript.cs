@@ -137,7 +137,6 @@ public class SalamanderScript : PlayerParent
         if (((health / maxHealth * 100f) <= 70) && ((health / maxHealth * 100f) > 40))
         {
             anim.SetBool("isInjured", true);
-            Debug.Log("fuck");
         }
 
         if (((health / maxHealth * 100f) <= 40))
