@@ -516,8 +516,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 116772674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 9, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1219691102}
   m_RootOrder: 0
@@ -1710,7 +1710,7 @@ Transform:
   m_GameObject: {fileID: 558632352}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.3424, y: 2.9120004, z: 0}
-  m_LocalScale: {x: 0.13440003, y: 0.13440003, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children:
   - {fileID: 1321174869}
   m_Father: {fileID: 75051563}
@@ -1751,7 +1751,7 @@ SpriteRenderer:
   m_SortingLayerID: 1764212775
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7a540ced9db812e418b85d6448c870aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88f672ada83447e49bbd091fc33a0619, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3771,7 +3771,7 @@ Transform:
   m_GameObject: {fileID: 1219691101}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.02, y: 2.9120004, z: 0}
-  m_LocalScale: {x: 0.13440001, y: 0.13440001, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children:
   - {fileID: 116772675}
   m_Father: {fileID: 75051563}
@@ -3812,7 +3812,7 @@ SpriteRenderer:
   m_SortingLayerID: 1764212775
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7a540ced9db812e418b85d6448c870aa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 88f672ada83447e49bbd091fc33a0619, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -3965,8 +3965,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1321174868}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 9, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 558632353}
   m_RootOrder: 0
@@ -5529,9 +5529,6 @@ MonoBehaviour:
   p1: {fileID: 859135316}
   p2: {fileID: 74629577}
   chimera: {fileID: 2087923101}
-  p1h: 0
-  p2h: 0
-  ch: 0
   timer: {fileID: 1897989869}
   timeLeft: 90
 --- !u!4 &1899559280
