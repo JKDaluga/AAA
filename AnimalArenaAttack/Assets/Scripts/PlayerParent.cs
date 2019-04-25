@@ -328,6 +328,7 @@ public class PlayerParent : MonoBehaviour
             if (isPlayer1)
             {
                 P1HealthBar.value = 0;
+                p1HB.fillAmount = 0;
                 EagleReviveBG.gameObject.SetActive(true);
                 eagleDeath = true;
 
@@ -336,6 +337,7 @@ public class PlayerParent : MonoBehaviour
             else if (!isPlayer1)
             {
                 P2HealthBar.value = 0;
+                p2HB.fillAmount = 0;
                 SalamanderReviveBG.gameObject.SetActive(true);
                 salamanderDeath = true;
                 
