@@ -25,8 +25,6 @@ public class FireGround : MonoBehaviour {
         burntSpot.Play();
         Destroy(burn, 5);
         firstPass = false;
-
-        StartCoroutine("ColorPulsing");
     }
 
     // Update is called once per frame
@@ -57,21 +55,5 @@ public class FireGround : MonoBehaviour {
         {
             col.gameObject.GetComponent<PlayerParent>().Damage(damage);
         }
-    }
-
-    private IEnumerator ColorPulsing()
-    {
-        if (firstPass == true)
-        {
-            firstPass = false;
-            fireSpot.color = Color.Lerp(firstColor, secondaryColor, fadeSpeed * Time.deltaTime );
-        }
-        else {
-            firstPass = true;
-            fireSpot.color = Color.Lerp(secondaryColor, firstColor, fadeSpeed * Time.deltaTime);
-        }
-  
-        yield return new WaitForSeconds(0.5f);
-        StartCoroutine("ColorPulsing");
     }
 }

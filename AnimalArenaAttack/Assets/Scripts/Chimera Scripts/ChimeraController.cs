@@ -271,7 +271,8 @@ public class ChimeraController : MonoBehaviour
             fireBallCounter = 0;
 
             //Enable roar animation here
-            playRoar();
+
+            StartCoroutine(playRoar());
             yield return new WaitForSeconds(1.4f);
         }
         //Forces upgraded Water Beam attack one time when health is 50% of original health
@@ -282,7 +283,7 @@ public class ChimeraController : MonoBehaviour
             waterCounter = 0;
 
             //Enable roar animation here
-            playRoar();
+            StartCoroutine(playRoar());
             yield return new WaitForSeconds(1.4f);
 
         }
@@ -294,7 +295,7 @@ public class ChimeraController : MonoBehaviour
             electricCounter = 0;
 
             //Enable roar animation here
-            playRoar();
+            StartCoroutine(playRoar());
             yield return new WaitForSeconds(1.4f);
 
         }
