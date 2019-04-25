@@ -22,7 +22,7 @@ public class EagleFeather : MonoBehaviour {
         speed *= Time.deltaTime;
         GameManager = GameObject.Find("GameManager");
     }
-
+     
     private void FixedUpdate()
     {
         if (timer >= .8)

@@ -6,6 +6,7 @@ using UnityEngine;
 public class SalamanderScript : PlayerParent
 {
     public GameObject slash;
+    public GameObject fireBlast;
     public float slashUsed;
     public GameObject smoke;
 
@@ -32,6 +33,7 @@ public class SalamanderScript : PlayerParent
         {
             source.PlayOneShot(attack, .125f);
             Instantiate(slash, (transform.position * .8f), transform.rotation);
+            Instantiate(fireBlast, (transform.position * .8f), transform.rotation);
             slashUsed = Time.time;
         }
         //source.Play();
