@@ -2808,6 +2808,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1959169983151102, guid: cbe3468fb91ae0f419d39b248ed8653d,
         type: 2}
+    - target: {fileID: 82138765316906372, guid: 29f30ba6ca6b64e4eafb18e88e06668a,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.02
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 82006448065542426, guid: 29f30ba6ca6b64e4eafb18e88e06668a, type: 2}
     - {fileID: 82735802888676784, guid: 29f30ba6ca6b64e4eafb18e88e06668a, type: 2}

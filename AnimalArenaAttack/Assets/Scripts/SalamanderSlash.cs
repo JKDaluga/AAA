@@ -18,7 +18,7 @@ public class SalamanderSlash : MonoBehaviour {
     void Start()
     {
         source = GameObject.FindGameObjectWithTag("Salamander").GetComponent<AudioSource>();
-        chimera = GameObject.FindGameObjectWithTag("Monster");
+        chimera = GameObject.FindGameObjectWithTag("FeatherCollisionBox");
         speed *= Time.deltaTime;
         GameManager = GameObject.Find("GameManager");
 
@@ -33,6 +33,8 @@ public class SalamanderSlash : MonoBehaviour {
         timer += 1.0F * Time.deltaTime;
 
         transform.position = Vector3.MoveTowards(transform.position, chimera.transform.position, speed);
+        transform.up = chimera.transform.position - transform.position;
+
         //transform.up = chimera.transform.position - transform.position;
 
     }

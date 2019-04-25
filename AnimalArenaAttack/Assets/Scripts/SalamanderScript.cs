@@ -31,7 +31,7 @@ public class SalamanderScript : PlayerParent
     {
         if (Time.time > slashUsed + .15)
         {
-            source.PlayOneShot(attack, .125f);
+            source.PlayOneShot(attack, .05f);
             Instantiate(slash, (transform.position * .8f), transform.rotation);
             Instantiate(fireBlast, (transform.position * .8f), transform.rotation);
             slashUsed = Time.time;
