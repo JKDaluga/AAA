@@ -1,15 +1,10 @@
 fileFormatVersion: 2
-guid: a58671c7bf904f74cade9e1dcd071a5a
+guid: 67389fd1b91cb634da2ad57acda11907
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sprite_splash_1
-    21300002: sprite_splash_2
-    21300004: sprite_splash_3
-    21300006: sprite_splash_7
-    21300008: sprite_splash_12
-    21300010: sprite_splash_14
-    21300012: sprite_splash_0
-    21300014: sprite_splash_4
+    21300000: storm_cloud_0
+    21300002: storm_cloud_1
+    21300004: storm_cloud_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -88,105 +83,76 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite_splash_0
+      name: storm_cloud_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 886.8
-        height: 482
-      alignment: 9
-      pivot: {x: 0.19770707, y: 0.71704185}
+        x: 277
+        y: 258
+        width: 500
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 456f887eb5b8d7241955c933c66ccdf6
+      spriteID: 4e37f21387032484487ae9b33f5669ce
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_splash_1
+      name: storm_cloud_1
       rect:
         serializedVersion: 2
-        x: 886
-        y: 0
-        width: 886.8
-        height: 482
-      alignment: 9
-      pivot: {x: 0.2898702, y: 0.5813907}
+        x: 1319
+        y: 255
+        width: 500
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05956f8693a74dc4eab6d894c353872b
+      spriteID: f3d68b54a192f744183106cb7e2438f3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite_splash_2
+      name: storm_cloud_2
       rect:
         serializedVersion: 2
-        x: 1772
-        y: 0
-        width: 886.8
-        height: 482
-      alignment: 9
-      pivot: {x: 0.4115248, y: 0.46608713}
+        x: 2351
+        y: 257
+        width: 500
+        height: 460
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3d7276b5aa435e48b07486697d8fa8e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_splash_3
-      rect:
-        serializedVersion: 2
-        x: 2658
-        y: 0
-        width: 886.8
-        height: 482
-      alignment: 9
-      pivot: {x: 0.4705092, y: 0.5067824}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e15ac569bcc86649a5b0e2a8a01a443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sprite_splash_4
-      rect:
-        serializedVersion: 2
-        x: 3544
-        y: 0
-        width: 886.8
-        height: 482
-      alignment: 9
-      pivot: {x: 0.5479264, y: 0.53391284}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c94ddfc44efa5a944a2905282861717f
+      spriteID: d726d6ffaa0539e47aa6c7414b459115
       vertices: []
       indices: 
       edges: []
@@ -194,7 +160,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b255cc899b9ccef42a4018e8495dfe47
+    spriteID: cdc004b2c7d959145b8d507172fae256
     vertices: []
     indices: 
     edges: []
