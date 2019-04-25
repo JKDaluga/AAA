@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50699626142793114}
   - component: {fileID: 60304193228836070}
   - component: {fileID: 114505608509603606}
+  - component: {fileID: 95572876927942748}
   m_Layer: 8
   m_Name: Salamander Ranged Attack
   m_TagString: PlayerAttack
@@ -90,6 +91,24 @@ PolygonCollider2D:
     - - {x: 0, y: 0.5}
       - {x: -0.4330127, y: -0.25000003}
       - {x: 0.43301272, y: -0.24999996}
+--- !u!95 &95572876927942748
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1959169983151102}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 09bd589786be934478fb36ca87802288, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114505608509603606
 MonoBehaviour:
   m_ObjectHideFlags: 1
