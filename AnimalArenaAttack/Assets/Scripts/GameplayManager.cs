@@ -19,6 +19,8 @@ public class GameplayManager : MonoBehaviour
     int p2h;
     int ch;
 
+    bool canCount = true;
+
     public Text timer;
     public int timeLeft = 90;
 
@@ -67,10 +69,13 @@ public class GameplayManager : MonoBehaviour
         if (timeLeft <= 15)
         {
             timer.color = Color.red;
-            audioSource.PlayOneShot(timerWarning);
         }
-
+        if (timeLeft == 10)
+        {
+            countdownTimer();
+        }
     }
+  
     private IEnumerator TimeNotice()
     {
         timer.color = Color.red;
@@ -78,7 +83,15 @@ public class GameplayManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         timer.color = Color.white;
     }
-    
+
+    private void countdownTimer()
+    {
+        if (timeLeft == 10 && canCount == true)
+        {
+            audioSource.PlayOneShot(timerWarning);
+            canCount = false;
+        }
+    }
 
     private IEnumerator WaitForWin()
     {
