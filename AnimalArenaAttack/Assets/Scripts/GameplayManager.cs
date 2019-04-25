@@ -52,6 +52,7 @@ public class GameplayManager : MonoBehaviour
         if (p1h <= 0 && p2h <= 0)
         {
             EndDestruction();
+            StopCoroutine("LoseTime");
             StartCoroutine(WaitForLose());
         }
         if (((Input.GetKey(KeyCode.Alpha1)) && (Input.GetKey(KeyCode.Alpha2))))
