@@ -7,7 +7,7 @@ public class FlameBurst : MonoBehaviour {
     GameObject GameManager;
     public int damage = 5;
     public float timer = 0;
-    float speed = 13f;
+    float speed = 20f;
 
     public float yOffset = 0f;
 
@@ -28,7 +28,7 @@ public class FlameBurst : MonoBehaviour {
             GameObject.Destroy(gameObject);
         }
         timer += 1.0F * Time.deltaTime;
-        speed *= .95f;
+        speed *= .9f;
         transform.position = Vector3.MoveTowards(transform.position, redHead.transform.position, speed*Time.deltaTime);
         transform.up = redHead.transform.position - transform.position;
     }
