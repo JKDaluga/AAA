@@ -280,7 +280,7 @@ public class PlayerParent : MonoBehaviour
                             isVulnerable = false;
                             gameObject.layer = 11;
                             Invoke("setVulnerability", 1f);
-                            Invoke("endDodgeAnimation", .025f);
+                            Invoke("endDodgeAnimation", .005f);
                             Instantiate(smokeTrail, transform.position, this.transform.rotation);
                             smokeTrail.Play();
                             Invoke("KillSmoke", 1);
