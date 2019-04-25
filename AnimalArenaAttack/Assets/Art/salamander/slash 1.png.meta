@@ -101,12 +101,12 @@ TextureImporter:
       name: slash 1_0
       rect:
         serializedVersion: 2
-        x: 340
+        x: 376
         y: 368
         width: 300
         height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +121,12 @@ TextureImporter:
       name: slash 1_1
       rect:
         serializedVersion: 2
-        x: 1437
-        y: 391
-        width: 300
-        height: 300
+        x: 1416
+        y: 360
+        width: 348
+        height: 340
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: slash 1_2
       rect:
         serializedVersion: 2
-        x: 2448
-        y: 352
-        width: 300
-        height: 300
+        x: 2426
+        y: 340
+        width: 360
+        height: 355
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
