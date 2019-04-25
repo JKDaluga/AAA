@@ -32,4 +32,15 @@ public class FlameBurst : MonoBehaviour {
         transform.position = Vector3.MoveTowards(transform.position, redHead.transform.position, speed*Time.deltaTime);
         transform.up = redHead.transform.position - transform.position;
     }
+
+    // Update is called once per frame
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "FeatherCollisionBox")
+        {
+            GameManager.GetComponent<AnalyticManager>().salamander += damage;
+            chimera.GetComponent<ChimeraController>().Damage(damage);
+            GameObject.Destroy(gameObject);
+        }
+    }
 }
