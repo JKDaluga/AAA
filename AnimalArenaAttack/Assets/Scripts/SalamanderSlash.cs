@@ -26,7 +26,7 @@ public class SalamanderSlash : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        if (timer >= 1)
+        if (timer >= .05f)
         {
             GameObject.Destroy(gameObject);
         }
@@ -45,7 +45,6 @@ public class SalamanderSlash : MonoBehaviour {
             //source.PlayOneShot(slashDagger);
             col.gameObject.GetComponent<ChimeraController>().Damage(damage);
             //GameManager.GetComponent<AnalyticManager>().salamander = 15;
-            GameObject.Destroy(gameObject);
         }
     }
 }
