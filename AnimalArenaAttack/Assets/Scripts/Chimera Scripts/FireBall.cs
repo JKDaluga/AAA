@@ -35,7 +35,7 @@ public class FireBall : MonoBehaviour
         if (col.gameObject.tag == "Eagle" || col.gameObject.tag == "Salamander")
         {
             GameObject fire = Instantiate(fireBurst.gameObject, transform.position, transform.rotation);
-            src.PlayOneShot(expl);
+            src.PlayOneShot(expl,.5f);
             fireBurst.Play();
 
             Destroy(fire, .3f);
