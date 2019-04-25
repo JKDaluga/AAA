@@ -7,7 +7,7 @@ public class FlameBurst : MonoBehaviour {
     GameObject GameManager;
     public int damage = 5;
     public float timer = 0;
-    float speed = 20f;
+    float speed = 32f;
 
     public float yOffset = 0f;
 
@@ -23,7 +23,7 @@ public class FlameBurst : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (timer >= .4)
+        if (timer >= .5)
         {
             GameObject.Destroy(gameObject);
         }
