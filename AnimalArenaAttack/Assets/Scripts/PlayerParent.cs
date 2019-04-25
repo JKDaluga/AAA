@@ -256,21 +256,21 @@ public class PlayerParent : MonoBehaviour
                         anim.SetBool("isDodging", true);
                         if (Input.GetAxisRaw("Horizontal2") > 0)
                         {
-                            anim.SetBool("DodgeLeft", false);
+                            transform.eulerAngles = new Vector3(0, 0, 270);
                         }
                         else if (Input.GetAxisRaw("Horizontal2") < 0)
                         {
-                            anim.SetBool("DodgeLeft", true);
+                            transform.eulerAngles = new Vector3(0, 0, -270);
                         }
                         else if (Input.GetAxisRaw("Horizontal2") == 0)
                         {
                             if (facingRight == true)
                             {
-                                anim.SetBool("DodgeLeft", false);
+                                transform.eulerAngles = new Vector3(0, 0, 270);
                             }
                             else if (facingRight == false)
                             {
-                                anim.SetBool("DodgeLeft", true);
+                                transform.eulerAngles = new Vector3(0, 0, -270);
                             }
                         }
                         if (rb.velocity.magnitude != 0)
@@ -280,7 +280,7 @@ public class PlayerParent : MonoBehaviour
                             isVulnerable = false;
                             gameObject.layer = 11;
                             Invoke("setVulnerability", 1f);
-                            Invoke("endDodgeAnimation", .005f);
+                            Invoke("endDodgeAnimation", .5f);
                             Instantiate(smokeTrail, transform.position, this.transform.rotation);
                             smokeTrail.Play();
                             Invoke("KillSmoke", 1);
@@ -294,7 +294,7 @@ public class PlayerParent : MonoBehaviour
                                 isVulnerable = false;
                                 gameObject.layer = 11;
                                 Invoke("setVulnerability", 1f);
-                                //Invoke("endDodgeAnimation", .025f);
+                                Invoke("endDodgeAnimation", .5f);
                                 Instantiate(smokeTrail, transform.position, this.transform.rotation);
                                 smokeTrail.Play();
                                 Invoke("KillSmoke", 1);
@@ -305,8 +305,8 @@ public class PlayerParent : MonoBehaviour
                                 rollVector = Vector2.left;
                                 isVulnerable = false;
                                 gameObject.layer = 11;
-                                Invoke("setVulnerability", 1f);
-                                //Invoke("endDodgeAnimation", .025f);
+                                Invoke("setVulnerability", 1);
+                                Invoke("endDodgeAnimation", .5f);
                                 Instantiate(smokeTrail, transform.position, this.transform.rotation);
                                 smokeTrail.Play();
                                 Invoke("KillSmoke", 1);
@@ -485,7 +485,7 @@ public class PlayerParent : MonoBehaviour
     }
     void endDodgeAnimation()
     {
-        anim.SetBool("isDodging", false);
+        transform.eulerAngles = new Vector3(0, 0, 0);
     }
     public void Revive()
     {
