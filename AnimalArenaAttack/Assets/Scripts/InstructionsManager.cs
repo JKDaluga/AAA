@@ -11,6 +11,9 @@ public class InstructionsManager : MonoBehaviour
     public int timeLeft = 5;
     public AudioClip music;
     public AudioSource src;
+
+    public Animator transAnim;
+
     // Use this for initialization
     void Start()
     {
@@ -19,6 +22,7 @@ public class InstructionsManager : MonoBehaviour
         StartCoroutine("LoseTime");
         Time.timeScale = 1;
         StartCoroutine(WaitForSceneSwitch());
+        StartCoroutine(waitToTransition());
     }
 
     private void Update()
@@ -36,6 +40,7 @@ public class InstructionsManager : MonoBehaviour
     private IEnumerator WaitForSceneSwitch()
     {
         yield return new WaitForSeconds(timeLeft);
+     
         SceneManager.LoadScene(2);
     }
     IEnumerator LoseTime()
@@ -45,6 +50,11 @@ public class InstructionsManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             timeLeft--;
         }
+    }
+    private IEnumerator waitToTransition()
+    {
+        yield return new WaitForSeconds(14.5f);
+        transAnim.SetBool("gameEnd", true);
     }
 
 }

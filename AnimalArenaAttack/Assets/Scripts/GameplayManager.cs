@@ -15,6 +15,8 @@ public class GameplayManager : MonoBehaviour
     public GameObject p2;
     public GameObject chimera;
 
+    public Animator transAnim;
+
     int p1h;
     int p2h;
     int ch;
@@ -95,7 +97,8 @@ public class GameplayManager : MonoBehaviour
 
     private IEnumerator WaitForWin()
     {
-        yield return new WaitForSeconds(.2f);
+        transAnim.SetBool("gameEnd", true);
+        yield return new WaitForSeconds(.5f);
         SceneManager.LoadScene(3);
     }
 
@@ -107,7 +110,8 @@ public class GameplayManager : MonoBehaviour
 
     IEnumerator WaitForLose()
     {
-        yield return new WaitForSeconds(.2f);
+        transAnim.SetBool("gameEnd", true);
+        yield return new WaitForSeconds(.5f);
         SceneManager.LoadScene(4);
     }
     IEnumerator LoseTime()
