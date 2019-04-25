@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    // Use this for initialization
+    public Animator transAnim;
 
     // Update is called once per frame
     void Update()
@@ -21,7 +21,13 @@ public class MenuManager : MonoBehaviour
                   Input.GetKey(KeyCode.B) || Input.GetKey(KeyCode.I) ||
               Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.K))
         {
-            SceneManager.LoadScene(1);
+            StartCoroutine(switchScene());
         }
+    }
+    private IEnumerator switchScene()
+    {
+        transAnim.SetBool("gameEnd", true);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(1);
     }
 }
