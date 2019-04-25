@@ -211,11 +211,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4687741165474642, guid: d60cb50e5893a2c4793b2f494ce70760, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4687741165474642, guid: d60cb50e5893a2c4793b2f494ce70760, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4687741165474642, guid: d60cb50e5893a2c4793b2f494ce70760, type: 2}
       propertyPath: m_RootOrder
@@ -306,6 +306,10 @@ Prefab:
       propertyPath: revive
       value: 
       objectReference: {fileID: 8300000, guid: 6610c4d77ed54430096ac1b89e44064c, type: 3}
+    - target: {fileID: 4687741165474642, guid: d60cb50e5893a2c4793b2f494ce70760, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d60cb50e5893a2c4793b2f494ce70760, type: 2}
   m_IsPrefabAsset: 0
@@ -4032,7 +4036,7 @@ SpriteRenderer:
   m_Size: {x: 2.15, y: 4.98}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1333279824

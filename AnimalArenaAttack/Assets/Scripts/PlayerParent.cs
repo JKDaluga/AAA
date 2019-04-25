@@ -254,6 +254,25 @@ public class PlayerParent : MonoBehaviour
                     {
                         eagleSrc.PlayOneShot(eagleDodge);
                         anim.SetBool("isDodging", true);
+                        if (Input.GetAxisRaw("Horizontal2") > 0)
+                        {
+                            anim.SetBool("DodgeLeft", false);
+                        }
+                        else if (Input.GetAxisRaw("Horizontal2") < 0)
+                        {
+                            anim.SetBool("DodgeLeft", true);
+                        }
+                        else if (Input.GetAxisRaw("Horizontal2") == 0)
+                        {
+                            if (facingRight == true)
+                            {
+                                anim.SetBool("DodgeLeft", false);
+                            }
+                            else if (facingRight == false)
+                            {
+                                anim.SetBool("DodgeLeft", true);
+                            }
+                        }
                         if (rb.velocity.magnitude != 0)
                         {
                             rollTime = .2f;
@@ -491,6 +510,10 @@ public class PlayerParent : MonoBehaviour
             onDamage.Clear();
             Destroy(onDamage.gameObject);
         }
+    }
+    void ResetDodgeRoll()
+    {
+        anim.SetBool("isDodging", false);
     }
 }
 
