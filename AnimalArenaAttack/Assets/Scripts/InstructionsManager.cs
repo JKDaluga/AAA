@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class InstructionsManager : MonoBehaviour
 {
     public GameObject instructions1;
+    public GameObject instructions2;
     public Text timer;
     public int timeLeft = 5;
     public AudioClip music;
@@ -31,6 +32,7 @@ public class InstructionsManager : MonoBehaviour
         if (timeLeft==7)
         {
             instructions1.SetActive(false);
+            instructions2.SetActive(true);
         }
     }
     private IEnumerator WaitForSceneSwitch()
