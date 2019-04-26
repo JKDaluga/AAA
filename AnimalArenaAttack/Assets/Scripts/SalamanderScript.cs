@@ -197,7 +197,7 @@ public class SalamanderScript : PlayerParent
             {
                 gameObject.layer = 8;
                 //Ability 1 Player 2
-                if (((Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.Mouse0))))
+                if (Input.GetKeyDown(KeyCode.Period))
                 {
                     StartCoroutine(setAttack());
                     Ability1(); 
@@ -220,7 +220,7 @@ public class SalamanderScript : PlayerParent
             p2HB.fillAmount = (health / maxHealth);
 
             //Ability 2 Player 2
-            if ((Input.GetKeyDown(KeyCode.I)) && isVulnerable)
+            if ((Input.GetKeyDown(KeyCode.RightShift)) && isVulnerable)
             {
                 anim.SetBool("isDodging", true);
                 //Debug.Log("Am I Work?");
