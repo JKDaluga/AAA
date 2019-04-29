@@ -9,6 +9,7 @@ public class GameplayManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip battleMusic;
     public AudioClip timerWarning;
+    public AudioClip roar;
    // public AudioClip expl;
 
     public GameObject p1;
@@ -17,11 +18,13 @@ public class GameplayManager : MonoBehaviour
 
     public Animator transAnim;
 
+
     int p1h;
     int p2h;
     int ch;
 
     bool canCount = true;
+    bool canRoar = true;
 
     public Text timer;
     public int timeLeft = 90;
@@ -91,15 +94,21 @@ public class GameplayManager : MonoBehaviour
     {
         if (timeLeft == 10 && canCount == true)
         {
-            audioSource.PlayOneShot(timerWarning);
+            audioSource.PlayOneShot(timerWarning,.9f);
             canCount = false;
         }
     }
 
     private IEnumerator WaitForWin()
     {
+        if ( canRoar == true)
+        {
+            audioSource.PlayOneShot(roar);
+            canRoar = false;
+        }
+
         transAnim.SetBool("gameEnd", true);
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.75f);
         SceneManager.LoadScene(3);
     }
 

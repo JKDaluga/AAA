@@ -244,13 +244,13 @@ public class PlayerParent : MonoBehaviour
                 }
                 if (isPlayer1)
                 {
-                    if ((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.Mouse0)))
+                    if ((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.C)) || (Input.GetKeyDown(KeyCode.Mouse0)))
                     {
                         StartCoroutine(setAttack());
                         Ability1();
 
                     }
-                    if ((Input.GetKeyDown(KeyCode.B)))
+                    if ((Input.GetKeyDown(KeyCode.B)) || (Input.GetKeyDown(KeyCode.Alpha5)))
                     {
                         eagleSrc.PlayOneShot(eagleDodge);
                         anim.SetBool("isDodging", true);

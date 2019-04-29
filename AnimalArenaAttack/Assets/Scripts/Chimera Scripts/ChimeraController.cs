@@ -58,7 +58,7 @@ public class ChimeraController : MonoBehaviour
     public AudioClip thunder;
     public AudioClip fireball;
     public AudioClip water;
-    float waterVol = .25f;
+    float waterVol = .3f;
     public AudioClip roar;
     public AudioClip salamanderSlash;
 
@@ -116,7 +116,7 @@ public class ChimeraController : MonoBehaviour
 
     IEnumerator lightningStrikes()
     {
-        source.PlayOneShot(thunder,.3f);
+        source.PlayOneShot(thunder,.5f);
         StartCoroutine("summonLightning");
         float delay = 1.5f;
         for (int i = 0; i < 2; i++)
@@ -432,7 +432,7 @@ public class ChimeraController : MonoBehaviour
     {
         if (collision.gameObject.tag == "SalamanderSlash")
         {
-            source.PlayOneShot(salamanderSlash, .25f);
+            source.PlayOneShot(salamanderSlash, .15f);
         }
     }
 

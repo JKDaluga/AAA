@@ -67,7 +67,7 @@ public class Lightning : MonoBehaviour {
         {
             if (played == false)
             {
-                source.PlayOneShot(lightning, .15f);
+                source.PlayOneShot(lightning, .3f);
                 played = true;
             }
             lighting.SetActive(true);

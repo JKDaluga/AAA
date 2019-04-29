@@ -19,7 +19,10 @@ public class MenuManager : MonoBehaviour
                   Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.Q) ||
                   Input.GetKey(KeyCode.V) || Input.GetKey(KeyCode.W) ||
                   Input.GetKey(KeyCode.B) || Input.GetKey(KeyCode.I) ||
-              Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.K))
+              Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.K)||
+              Input.GetKey(KeyCode.Alpha6) || Input.GetKey(KeyCode.Alpha5) ||
+              Input.GetKey(KeyCode.RightBracket) || Input.GetKey(KeyCode.C)
+                  )
         {
             StartCoroutine(switchScene());
         }
