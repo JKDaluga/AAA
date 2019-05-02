@@ -540,7 +540,7 @@ MonoBehaviour:
   eagleRend: {fileID: 212483952405749530, guid: d60cb50e5893a2c4793b2f494ce70760,
     type: 2}
   salamanderRend: {fileID: 212974269717539756}
-  fadeSpeed: 100
+  fadeSpeed: 100000
   savedVelocity: {x: 0, y: 0}
   dashTime: 1
   dashDistance: 10
