@@ -146,12 +146,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   burntSpot: {fileID: 198322714915972570, guid: 099e1be87c2103a4badeff1e8be44110,
     type: 2}
+<<<<<<< HEAD
   fireSpot: {fileID: 212996946948464452}
   fadeSpeed: 0.1
   timer: 3
   damage: 10
   firstColor: {r: 1, g: 0, b: 0, a: 1}
   secondaryColor: {r: 1, g: 0.20784314, b: 0, a: 1}
+=======
+  timer: 9
+  damage: 10
+>>>>>>> parent of a4b032f... FireGround pulsates between 2 colors
 --- !u!212 &212996946948464452
 SpriteRenderer:
   m_ObjectHideFlags: 1

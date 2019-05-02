@@ -6,25 +6,21 @@ public class FireGround : MonoBehaviour {
 
     public ParticleSystem burntSpot;
 
-    public SpriteRenderer fireSpot;
-
-    public float fadeSpeed = 0f;
-
     public float timer;
     public int damage;
 
-    public Color firstColor;
-    public Color secondaryColor;
-
-    private bool firstPass;
-
 	// Use this for initialization
 	void Start () {
+<<<<<<< HEAD
        
         GameObject burn = Instantiate(burntSpot.gameObject, transform.position, Quaternion.Euler(new Vector3(-90, transform.rotation.y, transform.rotation.z)));
         burntSpot.Play();
         Destroy(burn, 5);
         firstPass = false;
+=======
+        Instantiate(burntSpot, transform.position, Quaternion.Euler(new Vector3(-90, transform.rotation.y, transform.rotation.z)));
+
+>>>>>>> parent of a4b032f... FireGround pulsates between 2 colors
     }
 
     // Update is called once per frame
@@ -36,8 +32,6 @@ public class FireGround : MonoBehaviour {
             Destroy(this.gameObject);
 
         }
-
-
     }
 
     void OnTriggerEnter2D(Collider2D col)
