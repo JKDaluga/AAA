@@ -6081,7 +6081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   darkMask: {fileID: 1608955332}
-  Health: 5000
+  Health: 6000
   salamander: {fileID: 859135316}
   eagle: {fileID: 74629577}
   anim: {fileID: 2087923102}

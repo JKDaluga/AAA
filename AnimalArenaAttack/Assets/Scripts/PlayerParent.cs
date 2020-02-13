@@ -244,13 +244,13 @@ public class PlayerParent : MonoBehaviour
                 }
                 if (isPlayer1)
                 {
-                    if ((Input.GetKeyDown(KeyCode.V)) || (Input.GetKeyDown(KeyCode.C)) || (Input.GetKeyDown(KeyCode.Mouse0)))
+                    if (( (Input.GetKeyDown(KeyCode.F)) || (Input.GetKeyDown(KeyCode.Mouse0))))
                     {
                         StartCoroutine(setAttack());
                         Ability1();
 
                     }
-                    if ((Input.GetKeyDown(KeyCode.B)) || (Input.GetKeyDown(KeyCode.Alpha5)))
+                    if ((Input.GetKeyDown(KeyCode.G)))
                     {
                         eagleSrc.PlayOneShot(eagleDodge);
                         anim.SetBool("isDodging", true);
@@ -318,14 +318,14 @@ public class PlayerParent : MonoBehaviour
                 else if (!isPlayer1)
                 {
                     //Ability 1 Player 2
-                    if (((Input.GetKeyDown(KeyCode.W)) || (Input.GetKeyDown(KeyCode.Mouse0))))
+                    if (((Input.GetKeyDown(KeyCode.N)) || (Input.GetKeyDown(KeyCode.Mouse0))))
                     {
                         StartCoroutine(setAttack());
                         Ability1(); MovementP2();
                     }
 
                     //Ability 2 Player 2
-                    if ((Input.GetKeyDown(KeyCode.I)))
+                    if ((Input.GetKeyDown(KeyCode.M)))
                     {
                         //Debug.Log("Am I Work?");
                         //anim.SetBool("Ability2", true);

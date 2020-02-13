@@ -14,14 +14,14 @@ public class MenuManager : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
-        else if (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.A) ||
-                  Input.GetKey(KeyCode.X) || Input.GetKey(KeyCode.S) ||
-                  Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.Q) ||
-                  Input.GetKey(KeyCode.V) || Input.GetKey(KeyCode.W) ||
-                  Input.GetKey(KeyCode.B) || Input.GetKey(KeyCode.I) ||
-              Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.K)||
-              Input.GetKey(KeyCode.Alpha6) || Input.GetKey(KeyCode.Alpha5) ||
-              Input.GetKey(KeyCode.RightBracket) || Input.GetKey(KeyCode.C)
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A) ||
+                  Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) ||
+                  Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) ||
+                  Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) ||
+                  Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.J) ||
+              Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.G)||
+              Input.GetKey(KeyCode.F) || Input.GetKey(KeyCode.M) ||
+              Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.N)
                   )
         {
             StartCoroutine(switchScene());
